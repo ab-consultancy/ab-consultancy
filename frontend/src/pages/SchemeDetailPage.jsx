@@ -7,6 +7,7 @@ import {
   ShieldCheck, 
   CheckCircle2, 
   ArrowRight, 
+  Building,
   Building2, 
   Factory, 
   Award, 
