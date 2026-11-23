@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useSEO } from '../utils/seo';
 import { 
@@ -16,6 +16,7 @@ import {
   Phone, 
   Award, 
   ChevronRight, 
+  ChevronLeft,
   ChevronDown, 
   HelpCircle, 
   Rocket, 
@@ -99,6 +100,78 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
   const [openFaq, setOpenFaq] = useState(0);
   const [selectedVertical, setSelectedVertical] = useState('dairy');
   const [selectedTier, setSelectedTier] = useState('micro');
+
+  // Ref & Keys for scroll-linked 6 Industry Verticals transition
+  const verticalsSectionRef = useRef(null);
+  const verticalKeys = ['dairy', 'feed', 'meat', 'breed', 'veterinary', 'cbg'];
+
+  // Scroll listener: Drives one-by-one vertical progression smoothly as user scrolls
+  useEffect(() => {
+    let ticking = false;
+
+    const handleScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          if (!verticalsSectionRef.current) {
+            ticking = false;
+            return;
+          }
+
+          // Active on larger screens where sticky multi-height viewport operates
+          if (window.innerWidth >= 1024) {
+            const rect = verticalsSectionRef.current.getBoundingClientRect();
+            const totalScrollable = rect.height - window.innerHeight;
+
+            if (totalScrollable > 0) {
+              const scrolled = -rect.top;
+              if (scrolled >= 0 && scrolled <= totalScrollable) {
+                const progress = scrolled / totalScrollable;
+                const index = Math.min(
+                  verticalKeys.length - 1,
+                  Math.max(0, Math.floor(progress * verticalKeys.length))
+                );
+                setSelectedVertical(verticalKeys[index]);
+              }
+            }
+          }
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const handleVerticalSelect = (verticalId) => {
+    setSelectedVertical(verticalId);
+    if (window.innerWidth >= 1024 && verticalsSectionRef.current) {
+      const index = verticalKeys.indexOf(verticalId);
+      if (index !== -1) {
+        const rect = verticalsSectionRef.current.getBoundingClientRect();
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const totalScrollable = verticalsSectionRef.current.offsetHeight - window.innerHeight;
+        if (totalScrollable > 0) {
+          const sliceSize = totalScrollable / verticalKeys.length;
+          const targetY = scrollTop + rect.top + (index * sliceSize) + (sliceSize * 0.35);
+          window.scrollTo({ top: targetY, behavior: 'smooth' });
+        }
+      }
+    }
+  };
+
+  const handlePrevVertical = () => {
+    const currentIndex = verticalKeys.indexOf(selectedVertical);
+    const prevIndex = (currentIndex - 1 + verticalKeys.length) % verticalKeys.length;
+    handleVerticalSelect(verticalKeys[prevIndex]);
+  };
+
+  const handleNextVertical = () => {
+    const currentIndex = verticalKeys.indexOf(selectedVertical);
+    const nextIndex = (currentIndex + 1) % verticalKeys.length;
+    handleVerticalSelect(verticalKeys[nextIndex]);
+  };
 
   // Scroll to top on mount
   useEffect(() => {
@@ -639,131 +712,210 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
         </div>
       </section>
 
-      {/* 3. The 6 Eligible Industry Verticals (Interactive Visual Category Showcase) */}
-      <section className="py-12 sm:py-20 bg-[#F4F8FD] border-b border-slate-200/80">
-        <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
-          <div className="max-w-3xl mb-10 sm:mb-12">
-            <AnimatedBadge icon={Building2} text="DAHD Approved Sectors" className="mb-2" />
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
-              6 Eligible Industry Verticals Under AHIDF Scheme
-            </h2>
-            <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Explore the six government-approved infrastructure sectors eligible for 3% interest subvention and 90% debt funding.
-            </p>
-          </div>
-
-          {/* Vertical Selection Buttons */}
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3 mb-8">
-            {[
-              { id: 'dairy', label: 'Dairy Processing', icon: Milk },
-              { id: 'feed', label: 'Feed Mills', icon: Warehouse },
-              { id: 'meat', label: 'Meat Processing', icon: Beef },
-              { id: 'breed', label: 'Breed Farms', icon: Tractor },
-              { id: 'veterinary', label: 'Vaccines & Bio', icon: Wrench },
-              { id: 'cbg', label: 'CBG & Biogas', icon: Flame }
-            ].map((btn) => {
-              const IconComponent = btn.icon;
-              const isSelected = selectedVertical === btn.id;
-              return (
-                <button
-                  key={btn.id}
-                  type="button"
-                  onClick={() => setSelectedVertical(btn.id)}
-                  className={`p-3 sm:p-4 rounded-2xl border text-center transition-all cursor-pointer flex flex-col items-center justify-center gap-2 ${
-                    isSelected
-                      ? 'bg-white border-[#0062FF] shadow-md ring-2 ring-[#0062FF]/20 text-[#0062FF]'
-                      : 'bg-white/70 border-slate-200/90 hover:bg-white text-slate-700'
-                  }`}
-                >
-                  <IconComponent className={`w-5 h-5 ${isSelected ? 'text-[#0062FF]' : 'text-slate-500'}`} />
-                  <span className="text-xs font-bold leading-tight">{btn.label}</span>
-                </button>
-              );
-            })}
-          </div>
-
-          {/* Detailed Selected Vertical Card */}
-          <div className="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-10 shadow-xs">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-              
-              <div className="lg:col-span-7">
-                <div className="flex items-center gap-2 mb-2">
-                  <AnimatedBadge text={currentVertical.badge} className="!text-[10px] !px-2.5 !py-0.5 normal-case font-bold" />
-                </div>
-                
-                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                  {currentVertical.title}
-                </h3>
+      {/* 3. The 6 Eligible Industry Verticals (Interactive Visual Category Showcase with Smooth Scroll-Linked Animation) */}
+      <section 
+        ref={verticalsSectionRef}
+        className="relative bg-[#F4F8FD] border-b border-slate-200/80 min-h-auto lg:min-h-[250vh]"
+      >
+        <div className="lg:sticky lg:top-20 py-10 sm:py-16">
+          <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
+            
+            {/* Header + Sequence Progress Bar */}
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 sm:mb-10">
+              <div className="max-w-2xl">
+                <AnimatedBadge icon={Building2} text="DAHD Approved Sectors" className="mb-2" />
+                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+                  6 Eligible Industry Verticals Under AHIDF Scheme
+                </h2>
                 <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  {currentVertical.summary}
+                  Scroll through or select to explore each approved infrastructure sector eligible for 3% interest subvention and 90% debt funding.
                 </p>
-
-                {/* Scope of Investment Checklist */}
-                <div className="mt-6">
-                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">
-                    Eligible Project Scope & Machinery Capex:
-                  </h4>
-                  <ul className="space-y-2.5">
-                    {currentVertical.scope.map((item, idx) => (
-                      <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-[13px] text-slate-700 leading-relaxed">
-                        <CheckCircle2 className="w-4 h-4 text-[#0062FF] flex-shrink-0 mt-0.5" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
-                <div className="mt-6 p-4 rounded-2xl bg-blue-50/60 border border-blue-100 text-xs text-blue-900">
-                  <strong className="font-bold">Regional Relevance:</strong> {currentVertical.marketImpact}
-                </div>
               </div>
 
-              {/* Right Column: Funding Specs */}
-              <div className="lg:col-span-5 bg-[#0B1528] text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
-                <div>
-                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#93C5FD] pb-3 border-b border-slate-800">
-                    Scheme Financing Architecture
-                  </h4>
-
-                  <div className="divide-y divide-slate-800/80 my-4 space-y-3">
-                    <div className="pt-2">
-                      <span className="text-[11px] text-slate-400 block">Project Investment Quantum</span>
-                      <span className="text-lg sm:text-xl font-black text-white">{currentVertical.quantum}</span>
-                    </div>
-
-                    <div className="pt-3">
-                      <span className="text-[11px] text-slate-400 block">Bank Debt Support</span>
-                      <span className="text-lg sm:text-xl font-black text-emerald-400">{currentVertical.funding}</span>
-                    </div>
-
-                    <div className="pt-3">
-                      <span className="text-[11px] text-slate-400 block">Central Interest Subvention</span>
-                      <span className="text-lg sm:text-xl font-black text-[#60A5FA]">{currentVertical.subvention}</span>
-                    </div>
-
-                    <div className="pt-3">
-                      <span className="text-[11px] text-slate-400 block">Principal Moratorium</span>
-                      <span className="text-lg sm:text-xl font-black text-amber-400">{currentVertical.moratorium}</span>
-                    </div>
-                  </div>
+              {/* Progress counter & quick sequential buttons */}
+              <div className="flex items-center gap-3 self-start md:self-end">
+                <div className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-700 shadow-2xs flex items-center gap-1.5">
+                  <span className="w-2 h-2 rounded-full bg-[#0062FF] animate-pulse" />
+                  <span className="text-[#0062FF] font-black">
+                    0{verticalKeys.indexOf(selectedVertical) + 1}
+                  </span>
+                  <span className="text-slate-400">/</span>
+                  <span className="text-slate-500 font-medium">06 Verticals</span>
                 </div>
-
-                <div className="pt-4 border-t border-slate-800">
+                <div className="flex items-center gap-1.5">
                   <button
                     type="button"
-                    onClick={onCheckEligibility}
-                    className="w-full py-3 rounded-full bg-[#0062FF] hover:bg-blue-600 text-white font-bold text-xs sm:text-sm transition-all shadow-md cursor-pointer flex items-center justify-center gap-2"
+                    onClick={handlePrevVertical}
+                    className="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#0062FF] hover:text-[#0062FF] flex items-center justify-center transition-all cursor-pointer shadow-2xs"
+                    title="Previous Vertical"
+                    aria-label="Previous Vertical"
                   >
-                    <span>Check DPR Feasibility for this Vertical</span>
-                    <ArrowRight className="w-4 h-4" />
+                    <ChevronLeft className="w-4 h-4" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={handleNextVertical}
+                    className="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#0062FF] hover:text-[#0062FF] flex items-center justify-center transition-all cursor-pointer shadow-2xs"
+                    title="Next Vertical"
+                    aria-label="Next Vertical"
+                  >
+                    <ChevronRight className="w-4 h-4" />
                   </button>
                 </div>
               </div>
-
             </div>
-          </div>
 
+            {/* Vertical Selection Buttons with Visual Flow Connecting Arrows */}
+            <div className="relative mb-6 sm:mb-8">
+              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3">
+                {[
+                  { id: 'dairy', step: '01', label: 'Dairy Processing', icon: Milk },
+                  { id: 'feed', step: '02', label: 'Feed Mills', icon: Warehouse },
+                  { id: 'meat', step: '03', label: 'Meat Processing', icon: Beef },
+                  { id: 'breed', step: '04', label: 'Breed Farms', icon: Tractor },
+                  { id: 'veterinary', step: '05', label: 'Vaccines & Bio', icon: Wrench },
+                  { id: 'cbg', step: '06', label: 'CBG & Biogas', icon: Flame }
+                ].map((btn, index) => {
+                  const IconComponent = btn.icon;
+                  const isSelected = selectedVertical === btn.id;
+                  const isPassed = verticalKeys.indexOf(selectedVertical) > index;
+                  
+                  return (
+                    <div key={btn.id} className="relative group">
+                      <button
+                        type="button"
+                        onClick={() => handleVerticalSelect(btn.id)}
+                        className={`w-full p-3 sm:p-4 rounded-2xl border text-center transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-2 relative ${
+                          isSelected
+                            ? 'bg-white border-[#0062FF] shadow-md ring-2 ring-[#0062FF]/20 text-[#0062FF] scale-[1.02]'
+                            : isPassed
+                            ? 'bg-white/90 border-blue-200/70 text-slate-800 hover:bg-white'
+                            : 'bg-white/70 border-slate-200/90 hover:bg-white text-slate-700'
+                        }`}
+                      >
+                        {/* Step Micro Badge */}
+                        <span className={`text-[10px] font-bold tracking-wider px-1.5 py-0.5 rounded-md ${
+                          isSelected
+                            ? 'bg-blue-50 text-[#0062FF]'
+                            : 'bg-slate-100 text-slate-500'
+                        }`}>
+                          {btn.step}
+                        </span>
+
+                        <IconComponent className={`w-5 h-5 transition-transform duration-300 ${
+                          isSelected ? 'text-[#0062FF] scale-110' : 'text-slate-500'
+                        }`} />
+                        <span className="text-xs font-bold leading-tight">{btn.label}</span>
+
+                        {/* Active Bottom Glow Indicator */}
+                        {isSelected && (
+                          <div className="absolute -bottom-[1px] left-4 right-4 h-[2px] bg-[#0062FF] rounded-full" />
+                        )}
+                      </button>
+
+                      {/* Directional Flow Arrow to Next Step (matching hand-drawn sequence on desktop) */}
+                      {index < 5 && (
+                        <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 pointer-events-none items-center justify-center">
+                          <div className={`w-5 h-5 rounded-full flex items-center justify-center transition-colors duration-300 ${
+                            isPassed || isSelected
+                              ? 'bg-blue-50 text-[#0062FF]'
+                              : 'text-slate-300'
+                          }`}>
+                            <ChevronRight className={`w-3.5 h-3.5 ${isSelected ? 'animate-flow-arrow text-[#0062FF]' : ''}`} />
+                          </div>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Detailed Selected Vertical Card with Smooth Keyframe Transition */}
+            <div 
+              key={currentVertical.id}
+              className="animate-vertical-reveal bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-10 shadow-xs transition-all duration-500"
+            >
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                
+                <div className="lg:col-span-7">
+                  <div className="flex items-center gap-2 mb-2">
+                    <AnimatedBadge text={currentVertical.badge} className="!text-[10px] !px-2.5 !py-0.5 normal-case font-bold" />
+                  </div>
+                  
+                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                    {currentVertical.title}
+                  </h3>
+                  <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                    {currentVertical.summary}
+                  </p>
+
+                  {/* Scope of Investment Checklist */}
+                  <div className="mt-6">
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">
+                      Eligible Project Scope & Machinery Capex:
+                    </h4>
+                    <ul className="space-y-2.5">
+                      {currentVertical.scope.map((item, idx) => (
+                        <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-[13px] text-slate-700 leading-relaxed">
+                          <CheckCircle2 className="w-4 h-4 text-[#0062FF] flex-shrink-0 mt-0.5" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="mt-6 p-4 rounded-2xl bg-blue-50/60 border border-blue-100 text-xs text-blue-900">
+                    <strong className="font-bold">Regional Relevance:</strong> {currentVertical.marketImpact}
+                  </div>
+                </div>
+
+                {/* Right Column: Funding Specs */}
+                <div className="lg:col-span-5 bg-[#0B1528] text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
+                  <div>
+                    <h4 className="text-xs font-bold uppercase tracking-widest text-[#93C5FD] pb-3 border-b border-slate-800">
+                      Scheme Financing Architecture
+                    </h4>
+
+                    <div className="divide-y divide-slate-800/80 my-4 space-y-3">
+                      <div className="pt-2">
+                        <span className="text-[11px] text-slate-400 block">Project Investment Quantum</span>
+                        <span className="text-lg sm:text-xl font-black text-white">{currentVertical.quantum}</span>
+                      </div>
+
+                      <div className="pt-3">
+                        <span className="text-[11px] text-slate-400 block">Bank Debt Support</span>
+                        <span className="text-lg sm:text-xl font-black text-emerald-400">{currentVertical.funding}</span>
+                      </div>
+
+                      <div className="pt-3">
+                        <span className="text-[11px] text-slate-400 block">Central Interest Subvention</span>
+                        <span className="text-lg sm:text-xl font-black text-[#60A5FA]">{currentVertical.subvention}</span>
+                      </div>
+
+                      <div className="pt-3">
+                        <span className="text-[11px] text-slate-400 block">Principal Moratorium</span>
+                        <span className="text-lg sm:text-xl font-black text-amber-400">{currentVertical.moratorium}</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="pt-4 border-t border-slate-800">
+                    <button
+                      type="button"
+                      onClick={onCheckEligibility}
+                      className="w-full py-3 rounded-full bg-[#0062FF] hover:bg-blue-600 text-white font-bold text-xs sm:text-sm transition-all shadow-md cursor-pointer flex items-center justify-center gap-2"
+                    >
+                      <span>Check DPR Feasibility for this Vertical</span>
+                      <ArrowRight className="w-4 h-4" />
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
 
