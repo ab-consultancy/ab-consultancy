@@ -32,6 +32,14 @@ import SchemeDetailPage, {
   NhmSchemePage,
   PsiSchemePage
 } from './pages/SchemeDetailPage';
+import ConsultancyDetailPage, {
+  BusinessConsultancyPage,
+  BusinessSetupGuidancePage,
+  FinancialConsultancyPage,
+  ProjectReportPreparationPage,
+  GovernmentSchemeApplicationAssistancePage,
+  SubsidyApplicationAssistancePage
+} from './pages/ConsultancyDetailPage';
 import { useSEO } from './utils/seo';
 
 function HomePageView({ onCheckEligibility, onTalkConsultant, onBookAppointment, onFeatureClick, onSelectScheme }) {
@@ -632,6 +640,138 @@ export default function App() {
           path="/psi" 
           element={
             <PsiSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 24: Business Consultancy Page */}
+        <Route 
+          path="/services/business-consultancy" 
+          element={
+            <BusinessConsultancyPage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/business-consultancy" 
+          element={
+            <BusinessConsultancyPage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 25: Business Setup Guidance Page */}
+        <Route 
+          path="/services/business-setup-guidance" 
+          element={
+            <BusinessSetupGuidancePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/business-setup-guidance" 
+          element={
+            <BusinessSetupGuidancePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 26: Financial Consultancy Page */}
+        <Route 
+          path="/services/financial-consultancy" 
+          element={
+            <FinancialConsultancyPage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/financial-consultancy" 
+          element={
+            <FinancialConsultancyPage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 27: Project Report Preparation Page */}
+        <Route 
+          path="/services/project-report-preparation" 
+          element={
+            <ProjectReportPreparationPage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/project-report-preparation" 
+          element={
+            <ProjectReportPreparationPage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 28: Government Scheme Application Assistance Page */}
+        <Route 
+          path="/services/government-scheme-application-assistance" 
+          element={
+            <GovernmentSchemeApplicationAssistancePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/government-scheme-application-assistance" 
+          element={
+            <GovernmentSchemeApplicationAssistancePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 29: Subsidy Application Assistance Page */}
+        <Route 
+          path="/services/subsidy-application-assistance" 
+          element={
+            <SubsidyApplicationAssistancePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/subsidy-application-assistance" 
+          element={
+            <SubsidyApplicationAssistancePage 
               onCheckEligibility={handleCheckEligibility}
               onTalkConsultant={handleTalkConsultant}
               onBookAppointment={handleBookAppointment}

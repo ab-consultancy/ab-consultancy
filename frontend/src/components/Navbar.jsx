@@ -320,6 +320,18 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
       navigate('/services/nhm');
     } else if (searchTerm === 'PSI' || searchTerm === 'Package Scheme of Incentives' || searchTerm === 'psi') {
       navigate('/services/psi');
+    } else if (searchTerm === 'Business Consultancy' || searchTerm === 'business-consultancy') {
+      navigate('/services/business-consultancy');
+    } else if (searchTerm === 'Business Setup Guidance' || searchTerm === 'business-setup-guidance') {
+      navigate('/services/business-setup-guidance');
+    } else if (searchTerm === 'Financial Consultancy' || searchTerm === 'financial-consultancy') {
+      navigate('/services/financial-consultancy');
+    } else if (searchTerm === 'Project Report Preparation' || searchTerm === 'project-report-preparation') {
+      navigate('/services/project-report-preparation');
+    } else if (searchTerm === 'Government Scheme Application Assistance' || searchTerm === 'government-scheme-application-assistance') {
+      navigate('/services/government-scheme-application-assistance');
+    } else if (searchTerm === 'Subsidy Application Assistance' || searchTerm === 'subsidy-application-assistance') {
+      navigate('/services/subsidy-application-assistance');
     } else {
       navigate(`/services?q=${encodeURIComponent(searchTerm)}`);
     }
