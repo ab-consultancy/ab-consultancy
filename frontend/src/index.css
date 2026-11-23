@@ -301,7 +301,7 @@
 @keyframes verticalCardReveal {
   0% {
     opacity: 0;
-    transform: translateY(12px) scale(0.995);
+    transform: translateY(14px) scale(0.992);
   }
   100% {
     opacity: 1;
@@ -310,7 +310,7 @@
 }
 
 .animate-vertical-reveal {
-  animation: verticalCardReveal 380ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: verticalCardReveal 340ms cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
 
