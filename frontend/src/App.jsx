@@ -22,6 +22,16 @@ import HotelRestaurantLoansPage from './pages/HotelRestaurantLoansPage';
 import AgricultureLoansPage from './pages/AgricultureLoansPage';
 import GovernmentSponsoredLoansPage from './pages/GovernmentSponsoredLoansPage';
 import AhidfSchemePage from './pages/AhidfSchemePage';
+import SchemeDetailPage, {
+  PmegpSchemePage,
+  CmegpSchemePage,
+  PmfmeSchemePage,
+  AifSchemePage,
+  PmksySchemePage,
+  NhbSchemePage,
+  NhmSchemePage,
+  PsiSchemePage
+} from './pages/SchemeDetailPage';
 import { useSEO } from './utils/seo';
 
 function HomePageView({ onCheckEligibility, onTalkConsultant, onBookAppointment, onFeatureClick, onSelectScheme }) {
@@ -446,6 +456,182 @@ export default function App() {
           path="/ahidf" 
           element={
             <AhidfSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 16: PMEGP Scheme Page */}
+        <Route 
+          path="/services/pmegp" 
+          element={
+            <PmegpSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/pmegp" 
+          element={
+            <PmegpSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 17: CMEGP Scheme Page */}
+        <Route 
+          path="/services/cmegp" 
+          element={
+            <CmegpSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/cmegp" 
+          element={
+            <CmegpSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 18: PMFME Scheme Page */}
+        <Route 
+          path="/services/pmfme" 
+          element={
+            <PmfmeSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/pmfme" 
+          element={
+            <PmfmeSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 19: AIF Scheme Page */}
+        <Route 
+          path="/services/aif" 
+          element={
+            <AifSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/aif" 
+          element={
+            <AifSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 20: PMKSY Scheme Page */}
+        <Route 
+          path="/services/pmksy" 
+          element={
+            <PmksySchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/pmksy" 
+          element={
+            <PmksySchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 21: NHB Scheme Page */}
+        <Route 
+          path="/services/nhb" 
+          element={
+            <NhbSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/nhb" 
+          element={
+            <NhbSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 22: NHM Scheme Page */}
+        <Route 
+          path="/services/nhm" 
+          element={
+            <NhmSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/nhm" 
+          element={
+            <NhmSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+
+        {/* Route 23: Maharashtra PSI Scheme Page */}
+        <Route 
+          path="/services/psi" 
+          element={
+            <PsiSchemePage 
+              onCheckEligibility={handleCheckEligibility}
+              onTalkConsultant={handleTalkConsultant}
+              onBookAppointment={handleBookAppointment}
+            />
+          } 
+        />
+        <Route 
+          path="/psi" 
+          element={
+            <PsiSchemePage 
               onCheckEligibility={handleCheckEligibility}
               onTalkConsultant={handleTalkConsultant}
               onBookAppointment={handleBookAppointment}

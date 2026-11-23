@@ -304,6 +304,22 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
       navigate('/services/government-sponsored-loans');
     } else if (searchTerm === 'AHIDF' || searchTerm === 'Animal Husbandry Infrastructure Development Fund' || searchTerm === 'ahidf' || searchTerm === 'animal-husbandry-infrastructure-development-fund') {
       navigate('/services/ahidf');
+    } else if (searchTerm === 'PMEGP' || searchTerm === "Prime Minister's Employment Generation Programme" || searchTerm === 'pmegp') {
+      navigate('/services/pmegp');
+    } else if (searchTerm === 'CMEGP' || searchTerm === 'Chief Minister Employment Generation Programme' || searchTerm === 'cmegp') {
+      navigate('/services/cmegp');
+    } else if (searchTerm === 'PMFME' || searchTerm === 'PM Formalisation of Micro Food Processing Enterprises' || searchTerm === 'pmfme') {
+      navigate('/services/pmfme');
+    } else if (searchTerm === 'AIF' || searchTerm === 'Agriculture Infrastructure Fund' || searchTerm === 'aif') {
+      navigate('/services/aif');
+    } else if (searchTerm === 'PMKSY' || searchTerm === 'Pradhan Mantri Kisan Sampada Yojana' || searchTerm === 'pmksy') {
+      navigate('/services/pmksy');
+    } else if (searchTerm === 'NHB' || searchTerm === 'National Horticulture Board' || searchTerm === 'nhb') {
+      navigate('/services/nhb');
+    } else if (searchTerm === 'NHM' || searchTerm === 'National Horticulture Mission' || searchTerm === 'nhm') {
+      navigate('/services/nhm');
+    } else if (searchTerm === 'PSI' || searchTerm === 'Package Scheme of Incentives' || searchTerm === 'psi') {
+      navigate('/services/psi');
     } else {
       navigate(`/services?q=${encodeURIComponent(searchTerm)}`);
     }

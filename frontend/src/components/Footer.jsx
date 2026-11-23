@@ -1,5 +1,5 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import BrandLogo from './BrandLogo';
 import { Mail, Phone, MapPin, ArrowRight, ShieldCheck, ExternalLink } from 'lucide-react';
 
@@ -225,12 +225,12 @@ export default function Footer({ onOpenEligibility, onOpenConsultant }) {
               Schemes
             </h4>
             <ul className="space-y-2.5 text-xs text-slate-400">
-              <li><span className="hover:text-white cursor-pointer transition-colors" onClick={onOpenEligibility}>PMEGP Subsidy</span></li>
-              <li><span className="hover:text-white cursor-pointer transition-colors" onClick={onOpenEligibility}>CGTMSE Loans</span></li>
-              <li><span className="hover:text-white cursor-pointer transition-colors" onClick={onOpenEligibility}>Mudra Loans</span></li>
-              <li><span className="hover:text-white cursor-pointer transition-colors" onClick={onOpenEligibility}>Stand-Up India</span></li>
-              <li><span className="hover:text-white cursor-pointer transition-colors" onClick={onOpenEligibility}>State Subsidies</span></li>
-              <li><span className="hover:text-white cursor-pointer transition-colors" onClick={onOpenEligibility}>DPR & CMA</span></li>
+              <li><Link to="/services/pmegp" className="hover:text-white transition-colors">PMEGP Subsidy</Link></li>
+              <li><Link to="/services/cmegp" className="hover:text-white transition-colors">CMEGP Maharashtra</Link></li>
+              <li><Link to="/services/pmfme" className="hover:text-white transition-colors">PMFME Food Processing</Link></li>
+              <li><Link to="/services/ahidf" className="hover:text-white transition-colors">AHIDF Dairy & Feed</Link></li>
+              <li><Link to="/services/aif" className="hover:text-white transition-colors">Agri Infra Fund (AIF)</Link></li>
+              <li><Link to="/services/psi" className="hover:text-white transition-colors">Maharashtra PSI 2019</Link></li>
             </ul>
           </div>
 
