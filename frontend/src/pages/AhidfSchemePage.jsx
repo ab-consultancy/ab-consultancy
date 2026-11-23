@@ -812,19 +812,6 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
                           <div className="absolute -bottom-[1px] left-4 right-4 h-[2px] bg-[#0062FF] rounded-full" />
                         )}
                       </button>
-
-                      {/* Directional Flow Arrow to Next Step (matching hand-drawn sequence on desktop) */}
-                      {index < 5 && (
-                        <div className="hidden lg:flex absolute -right-3 top-1/2 -translate-y-1/2 z-10 pointer-events-none items-center justify-center">
-                          <div className={`w-5 h-5 rounded-full flex items-center justify-center transition-colors duration-300 ${
-                            isPassed || isSelected
-                              ? 'bg-blue-50 text-[#0062FF]'
-                              : 'text-slate-300'
-                          }`}>
-                            <ChevronRight className={`w-3.5 h-3.5 ${isSelected ? 'animate-flow-arrow text-[#0062FF]' : ''}`} />
-                          </div>
-                        </div>
-                      )}
                     </div>
                   );
                 })}

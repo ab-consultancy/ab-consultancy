@@ -313,20 +313,5 @@
   animation: verticalCardReveal 380ms cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
-@keyframes flowArrowPulse {
-  0%, 100% {
-    opacity: 0.35;
-    transform: translateX(0);
-  }
-  50% {
-    opacity: 1;
-    transform: translateX(3px);
-  }
-}
-
-.animate-flow-arrow {
-  animation: flowArrowPulse 1.8s ease-in-out infinite;
-}
-
 
 
