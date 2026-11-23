@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Production builds
+dist/
+*/dist/
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Local scratch and third-party tools
+scratch/
+screenshot-to-code/
+services images/
+.qodo/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# System & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

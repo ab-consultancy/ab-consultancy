@@ -1,0 +1,17 @@
+{
+  "name": "ab-consultancy-workspace",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AB Consultancy - MSME & Government Scheme Advisory Platform",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "frontend": "npm --prefix frontend run dev",
+    "backend": "npm --prefix backend run dev",
+    "install:all": "npm --prefix frontend install && npm --prefix backend install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
