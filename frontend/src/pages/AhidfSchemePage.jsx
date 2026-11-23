@@ -1,35 +1,35 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useSEO } from '../utils/seo';
-import { 
-  Landmark, 
-  ShieldCheck, 
-  CheckCircle2, 
-  ArrowRight, 
-  PhoneCall, 
-  FileText, 
-  Building2, 
-  Factory, 
-  MapPin, 
-  Clock, 
-  Mail, 
-  Phone, 
-  Award, 
-  ChevronRight, 
+import {
+  Landmark,
+  ShieldCheck,
+  CheckCircle2,
+  ArrowRight,
+  PhoneCall,
+  FileText,
+  Building2,
+  Factory,
+  MapPin,
+  Clock,
+  Mail,
+  Phone,
+  Award,
+  ChevronRight,
   ChevronLeft,
-  ChevronDown, 
-  HelpCircle, 
-  Rocket, 
-  Briefcase, 
-  TrendingUp, 
-  Zap, 
-  Layers, 
-  Coins, 
-  Scale, 
-  Check, 
-  Calendar, 
-  FileCheck, 
-  Search, 
+  ChevronDown,
+  HelpCircle,
+  Rocket,
+  Briefcase,
+  TrendingUp,
+  Zap,
+  Layers,
+  Coins,
+  Scale,
+  Check,
+  Calendar,
+  FileCheck,
+  Search,
   ExternalLink,
   AlertCircle,
   Calculator,
@@ -57,27 +57,24 @@ import {
 // Reusable Animated Eyebrow Badge
 function AnimatedBadge({ icon: Icon, text, className = '', isHero = false, isDark = false }) {
   return (
-    <div 
-      className={`relative inline-flex items-center gap-1.5 xs:gap-2 px-3 xs:px-3.5 sm:px-4 py-1 sm:py-1.5 rounded-full font-semibold w-fit select-none overflow-hidden ${
-        isHero 
-          ? 'text-[11px] xs:text-xs sm:text-[12.5px] mb-4 sm:mb-5 text-[#0062FF]' 
+    <div
+      className={`relative inline-flex items-center gap-1.5 xs:gap-2 px-3 xs:px-3.5 sm:px-4 py-1 sm:py-1.5 rounded-full font-semibold w-fit select-none overflow-hidden ${isHero
+          ? 'text-[11px] xs:text-xs sm:text-[12.5px] mb-4 sm:mb-5 text-[#0062FF]'
           : 'text-xs uppercase tracking-wider mb-2'
-      } ${isDark ? 'text-[#93C5FD]' : 'text-[#0062FF]'} ${className}`}
+        } ${isDark ? 'text-[#93C5FD]' : 'text-[#0062FF]'} ${className}`}
       aria-label={text}
     >
-      <div 
-        className={`absolute inset-0 rounded-full border shadow-xs animate-badge-pill pointer-events-none z-0 ${
-          isHero 
-            ? 'bg-[#EBF3FE] border-[#D5E5FD] shadow-[0_1px_2px_rgba(0,98,255,0.05)]' 
+      <div
+        className={`absolute inset-0 rounded-full border shadow-xs animate-badge-pill pointer-events-none z-0 ${isHero
+            ? 'bg-[#EBF3FE] border-[#D5E5FD] shadow-[0_1px_2px_rgba(0,98,255,0.05)]'
             : isDark
-            ? 'bg-white/10 border-white/20 shadow-xs'
-            : 'bg-blue-50/90 border-blue-200/70'
-        }`} 
+              ? 'bg-white/10 border-white/20 shadow-xs'
+              : 'bg-blue-50/90 border-blue-200/70'
+          }`}
       />
       {Icon && (
-        <span className={`relative z-10 w-4 h-4 xs:w-4.5 xs:h-4.5 rounded-full flex items-center justify-center flex-shrink-0 shadow-xs ${
-          isDark ? 'bg-blue-500/30 text-white' : 'bg-[#00A3FF] text-white'
-        }`}>
+        <span className={`relative z-10 w-4 h-4 xs:w-4.5 xs:h-4.5 rounded-full flex items-center justify-center flex-shrink-0 shadow-xs ${isDark ? 'bg-blue-500/30 text-white' : 'bg-[#00A3FF] text-white'
+          }`}>
           <Icon className="w-2.5 h-2.5" />
         </span>
       )}
@@ -101,76 +98,40 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
   const [selectedVertical, setSelectedVertical] = useState('dairy');
   const [selectedTier, setSelectedTier] = useState('micro');
 
-  // Ref & Keys for scroll-linked 6 Industry Verticals transition
-  const verticalsSectionRef = useRef(null);
+  // 6 Industry Verticals Sequence & Auto-Advance Control
   const verticalKeys = ['dairy', 'feed', 'meat', 'breed', 'veterinary', 'cbg'];
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
 
-  // Scroll listener: Drives one-by-one vertical progression smoothly as user scrolls
+  // Smooth sequential auto-advance: covers each vertical one by one seamlessly
   useEffect(() => {
-    let ticking = false;
+    if (!isAutoPlaying) return;
+    const timer = setInterval(() => {
+      setSelectedVertical((prev) => {
+        const nextIdx = (verticalKeys.indexOf(prev) + 1) % verticalKeys.length;
+        return verticalKeys[nextIdx];
+      });
+    }, 4500);
 
-    const handleScroll = () => {
-      if (!ticking) {
-        window.requestAnimationFrame(() => {
-          if (!verticalsSectionRef.current) {
-            ticking = false;
-            return;
-          }
-
-          // Active on larger screens where sticky multi-height viewport operates
-          if (window.innerWidth >= 1024) {
-            const rect = verticalsSectionRef.current.getBoundingClientRect();
-            const totalScrollable = rect.height - window.innerHeight;
-
-            if (totalScrollable > 0) {
-              const scrolled = -rect.top;
-              if (scrolled >= 0 && scrolled <= totalScrollable) {
-                const progress = scrolled / totalScrollable;
-                const index = Math.min(
-                  verticalKeys.length - 1,
-                  Math.max(0, Math.floor(progress * verticalKeys.length))
-                );
-                setSelectedVertical(verticalKeys[index]);
-              }
-            }
-          }
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+    return () => clearInterval(timer);
+  }, [isAutoPlaying]);
 
   const handleVerticalSelect = (verticalId) => {
     setSelectedVertical(verticalId);
-    if (window.innerWidth >= 1024 && verticalsSectionRef.current) {
-      const index = verticalKeys.indexOf(verticalId);
-      if (index !== -1) {
-        const rect = verticalsSectionRef.current.getBoundingClientRect();
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        const totalScrollable = verticalsSectionRef.current.offsetHeight - window.innerHeight;
-        if (totalScrollable > 0) {
-          const sliceSize = totalScrollable / verticalKeys.length;
-          const targetY = scrollTop + rect.top + (index * sliceSize) + (sliceSize * 0.35);
-          window.scrollTo({ top: targetY, behavior: 'smooth' });
-        }
-      }
-    }
+    setIsAutoPlaying(false);
   };
 
   const handlePrevVertical = () => {
+    setIsAutoPlaying(false);
     const currentIndex = verticalKeys.indexOf(selectedVertical);
     const prevIndex = (currentIndex - 1 + verticalKeys.length) % verticalKeys.length;
-    handleVerticalSelect(verticalKeys[prevIndex]);
+    setSelectedVertical(verticalKeys[prevIndex]);
   };
 
   const handleNextVertical = () => {
+    setIsAutoPlaying(false);
     const currentIndex = verticalKeys.indexOf(selectedVertical);
     const nextIndex = (currentIndex + 1) % verticalKeys.length;
-    handleVerticalSelect(verticalKeys[nextIndex]);
+    setSelectedVertical(verticalKeys[nextIndex]);
   };
 
   // Scroll to top on mount
@@ -504,14 +465,14 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
 
   return (
     <div className="min-h-screen bg-[#F4F8FD] text-slate-800 font-sans selection:bg-[#0062FF] selection:text-white">
-      
+
       {/* 1. Hero Section: Authority Scheme Header */}
       <section className="relative pt-24 sm:pt-28 pb-14 sm:pb-20 bg-gradient-to-b from-[#EBF3FE] via-[#F4F8FD] to-[#F4F8FD] border-b border-slate-200/80 overflow-hidden">
         {/* Subtle grid pattern */}
         <div className="absolute inset-0 opacity-[0.03] pointer-events-none bg-[radial-gradient(#0062FF_1px,transparent_1px)] [background-size:16px_16px]" />
 
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12 relative z-10">
-          
+
           {/* Breadcrumb Navigation */}
           <nav aria-label="Breadcrumb" className="mb-4 sm:mb-6">
             <ol className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs text-slate-500 font-medium">
@@ -533,10 +494,10 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
 
           <div className="max-w-4xl">
             {/* Animated Eyebrow Badge */}
-            <AnimatedBadge 
-              icon={Landmark} 
-              text="DAHD • Ministry of Fisheries, Animal Husbandry & Dairying | ₹29,610 Cr National Corpus" 
-              isHero={true} 
+            <AnimatedBadge
+              icon={Landmark}
+              text="DAHD • Ministry of Fisheries, Animal Husbandry & Dairying | ₹29,610 Cr National Corpus"
+              isHero={true}
             />
 
             {/* H1 Title */}
@@ -632,7 +593,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
       {/* 2. Interactive AHIDF Financial Incentive & Comparison Matrix */}
       <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80">
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
+
           <div className="max-w-3xl mb-8 sm:mb-12">
             <AnimatedBadge icon={Scale} text="Financial Scheme Economics" className="mb-2" />
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -712,204 +673,196 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
         </div>
       </section>
 
-      {/* 3. The 6 Eligible Industry Verticals (Interactive Visual Category Showcase with Smooth Scroll-Linked Animation) */}
-      <section 
-        ref={verticalsSectionRef}
-        className="relative bg-[#F4F8FD] border-b border-slate-200/80 min-h-auto lg:min-h-[250vh]"
+      {/* 3. The 6 Eligible Industry Verticals (Interactive Visual Category Showcase) */}
+      <section
+        className="py-12 sm:py-16 bg-[#F4F8FD] border-b border-slate-200/80"
+        onMouseEnter={() => setIsAutoPlaying(false)}
+        onMouseLeave={() => setIsAutoPlaying(true)}
       >
-        <div className="lg:sticky lg:top-20 py-10 sm:py-16">
-          <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-            
-            {/* Header + Sequence Progress Bar */}
-            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 sm:mb-10">
-              <div className="max-w-2xl">
-                <AnimatedBadge icon={Building2} text="DAHD Approved Sectors" className="mb-2" />
-                <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
-                  6 Eligible Industry Verticals Under AHIDF Scheme
-                </h2>
-                <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                  Scroll through or select to explore each approved infrastructure sector eligible for 3% interest subvention and 90% debt funding.
-                </p>
-              </div>
+        <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
 
-              {/* Progress counter & quick sequential buttons */}
-              <div className="flex items-center gap-3 self-start md:self-end">
-                <div className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-700 shadow-2xs flex items-center gap-1.5">
-                  <span className="w-2 h-2 rounded-full bg-[#0062FF] animate-pulse" />
-                  <span className="text-[#0062FF] font-black">
-                    0{verticalKeys.indexOf(selectedVertical) + 1}
-                  </span>
-                  <span className="text-slate-400">/</span>
-                  <span className="text-slate-500 font-medium">06 Verticals</span>
-                </div>
-                <div className="flex items-center gap-1.5">
-                  <button
-                    type="button"
-                    onClick={handlePrevVertical}
-                    className="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#0062FF] hover:text-[#0062FF] flex items-center justify-center transition-all cursor-pointer shadow-2xs"
-                    title="Previous Vertical"
-                    aria-label="Previous Vertical"
-                  >
-                    <ChevronLeft className="w-4 h-4" />
-                  </button>
-                  <button
-                    type="button"
-                    onClick={handleNextVertical}
-                    className="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#0062FF] hover:text-[#0062FF] flex items-center justify-center transition-all cursor-pointer shadow-2xs"
-                    title="Next Vertical"
-                    aria-label="Next Vertical"
-                  >
-                    <ChevronRight className="w-4 h-4" />
-                  </button>
-                </div>
-              </div>
+          {/* Header + Sequence Progress Bar */}
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8 sm:mb-10">
+            <div className="max-w-2xl">
+              <AnimatedBadge icon={Building2} text="DAHD Approved Sectors" className="mb-2" />
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
+                6 Eligible Industry Verticals Under AHIDF Scheme
+              </h2>
+              <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                Explore each government-approved infrastructure sector eligible for 3% interest subvention and 90% debt funding.
+              </p>
             </div>
 
-            {/* Vertical Selection Buttons with Visual Flow Connecting Arrows */}
-            <div className="relative mb-6 sm:mb-8">
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3">
-                {[
-                  { id: 'dairy', step: '01', label: 'Dairy Processing', icon: Milk },
-                  { id: 'feed', step: '02', label: 'Feed Mills', icon: Warehouse },
-                  { id: 'meat', step: '03', label: 'Meat Processing', icon: Beef },
-                  { id: 'breed', step: '04', label: 'Breed Farms', icon: Tractor },
-                  { id: 'veterinary', step: '05', label: 'Vaccines & Bio', icon: Wrench },
-                  { id: 'cbg', step: '06', label: 'CBG & Biogas', icon: Flame }
-                ].map((btn, index) => {
-                  const IconComponent = btn.icon;
-                  const isSelected = selectedVertical === btn.id;
-                  const isPassed = verticalKeys.indexOf(selectedVertical) > index;
-                  
-                  return (
-                    <div key={btn.id} className="relative group">
-                      <button
-                        type="button"
-                        onClick={() => handleVerticalSelect(btn.id)}
-                        className={`w-full p-3 sm:p-4 rounded-2xl border text-center transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-2 relative ${
-                          isSelected
-                            ? 'bg-white border-[#0062FF] shadow-md ring-2 ring-[#0062FF]/20 text-[#0062FF] scale-[1.02]'
-                            : isPassed
-                            ? 'bg-white/90 border-blue-200/70 text-slate-800 hover:bg-white'
-                            : 'bg-white/70 border-slate-200/90 hover:bg-white text-slate-700'
-                        }`}
-                      >
-                        {/* Step Micro Badge */}
-                        <span className={`text-[10px] font-bold tracking-wider px-1.5 py-0.5 rounded-md ${
-                          isSelected
-                            ? 'bg-blue-50 text-[#0062FF]'
-                            : 'bg-slate-100 text-slate-500'
-                        }`}>
-                          {btn.step}
-                        </span>
-
-                        <IconComponent className={`w-5 h-5 transition-transform duration-300 ${
-                          isSelected ? 'text-[#0062FF] scale-110' : 'text-slate-500'
-                        }`} />
-                        <span className="text-xs font-bold leading-tight">{btn.label}</span>
-
-                        {/* Active Bottom Glow Indicator */}
-                        {isSelected && (
-                          <div className="absolute -bottom-[1px] left-4 right-4 h-[2px] bg-[#0062FF] rounded-full" />
-                        )}
-                      </button>
-                    </div>
-                  );
-                })}
+            {/* Progress counter & quick sequential buttons */}
+            <div className="flex items-center gap-3 self-start md:self-end">
+              <div className="px-3.5 py-1.5 rounded-full bg-white border border-slate-200 text-xs font-semibold text-slate-700 shadow-2xs flex items-center gap-1.5">
+                <span className={`w-2 h-2 rounded-full ${isAutoPlaying ? 'bg-emerald-500 animate-pulse' : 'bg-[#0062FF]'}`} />
+                <span className="text-[#0062FF] font-black">
+                  0{verticalKeys.indexOf(selectedVertical) + 1}
+                </span>
+                <span className="text-slate-400">/</span>
+                <span className="text-slate-500 font-medium">06 Verticals</span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <button
+                  type="button"
+                  onClick={handlePrevVertical}
+                  className="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#0062FF] hover:text-[#0062FF] flex items-center justify-center transition-all cursor-pointer shadow-2xs"
+                  title="Previous Vertical"
+                  aria-label="Previous Vertical"
+                >
+                  <ChevronLeft className="w-4 h-4" />
+                </button>
+                <button
+                  type="button"
+                  onClick={handleNextVertical}
+                  className="w-8 h-8 rounded-full bg-white border border-slate-200 text-slate-700 hover:border-[#0062FF] hover:text-[#0062FF] flex items-center justify-center transition-all cursor-pointer shadow-2xs"
+                  title="Next Vertical"
+                  aria-label="Next Vertical"
+                >
+                  <ChevronRight className="w-4 h-4" />
+                </button>
               </div>
             </div>
-
-            {/* Detailed Selected Vertical Card with Smooth Keyframe Transition */}
-            <div 
-              key={currentVertical.id}
-              className="animate-vertical-reveal bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-10 shadow-xs transition-all duration-500"
-            >
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-                
-                <div className="lg:col-span-7">
-                  <div className="flex items-center gap-2 mb-2">
-                    <AnimatedBadge text={currentVertical.badge} className="!text-[10px] !px-2.5 !py-0.5 normal-case font-bold" />
-                  </div>
-                  
-                  <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
-                    {currentVertical.title}
-                  </h3>
-                  <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                    {currentVertical.summary}
-                  </p>
-
-                  {/* Scope of Investment Checklist */}
-                  <div className="mt-6">
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">
-                      Eligible Project Scope & Machinery Capex:
-                    </h4>
-                    <ul className="space-y-2.5">
-                      {currentVertical.scope.map((item, idx) => (
-                        <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-[13px] text-slate-700 leading-relaxed">
-                          <CheckCircle2 className="w-4 h-4 text-[#0062FF] flex-shrink-0 mt-0.5" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="mt-6 p-4 rounded-2xl bg-blue-50/60 border border-blue-100 text-xs text-blue-900">
-                    <strong className="font-bold">Regional Relevance:</strong> {currentVertical.marketImpact}
-                  </div>
-                </div>
-
-                {/* Right Column: Funding Specs */}
-                <div className="lg:col-span-5 bg-[#0B1528] text-white rounded-2xl p-6 sm:p-8 flex flex-col justify-between">
-                  <div>
-                    <h4 className="text-xs font-bold uppercase tracking-widest text-[#93C5FD] pb-3 border-b border-slate-800">
-                      Scheme Financing Architecture
-                    </h4>
-
-                    <div className="divide-y divide-slate-800/80 my-4 space-y-3">
-                      <div className="pt-2">
-                        <span className="text-[11px] text-slate-400 block">Project Investment Quantum</span>
-                        <span className="text-lg sm:text-xl font-black text-white">{currentVertical.quantum}</span>
-                      </div>
-
-                      <div className="pt-3">
-                        <span className="text-[11px] text-slate-400 block">Bank Debt Support</span>
-                        <span className="text-lg sm:text-xl font-black text-emerald-400">{currentVertical.funding}</span>
-                      </div>
-
-                      <div className="pt-3">
-                        <span className="text-[11px] text-slate-400 block">Central Interest Subvention</span>
-                        <span className="text-lg sm:text-xl font-black text-[#60A5FA]">{currentVertical.subvention}</span>
-                      </div>
-
-                      <div className="pt-3">
-                        <span className="text-[11px] text-slate-400 block">Principal Moratorium</span>
-                        <span className="text-lg sm:text-xl font-black text-amber-400">{currentVertical.moratorium}</span>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="pt-4 border-t border-slate-800">
-                    <button
-                      type="button"
-                      onClick={onCheckEligibility}
-                      className="w-full py-3 rounded-full bg-[#0062FF] hover:bg-blue-600 text-white font-bold text-xs sm:text-sm transition-all shadow-md cursor-pointer flex items-center justify-center gap-2"
-                    >
-                      <span>Check DPR Feasibility for this Vertical</span>
-                      <ArrowRight className="w-4 h-4" />
-                    </button>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-
           </div>
+
+          {/* Vertical Selection Buttons */}
+          <div className="mb-6 sm:mb-8">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-2.5 sm:gap-3">
+              {[
+                { id: 'dairy', step: '01', label: 'Dairy Processing', icon: Milk },
+                { id: 'feed', step: '02', label: 'Feed Mills', icon: Warehouse },
+                { id: 'meat', step: '03', label: 'Meat Processing', icon: Beef },
+                { id: 'breed', step: '04', label: 'Breed Farms', icon: Tractor },
+                { id: 'veterinary', step: '05', label: 'Vaccines & Bio', icon: Wrench },
+                { id: 'cbg', step: '06', label: 'CBG & Biogas', icon: Flame }
+              ].map((btn) => {
+                const IconComponent = btn.icon;
+                const isSelected = selectedVertical === btn.id;
+
+                return (
+                  <button
+                    key={btn.id}
+                    type="button"
+                    onClick={() => handleVerticalSelect(btn.id)}
+                    className={`w-full p-3 sm:p-4 rounded-2xl border text-center transition-all duration-300 cursor-pointer flex flex-col items-center justify-center gap-2 relative ${isSelected
+                        ? 'bg-white border-[#0062FF] shadow-md ring-2 ring-[#0062FF]/20 text-[#0062FF] scale-[1.02]'
+                        : 'bg-white/70 border-slate-200/90 hover:bg-white text-slate-700'
+                      }`}
+                  >
+                    {/* Step Micro Badge */}
+                    <span className={`text-[10px] font-bold tracking-wider px-1.5 py-0.5 rounded-md ${isSelected
+                        ? 'bg-blue-50 text-[#0062FF]'
+                        : 'bg-slate-100 text-slate-500'
+                      }`}>
+                      {btn.step}
+                    </span>
+
+                    <IconComponent className={`w-5 h-5 transition-transform duration-300 ${isSelected ? 'text-[#0062FF] scale-110' : 'text-slate-500'
+                      }`} />
+                    <span className="text-xs font-bold leading-tight">{btn.label}</span>
+
+                    {/* Active Bottom Glow Indicator */}
+                    {isSelected && (
+                      <div className="absolute -bottom-[1px] left-4 right-4 h-[2px] bg-[#0062FF] rounded-full" />
+                    )}
+                  </button>
+                );
+              })}
+            </div>
+          </div>
+
+          {/* Detailed Selected Vertical Card with Smooth Keyframe Transition */}
+          <div
+            key={currentVertical.id}
+            className="animate-vertical-reveal bg-white rounded-3xl border border-slate-200/90 p-5 sm:p-7 lg:p-8 shadow-xs transition-all duration-500"
+          >
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+              <div className="lg:col-span-7">
+                <div className="flex items-center gap-2 mb-2">
+                  <AnimatedBadge text={currentVertical.badge} className="!text-[10px] !px-2.5 !py-0.5 normal-case font-bold" />
+                </div>
+
+                <h3 className="text-xl sm:text-2xl font-black text-slate-900 tracking-tight">
+                  {currentVertical.title}
+                </h3>
+                <p className="mt-2 text-xs sm:text-sm text-slate-600 leading-relaxed">
+                  {currentVertical.summary}
+                </p>
+
+                {/* Scope of Investment Checklist */}
+                <div className="mt-6">
+                  <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-3">
+                    Eligible Project Scope & Machinery Capex:
+                  </h4>
+                  <ul className="space-y-2.5">
+                    {currentVertical.scope.map((item, idx) => (
+                      <li key={idx} className="flex items-start gap-2.5 text-xs sm:text-[13px] text-slate-700 leading-relaxed">
+                        <CheckCircle2 className="w-4 h-4 text-[#0062FF] flex-shrink-0 mt-0.5" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="mt-6 p-4 rounded-2xl bg-blue-50/60 border border-blue-100 text-xs text-blue-900">
+                  <strong className="font-bold">Regional Relevance:</strong> {currentVertical.marketImpact}
+                </div>
+              </div>
+
+              {/* Right Column: Funding Specs */}
+              <div className="lg:col-span-5 bg-[#0B1528] text-white rounded-2xl p-5 sm:p-6 flex flex-col justify-between">
+                <div>
+                  <h4 className="text-xs font-bold uppercase tracking-widest text-[#93C5FD] pb-3 border-b border-slate-800">
+                    Scheme Financing Architecture
+                  </h4>
+
+                  <div className="divide-y divide-slate-800/80 my-4 space-y-3">
+                    <div className="pt-2">
+                      <span className="text-[11px] text-slate-400 block">Project Investment Quantum</span>
+                      <span className="text-lg sm:text-xl font-black text-white">{currentVertical.quantum}</span>
+                    </div>
+
+                    <div className="pt-3">
+                      <span className="text-[11px] text-slate-400 block">Bank Debt Support</span>
+                      <span className="text-lg sm:text-xl font-black text-emerald-400">{currentVertical.funding}</span>
+                    </div>
+
+                    <div className="pt-3">
+                      <span className="text-[11px] text-slate-400 block">Central Interest Subvention</span>
+                      <span className="text-lg sm:text-xl font-black text-[#60A5FA]">{currentVertical.subvention}</span>
+                    </div>
+
+                    <div className="pt-3">
+                      <span className="text-[11px] text-slate-400 block">Principal Moratorium</span>
+                      <span className="text-lg sm:text-xl font-black text-amber-400">{currentVertical.moratorium}</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="pt-4 border-t border-slate-800">
+                  <button
+                    type="button"
+                    onClick={onCheckEligibility}
+                    className="w-full py-3 rounded-full bg-[#0062FF] hover:bg-blue-600 text-white font-bold text-xs sm:text-sm transition-all shadow-md cursor-pointer flex items-center justify-center gap-2"
+                  >
+                    <span>Check DPR Feasibility for this Vertical</span>
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </section>
 
       {/* 4. Enterprise Classification & Margin Money Tiers */}
       <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80">
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
+
           <div className="max-w-3xl mb-8 sm:mb-12">
             <AnimatedBadge icon={Scale} text="Promoter Contribution Norms" className="mb-2" />
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -922,7 +875,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {Object.entries(enterpriseTiers).map(([key, tier]) => (
-              <div 
+              <div
                 key={key}
                 className="bg-[#F8FAFD] rounded-2xl p-6 border border-slate-200/80 flex flex-col justify-between hover:border-blue-300 transition-all"
               >
@@ -973,7 +926,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
       {/* 5. End-to-End AHIDF Portal Approval Workflow (5-Stage Horizontal Stepper) */}
       <section className="py-12 sm:py-20 bg-[#F4F8FD] border-b border-slate-200/80">
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
+
           <div className="max-w-3xl mb-10 sm:mb-14">
             <AnimatedBadge icon={Rocket} text="Application & Disbursement Protocol" className="mb-2" />
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -987,7 +940,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
           {/* Stepper Timeline Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {approvalSteps.map((st, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-white rounded-2xl p-5 border border-slate-200/90 shadow-xs relative flex flex-col justify-between"
               >
@@ -1023,7 +976,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
       {/* 6. Statutory Approvals & Regulatory Clearances Matrix */}
       <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80">
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
+
           <div className="max-w-3xl mb-8 sm:mb-12">
             <AnimatedBadge icon={FileCheck} text="Regulatory Compliance Matrix" className="mb-2" />
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -1035,7 +988,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            
+
             <div className="bg-[#F8FAFD] rounded-2xl p-5 border border-slate-200/80">
               <div className="flex items-center gap-2 mb-3">
                 <ShieldCheck className="w-4 h-4 text-[#0062FF]" />
@@ -1144,10 +1097,10 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
       {/* 7. Regional Agro-Climatic Advantage: Why Ahilyanagar is Maharashtra's Dairy Capital */}
       <section className="py-12 sm:py-16 bg-[#F4F8FD] border-b border-slate-200/80">
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
+
           <div className="bg-gradient-to-br from-[#0B1528] to-[#132238] rounded-3xl p-8 sm:p-12 text-white">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              
+
               <div className="lg:col-span-7">
                 <AnimatedBadge icon={MapPin} text="Regional Dairy & Agro Hub" isDark={true} className="mb-3" />
                 <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-white tracking-tight">
@@ -1208,7 +1161,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
       {/* 8. Comprehensive Document Checklist (4-Column Matrix) */}
       <section className="py-12 sm:py-16 bg-white border-b border-slate-200/80">
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
+
           <div className="max-w-3xl mb-8 sm:mb-12">
             <AnimatedBadge icon={FileCheck} text="Documentation Requisites" className="mb-2" />
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -1220,7 +1173,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
-            
+
             <div>
               <div className="flex items-center gap-2 mb-3">
                 <Users className="w-4 h-4 text-[#0062FF]" />
@@ -1329,7 +1282,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
       {/* 9. Direct-Answer FAQs (AEO & GEO Targeted) */}
       <section className="py-12 sm:py-16 bg-[#F4F8FD] border-b border-slate-200/80">
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
+
           <div className="max-w-3xl mb-8 sm:mb-12">
             <AnimatedBadge icon={HelpCircle} text="Frequently Asked Questions" className="mb-2" />
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight">
@@ -1342,7 +1295,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
 
           <div className="max-w-3xl space-y-3">
             {faqs.map((faq, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-white rounded-2xl border border-slate-200/90 overflow-hidden shadow-xs"
               >
@@ -1371,7 +1324,7 @@ export default function AhidfSchemePage({ onCheckEligibility, onTalkConsultant, 
         <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
           <div className="bg-gradient-to-br from-[#0B1528] to-[#1A2E4D] rounded-3xl p-8 sm:p-12 text-white shadow-xl">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-              
+
               <div className="lg:col-span-7 space-y-3">
                 <AnimatedBadge icon={MapPin} text="Ahilyanagar AHIDF Advisory Desk" isDark={true} />
                 <h2 className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
