@@ -13,9 +13,7 @@ import {
   Calendar,
   Building,
   User,
-  HelpCircle,
   FileText,
-  ChevronDown,
   ExternalLink,
   Landmark
 } from 'lucide-react';
@@ -86,26 +84,6 @@ export default function ContactPage({ onCheckEligibility, onTalkConsultant, onBo
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
-  const [openFaq, setOpenFaq] = useState(0);
-
-  const faqs = [
-    {
-      q: 'Do you charge any upfront fee for initial eligibility checks?',
-      a: 'No. Our initial scheme mapping and eligibility pre-check are 100% complimentary. We review your project parameters, geographical zone, and category to identify eligible subsidies before any formal engagement.'
-    },
-    {
-      q: 'Can you assist enterprises located outside Ahilyanagar or Maharashtra?',
-      a: 'Yes. While our headquarters are in Ahilyanagar (Ahmednagar), Maharashtra, we deliver digital DPR preparation, portal filing (KVIC, DIC, Samarth), and bank liaison services for MSMEs and startups across PAN-India.'
-    },
-    {
-      q: 'What basic documents should I have ready for our first meeting?',
-      a: 'For an initial assessment, keep your Aadhaar, PAN card, Udyam Registration (if registered), electricity bill/land documents, and a rough estimate of machinery or project costs handy.'
-    },
-    {
-      q: 'How fast can our DPR (Detailed Project Report) be completed?',
-      a: 'A standard bank-grade DPR with comprehensive 10-year financial projections, CMA data, and DSCR debt sensitivity ratios is typically completed within 3 to 5 business days after receiving required inputs.'
-    }
-  ];
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -675,53 +653,6 @@ export default function ContactPage({ onCheckEligibility, onTalkConsultant, onBo
               </div>
             </div>
 
-          </div>
-
-        </div>
-      </section>
-
-      {/* Frequently Asked Contact Questions */}
-      <section className="py-12 sm:py-16 bg-[#F4F8FD] border-t border-slate-200/60">
-        <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
-          
-          <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12">
-            <div className="flex justify-center mb-2">
-              <AnimatedBadge 
-                icon={HelpCircle} 
-                text="Common Queries" 
-              />
-            </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
-              Before You Connect
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-600 mt-1">
-              Key questions on our consulting process, turnaround timelines, and service coverage.
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto space-y-3">
-            {faqs.map((faq, idx) => (
-              <div 
-                key={idx}
-                className="bg-white rounded-2xl border border-slate-200/80 overflow-hidden shadow-xs transition-all"
-              >
-                <button
-                  type="button"
-                  onClick={() => setOpenFaq(openFaq === idx ? -1 : idx)}
-                  className="w-full p-4 sm:p-5 text-left flex items-center justify-between gap-4 font-bold text-sm sm:text-base text-slate-900 hover:text-brand-600 transition-colors cursor-pointer"
-                >
-                  <span>{faq.q}</span>
-                  <ChevronDown className={`w-4 h-4 text-slate-400 flex-shrink-0 transition-transform duration-200 ${
-                    openFaq === idx ? 'rotate-180 text-brand-600' : ''
-                  }`} />
-                </button>
-                {openFaq === idx && (
-                  <div className="px-4 pb-4 sm:px-5 sm:pb-5 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-3">
-                    {faq.a}
-                  </div>
-                )}
-              </div>
-            ))}
           </div>
 
         </div>
