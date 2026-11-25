@@ -196,6 +196,124 @@
 }
 
 /* ==========================================================================
+   Mobile Hero Locked Responsive Proportions System
+   Width-Driven Breakpoints (360px, 375px, 390px, 414px, 430px)
+   - Zero dependence on 100vh / 100dvh on mobile: address-bar show/hide will NEVER resize the hero.
+   - Proportions are locked per width breakpoint.
+   - Desktop (1024px+) preserves min-height: calc(100vh - 65px).
+   ========================================================================== */
+.mobile-hero-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* Default base mobile (< 375px, e.g. 360px) */
+  min-height: 660px;
+  height: auto;
+}
+
+@media (min-width: 375px) {
+  .mobile-hero-container {
+    min-height: 685px;
+  }
+}
+
+@media (min-width: 390px) {
+  .mobile-hero-container {
+    min-height: 710px;
+  }
+}
+
+@media (min-width: 414px) {
+  .mobile-hero-container {
+    min-height: 740px;
+  }
+}
+
+@media (min-width: 430px) {
+  .mobile-hero-container {
+    min-height: 770px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-hero-container {
+    min-height: calc(100vh - 65px);
+    height: auto;
+  }
+}
+
+/* Hero Foreground Image - Controlled Proportions per Breakpoint */
+.mobile-hero-image {
+  width: 100%;
+  height: auto;
+  max-height: 235px;
+  object-fit: contain;
+  object-position: bottom center;
+}
+
+@media (min-width: 375px) {
+  .mobile-hero-image {
+    max-height: 245px;
+  }
+}
+
+@media (min-width: 390px) {
+  .mobile-hero-image {
+    max-height: 255px;
+  }
+}
+
+@media (min-width: 414px) {
+  .mobile-hero-image {
+    max-height: 268px;
+  }
+}
+
+@media (min-width: 430px) {
+  .mobile-hero-image {
+    max-height: 280px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-hero-image {
+    max-height: none;
+    height: auto;
+    object-position: bottom right;
+  }
+}
+
+/* Hero Bottom Dark Strip - Stable Proportions per Breakpoint */
+.mobile-hero-strip {
+  width: 100%;
+  flex-shrink: 0;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media (min-width: 375px) {
+  .mobile-hero-strip {
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+  }
+}
+
+@media (min-width: 414px) {
+  .mobile-hero-strip {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .mobile-hero-strip {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
+}
+
+/* ==========================================================================
    Footer Decorative Pattern Animations (Subtle, Creative Depth)
    ========================================================================== */
 @keyframes footerBeamSlide {

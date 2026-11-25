@@ -68,7 +68,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
   ];
 
   return (
-    <div className="w-full min-h-[calc(100dvh-58px)] sm:min-h-[calc(100vh-65px)] flex flex-col justify-between select-none overflow-x-hidden bg-gradient-to-b from-[#E6F0FE] via-[#EDF5FE] to-[#DFEDFE] relative">
+    <div className="w-full mobile-hero-container flex flex-col justify-between select-none overflow-x-hidden bg-gradient-to-b from-[#E6F0FE] via-[#EDF5FE] to-[#DFEDFE] relative lg:min-h-[calc(100vh-65px)]">
 
       {/* Subtle Decorative Background Wave - Top Right */}
       <div className="absolute top-0 right-0 w-[320px] sm:w-[620px] h-[220px] sm:h-[420px] pointer-events-none opacity-40 overflow-hidden">
@@ -111,7 +111,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
       <div className="absolute top-12 left-10 w-[220px] sm:w-[360px] h-[220px] sm:h-[360px] bg-white/75 rounded-full blur-2xl pointer-events-none z-0" />
 
       {/* Subtle Oversized Abstract Geometric Curves, Circular Outlines & Flowing Lines */}
-      <div className="absolute top-0 left-0 w-[420px] sm:w-[780px] h-[320px] sm:h-[580px] pointer-events-none z-0 overflow-hidden">
+      <div className="absolute top-0 left-0 max-w-full w-[320px] xs:w-[360px] sm:w-[780px] h-[320px] sm:h-[580px] pointer-events-none z-0 overflow-hidden">
         <svg viewBox="0 0 780 580" fill="none" className="w-full h-full">
           <defs>
             <linearGradient id="ulSwooshGrad" x1="0" y1="0" x2="1" y2="1">
@@ -411,7 +411,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
             <img
               src="/assets/hero_user_provided.png"
               alt="AB Consultancy Government Scheme Advisory & Business Loan Facilitation"
-              className="w-full max-h-[255px] xs:max-h-[275px] sm:max-h-[340px] lg:max-h-none h-auto object-contain object-bottom select-none pointer-events-none relative z-10 drop-shadow-[0_12px_36px_rgba(8,102,255,0.10)]"
+              className="w-full mobile-hero-image sm:max-h-[340px] lg:max-h-none h-auto object-contain object-bottom select-none pointer-events-none relative z-10 drop-shadow-[0_12px_36px_rgba(8,102,255,0.10)]"
               loading="eager"
             />
 
@@ -424,7 +424,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
       </div>
 
       {/* ===================== 3. FULL-WIDTH TRUST & BENEFITS FEATURE STRIP (DARK THEME LIKE FOOTER) ===================== */}
-      <section className="relative z-20 w-full flex-shrink-0 bg-gradient-to-b from-[#0A0F1D] via-[#0F172A] to-[#080D1A] border-t border-b border-slate-800/90 py-2 xs:py-2.5 sm:py-3.5 lg:py-5 shadow-2xl overflow-hidden">
+      <section className="relative z-20 w-full flex-shrink-0 mobile-hero-strip bg-gradient-to-b from-[#0A0F1D] via-[#0F172A] to-[#080D1A] border-t border-b border-slate-800/90 sm:py-3.5 lg:py-5 shadow-2xl overflow-hidden">
 
         {/* Creative Pattern & Depth Layers (Matching Footer) */}
         {/* 1. Precision Top Border Glow Line with Gliding Shimmer Beam */}
