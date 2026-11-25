@@ -3,11 +3,11 @@ import React from 'react';
 export default function BrandLogo({ className = "", light = false }) {
   return (
     <div className={`flex items-center gap-2 xs:gap-3 select-none cursor-pointer ${className}`}>
-      {/* 3D Ribbon Icon Mark */}
+      {/* Brand Icon Mark */}
       <div className="relative flex items-center justify-center">
         <img 
           src="/logo-mark.png" 
-          alt="AB Consultancy 3D Ribbon Logo" 
+          alt="AB Consultancy Logo" 
           className="h-9 xs:h-10 sm:h-11 w-auto object-contain transition-transform duration-300 hover:scale-105 drop-shadow-[0_2px_8px_rgba(0,98,255,0.18)]"
           loading="eager"
         />
