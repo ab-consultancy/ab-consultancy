@@ -68,7 +68,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
   ];
 
   return (
-    <div className="w-full min-h-[calc(100dvh-58px)] sm:min-h-[calc(100vh-65px)] flex flex-col justify-between select-none overflow-x-hidden bg-gradient-to-b from-[#E6F0FE] via-[#EDF5FE] to-[#DFEDFE] relative">
+    <div className="w-full min-h-[calc(100vh-65px)] flex flex-col justify-between select-none overflow-x-hidden bg-gradient-to-b from-[#E6F0FE] via-[#EDF5FE] to-[#DFEDFE] relative">
       
       {/* Subtle Decorative Background Wave - Top Right */}
       <div className="absolute top-0 right-0 w-[320px] sm:w-[620px] h-[220px] sm:h-[420px] pointer-events-none opacity-40 overflow-hidden">
@@ -206,19 +206,19 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
       </div>
 
       {/* ===================== MIDDLE HERO CONTENT ===================== */}
-      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12 pt-2.5 xs:pt-3.5 sm:pt-6 lg:pt-2 pb-0 flex flex-col justify-between lg:grid lg:grid-cols-12 gap-0 lg:gap-2 lg:items-end flex-1">
+      <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12 pt-5 xs:pt-5 sm:pt-6 lg:pt-2 pb-0 flex flex-col justify-between lg:grid lg:grid-cols-12 gap-0 lg:gap-2 lg:items-end flex-1">
         
         {/* Left Column: Eyebrow + 3-line Headline + Subtitle + CTAs + Micro Trust */}
         <div className="lg:col-span-5 xl:col-span-5 flex flex-col justify-start lg:justify-center translate-y-0 lg:-translate-y-16 xl:-translate-y-20 z-20">
           
           {/* Eyebrow Pill Tag with Smooth Left-to-Right Reveal Animation */}
           <div 
-            className="relative inline-flex items-center gap-1.5 xs:gap-2 px-2.5 xs:px-3 sm:px-4 py-0.5 xs:py-1 sm:py-1.5 rounded-full text-[#0062FF] text-[10.5px] xs:text-xs sm:text-[12.5px] font-semibold mb-1.5 xs:mb-2 sm:mb-3 w-fit select-none"
+            className="relative inline-flex items-center gap-1.5 xs:gap-2 px-3 xs:px-3.5 sm:px-4 py-1 sm:py-1.5 rounded-full text-[#0062FF] text-[11px] xs:text-xs sm:text-[12.5px] font-semibold mb-2 xs:mb-2.5 sm:mb-3 w-fit select-none"
             aria-label="Government Scheme & Business Support"
           >
             {/* 1. Stationary Bank Icon - In cyan/blue circle matching design */}
-            <span className="relative z-10 w-3.5 h-3.5 xs:w-4 xs:h-4 sm:w-4.5 sm:h-4.5 rounded-full bg-[#00A3FF] text-white flex items-center justify-center flex-shrink-0 shadow-xs">
-              <Landmark className="w-2 h-2 xs:w-2.5 xs:h-2.5" />
+            <span className="relative z-10 w-4 h-4 xs:w-4.5 xs:h-4.5 rounded-full bg-[#00A3FF] text-white flex items-center justify-center flex-shrink-0 shadow-xs">
+              <Landmark className="w-2.5 h-2.5" />
             </span>
 
             {/* 2. Badge Background / Pill Layer - Reveals smoothly left-to-right (0–900ms) */}
@@ -242,8 +242,8 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
             </span>
           </div>
 
-          {/* Main Headline - Proportionate on mobile & commanding on desktop */}
-          <h1 className="text-[25px] xs:text-[28px] sm:text-[38px] md:text-5xl lg:text-[52px] xl:text-[58px] font-black text-[#0F172A] tracking-[-0.03em] leading-[1.08] sm:leading-[1.06] [text-wrap:balance]">
+          {/* Main Headline - Slightly increased for commanding optical presence & balanced upper spacing */}
+          <h1 className="text-[32px] xs:text-[36px] sm:text-[42px] md:text-5xl lg:text-[52px] xl:text-[58px] font-black text-[#0F172A] tracking-[-0.035em] leading-[1.08] sm:leading-[1.06] [text-wrap:balance]">
             <span className="block">Your Business.</span>
             <span className="block mt-0.5 sm:mt-1">Your Opportunities.</span>
             <span className="block mt-0.5 sm:mt-1 text-[#0062FF]">
@@ -252,18 +252,18 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
           </h1>
 
           {/* Subtitle */}
-          <p className="mt-1.5 xs:mt-2 sm:mt-3 text-[11.5px] xs:text-[12.5px] sm:text-base lg:text-[15.5px] text-slate-600 font-normal leading-[1.4] sm:leading-[1.55] max-w-[320px] xs:max-w-[360px] sm:max-w-[480px]">
+          <p className="mt-2.5 sm:mt-3 text-[12.5px] xs:text-[13.5px] sm:text-base lg:text-[15.5px] text-slate-600 font-normal leading-[1.48] sm:leading-[1.55] max-w-[330px] xs:max-w-[370px] sm:max-w-[480px]">
             Helping startups and MSMEs unlock Central & State government schemes, 
             secure low-interest business loans, and prepare bank-ready documentation—fast 
             and hassle-free.
           </p>
 
           {/* CTAs - Stacked compact pill buttons on mobile */}
-          <div className="mt-2.5 xs:mt-3 sm:mt-5 flex flex-col sm:flex-row items-start sm:items-center gap-1.5 xs:gap-2 sm:gap-4 w-full sm:w-auto">
+          <div className="mt-3 sm:mt-5 flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4 w-full sm:w-auto">
             {/* Primary CTA */}
             <button
               onClick={onCheckEligibility}
-              className="group relative inline-flex items-center justify-between gap-3 px-4 xs:px-5 sm:pl-6 sm:pr-3.5 py-2 xs:py-2.5 sm:py-3.5 rounded-full bg-[#0062FF] hover:bg-[#0052CC] active:scale-[0.98] text-white font-semibold text-[11.5px] xs:text-xs sm:text-sm shadow-[0_4px_16px_rgba(0,98,255,0.35)] hover:shadow-[0_6px_22px_rgba(0,98,255,0.42)] transition-all duration-200 cursor-pointer min-h-[38px] xs:min-h-[40px] sm:min-h-[48px] w-fit min-w-[200px] xs:min-w-[215px]"
+              className="group relative inline-flex items-center justify-between gap-3 px-5 sm:pl-6 sm:pr-3.5 py-2.5 sm:py-3.5 rounded-full bg-[#0062FF] hover:bg-[#0052CC] active:scale-[0.98] text-white font-semibold text-xs sm:text-sm shadow-[0_4px_16px_rgba(0,98,255,0.35)] hover:shadow-[0_6px_22px_rgba(0,98,255,0.42)] transition-all duration-200 cursor-pointer min-h-[42px] sm:min-h-[48px] w-fit min-w-[210px] xs:min-w-[220px]"
             >
               <span>Check Your Eligibility</span>
               <span className="w-5 h-5 sm:w-6 sm:h-6 rounded-full bg-white/25 flex items-center justify-center transition-transform duration-200 group-hover:translate-x-0.5 flex-shrink-0">
@@ -274,15 +274,15 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
             {/* Secondary CTA */}
             <button
               onClick={onTalkConsultant}
-              className="inline-flex items-center justify-center gap-2 px-4 xs:px-5 sm:px-6 py-2 xs:py-2.5 sm:py-3.5 rounded-full bg-white hover:bg-slate-50 active:scale-[0.98] text-[#0062FF] font-semibold text-[11.5px] xs:text-xs sm:text-sm border border-[#0062FF] transition-all duration-200 shadow-xs hover:shadow-sm cursor-pointer min-h-[38px] xs:min-h-[40px] sm:min-h-[48px] w-fit min-w-[200px] xs:min-w-[215px]"
+              className="inline-flex items-center justify-center gap-2 px-5 sm:px-6 py-2.5 sm:py-3.5 rounded-full bg-white hover:bg-slate-50 active:scale-[0.98] text-[#0062FF] font-semibold text-xs sm:text-sm border border-[#0062FF] transition-all duration-200 shadow-xs hover:shadow-sm cursor-pointer min-h-[42px] sm:min-h-[48px] w-fit min-w-[210px] xs:min-w-[220px]"
             >
-              <MessageSquare className="w-3 h-3 xs:w-3.5 xs:h-3.5 sm:w-4 sm:h-4 text-[#0062FF] flex-shrink-0" />
+              <MessageSquare className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#0062FF] flex-shrink-0" />
               <span>Talk to Our Consultant</span>
             </button>
           </div>
 
-          {/* Micro Trust Indicators - Compact wrapping on mobile */}
-          <div className="mt-1.5 xs:mt-2 sm:mt-4 flex flex-col xs:flex-row xs:flex-wrap items-start xs:items-center gap-x-3 sm:gap-x-6 gap-y-0.5 sm:gap-y-2 text-[10px] xs:text-[11px] sm:text-[12.5px] text-slate-600 font-medium">
+          {/* Micro Trust Indicators - Vertically stacked on mobile matching design */}
+          <div className="mt-2.5 sm:mt-4 flex flex-col sm:flex-row sm:flex-wrap items-start sm:items-center gap-1 sm:gap-x-6 sm:gap-y-2 text-[11px] xs:text-xs sm:text-[12.5px] text-slate-600 font-medium">
             <div className="flex items-center gap-1.5 flex-shrink-0">
               <Check className="w-3.5 h-3.5 text-[#0062FF] stroke-[2.5] flex-shrink-0" />
               <span>Zero Upfront Eligibility Fee</span>
@@ -302,7 +302,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
         {/* Right Column: Layered Composition (+30% Enlarge, Depth & Architectural Rings) */}
         <div className="lg:col-span-7 xl:col-span-7 flex items-end justify-end relative -mb-1 overflow-hidden lg:overflow-visible -mr-4 xs:-mr-5 sm:-mr-10 lg:-mr-6 xl:-mr-12 2xl:-mr-16 w-[calc(100%+2rem)] xs:w-[calc(100%+2.5rem)] lg:w-full mt-auto lg:mt-0 pointer-events-none select-none z-10">
           
-          <div className="relative w-[270px] xs:w-[310px] sm:w-[460px] md:w-[640px] lg:w-full max-w-[880px] xl:max-w-[980px] 2xl:max-w-[1040px] flex items-end justify-end ml-auto translate-x-3 xs:translate-x-5 sm:translate-x-10 lg:translate-x-0">
+          <div className="relative w-[420px] xs:w-[470px] sm:w-[560px] md:w-[640px] lg:w-full max-w-[880px] xl:max-w-[980px] 2xl:max-w-[1040px] flex items-end justify-end ml-auto translate-x-6 xs:translate-x-8 sm:translate-x-10 lg:translate-x-0">
 
             {/* ================= LAYER 1: BACKGROUND GEOMETRY & SOFT RADIAL GRADIENTS ================= */}
             {/* Deep Ambient Atmospheric Glow */}
@@ -426,7 +426,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
             <img 
               src="/assets/hero_user_provided.png" 
               alt="AB Consultancy Government Scheme Advisory & Business Loan Facilitation" 
-              className="w-full max-h-[175px] xs:max-h-[210px] sm:max-h-[320px] lg:max-h-none h-auto object-contain object-bottom select-none pointer-events-none relative z-10 drop-shadow-[0_12px_36px_rgba(8,102,255,0.10)]"
+              className="w-full h-auto object-contain select-none pointer-events-none relative z-10 drop-shadow-[0_12px_36px_rgba(8,102,255,0.10)]"
               loading="eager"
             />
 
@@ -439,7 +439,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
       </div>
 
       {/* ===================== 3. FULL-WIDTH TRUST & BENEFITS FEATURE STRIP (DARK THEME LIKE FOOTER) ===================== */}
-      <section className="relative z-20 w-full bg-gradient-to-b from-[#0A0F1D] via-[#0F172A] to-[#080D1A] border-t border-b border-slate-800/90 py-2 sm:py-3 lg:py-5 shadow-2xl overflow-hidden flex-shrink-0">
+      <section className="relative z-20 w-full bg-gradient-to-b from-[#0A0F1D] via-[#0F172A] to-[#080D1A] border-t border-b border-slate-800/90 py-2.5 sm:py-3.5 lg:py-5 shadow-2xl overflow-hidden">
         
         {/* Creative Pattern & Depth Layers (Matching Footer) */}
         {/* 1. Precision Top Border Glow Line with Gliding Shimmer Beam */}
