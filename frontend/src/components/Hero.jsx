@@ -69,13 +69,13 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
 
   return (
     <div className="w-full min-h-[calc(100dvh-58px)] sm:min-h-[calc(100vh-65px)] flex flex-col justify-between select-none overflow-x-hidden bg-gradient-to-b from-[#E6F0FE] via-[#EDF5FE] to-[#DFEDFE] relative">
-      
+
       {/* Subtle Decorative Background Wave - Top Right */}
       <div className="absolute top-0 right-0 w-[320px] sm:w-[620px] h-[220px] sm:h-[420px] pointer-events-none opacity-40 overflow-hidden">
         <svg viewBox="0 0 620 420" fill="none" className="w-full h-full">
-          <path 
-            d="M160 0 C 320 100, 480 190, 620 390 L 620 0 Z" 
-            fill="url(#topRightGrad)" 
+          <path
+            d="M160 0 C 320 100, 480 190, 620 390 L 620 0 Z"
+            fill="url(#topRightGrad)"
           />
           <defs>
             <linearGradient id="topRightGrad" x1="0" y1="0" x2="1" y2="1">
@@ -89,9 +89,9 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
       {/* Subtle Decorative Background Wave - Bottom Left */}
       <div className="absolute bottom-16 left-0 w-[260px] sm:w-[420px] h-[150px] sm:h-[240px] pointer-events-none opacity-40 overflow-hidden">
         <svg viewBox="0 0 420 240" fill="none" className="w-full h-full">
-          <path 
-            d="M0 240 L 0 110 C 100 130, 240 175, 420 240 Z" 
-            fill="url(#bottomLeftGrad)" 
+          <path
+            d="M0 240 L 0 110 C 100 130, 240 175, 420 240 Z"
+            fill="url(#bottomLeftGrad)"
           />
           <defs>
             <linearGradient id="bottomLeftGrad" x1="0" y1="0" x2="1" y2="0">
@@ -131,88 +131,88 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
           </defs>
 
           {/* 1. Oversized Abstract Geometric Curve / Translucent Swoosh */}
-          <path 
-            d="M -60 10 C 160 0, 360 80, 460 210 C 540 320, 520 440, 420 540 L -60 540 Z" 
-            fill="url(#ulSwooshGrad)" 
+          <path
+            d="M -60 10 C 160 0, 360 80, 460 210 C 540 320, 520 440, 420 540 L -60 540 Z"
+            fill="url(#ulSwooshGrad)"
           />
 
           {/* 2. Concentric Low-Opacity Circular Outlines */}
           {/* Outer dashed circular outline */}
           <g className="animate-orbit-ul-outer-cw">
-            <circle 
-              cx="160" 
-              cy="140" 
-              r="400" 
-              stroke="#0866FF" 
-              strokeWidth="1.5" 
-              strokeDasharray="10 8" 
-              opacity="0.26" 
+            <circle
+              cx="160"
+              cy="140"
+              r="400"
+              stroke="#0866FF"
+              strokeWidth="1.5"
+              strokeDasharray="10 8"
+              opacity="0.26"
             />
           </g>
           {/* Middle solid delicate ring */}
           <g className="animate-orbit-ul-inner-ccw">
-            <circle 
-              cx="160" 
-              cy="140" 
-              r="290" 
-              stroke="url(#ulStrokeGrad)" 
-              strokeWidth="2" 
-              opacity="0.36" 
+            <circle
+              cx="160"
+              cy="140"
+              r="290"
+              stroke="url(#ulStrokeGrad)"
+              strokeWidth="2"
+              opacity="0.36"
             />
           </g>
           {/* Inner dashed accent orbit (rotates clockwise at 45s) */}
           <g className="animate-orbit-ul-accent-cw">
-            <circle 
-              cx="160" 
-              cy="140" 
-              r="190" 
-              stroke="#0062FF" 
-              strokeWidth="1.5" 
-              strokeDasharray="6 6" 
-              opacity="0.30" 
+            <circle
+              cx="160"
+              cy="140"
+              r="190"
+              stroke="#0062FF"
+              strokeWidth="1.5"
+              strokeDasharray="6 6"
+              opacity="0.30"
             />
           </g>
           {/* Core soft circular glow (stationary) */}
-          <circle 
-            cx="160" 
-            cy="140" 
-            r="110" 
-            fill="#DCEBFF" 
-            fillOpacity="0.35" 
+          <circle
+            cx="160"
+            cy="140"
+            r="110"
+            fill="#DCEBFF"
+            fillOpacity="0.35"
           />
 
           {/* 3. Flowing Decorative Architectural Lines extending toward center */}
-          <path 
-            d="M -30 180 C 180 170, 380 250, 600 210" 
-            stroke="url(#ulAccentGrad)" 
-            strokeWidth="2" 
-            strokeDasharray="8 6" 
-            opacity="0.32" 
+          <path
+            d="M -30 180 C 180 170, 380 250, 600 210"
+            stroke="url(#ulAccentGrad)"
+            strokeWidth="2"
+            strokeDasharray="8 6"
+            opacity="0.32"
           />
-          <path 
-            d="M -10 270 C 200 260, 420 340, 660 290" 
-            stroke="#0062FF" 
-            strokeWidth="1.5" 
-            opacity="0.25" 
+          <path
+            d="M -10 270 C 200 260, 420 340, 660 290"
+            stroke="#0062FF"
+            strokeWidth="1.5"
+            opacity="0.25"
           />
-          <path 
-            d="M 40 360 C 250 340, 480 410, 720 380" 
-            stroke="#38BDF8" 
-            strokeWidth="1.2" 
-            strokeDasharray="5 5" 
-            opacity="0.22" 
+          <path
+            d="M 40 360 C 250 340, 480 410, 720 380"
+            stroke="#38BDF8"
+            strokeWidth="1.2"
+            strokeDasharray="5 5"
+            opacity="0.22"
           />
         </svg>
       </div>
 
       {/* ===================== MIDDLE HERO CONTENT ===================== */}
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12 pt-2 xs:pt-2.5 sm:pt-6 lg:pt-2 pb-0 flex flex-col justify-between lg:grid lg:grid-cols-12 gap-0 lg:gap-2 lg:items-end flex-1">
-        
+
         {/* Left Column: Eyebrow + 3-line Headline + Subtitle + CTAs + Micro Trust */}
         <div className="lg:col-span-5 xl:col-span-5 flex flex-col justify-start lg:justify-center translate-y-0 lg:-translate-y-16 xl:-translate-y-20 z-20">
-          
+
           {/* Eyebrow Pill Tag with Clean Reveal */}
-          <div 
+          <div
             className="relative inline-flex items-center gap-1.5 xs:gap-2 px-3 xs:px-3.5 sm:px-4 py-1 sm:py-1.5 rounded-full text-[#0062FF] text-[11px] xs:text-xs sm:text-[12.5px] font-semibold mb-2 xs:mb-2.5 sm:mb-3 w-fit select-none bg-[#EBF3FE] border border-[#D5E5FD] shadow-[0_1px_2px_rgba(0,98,255,0.05)]"
             aria-label="Government Scheme & Business Support"
           >
@@ -238,8 +238,8 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
 
           {/* Subtitle */}
           <p className="mt-2 xs:mt-2.5 sm:mt-3 text-[12.5px] xs:text-[13px] sm:text-base lg:text-[15.5px] text-slate-600 font-normal leading-[1.46] sm:leading-[1.55] max-w-[340px] xs:max-w-[370px] sm:max-w-[480px]">
-            Helping startups and MSMEs unlock Central & State government schemes, 
-            secure low-interest business loans, and prepare bank-ready documentation—fast 
+            Helping startups and MSMEs unlock Central & State government schemes,
+            secure low-interest business loans, and prepare bank-ready documentation—fast
             and hassle-free.
           </p>
 
@@ -286,13 +286,13 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
 
         {/* Right Column: Hero Visual positioned cleanly flush against bottom feature bar */}
         <div className="lg:col-span-7 xl:col-span-7 flex flex-col justify-end items-center lg:items-end relative -mb-1 overflow-hidden lg:overflow-visible w-full mt-auto lg:mt-0 pointer-events-none select-none z-10">
-          
+
           <div className="relative w-full max-w-[460px] sm:max-w-[560px] md:max-w-[640px] lg:max-w-[880px] xl:max-w-[980px] 2xl:max-w-[1040px] flex items-end justify-center lg:justify-end mx-auto lg:ml-auto translate-x-2 xs:translate-x-3 sm:translate-x-6 lg:translate-x-0">
 
             {/* ================= LAYER 1: BACKGROUND GEOMETRY & SOFT RADIAL GRADIENTS ================= */}
             {/* Deep Ambient Atmospheric Glow */}
             <div className="absolute -top-16 right-0 w-[640px] h-[520px] bg-gradient-to-bl from-[#0866FF]/16 via-[#DCEBFF]/35 to-transparent rounded-full blur-3xl pointer-events-none z-0" />
-            
+
             {/* Subject Separation Spotlight directly behind person */}
             <div className="absolute top-8 left-[22%] w-[340px] h-[340px] bg-white/80 rounded-full blur-2xl pointer-events-none z-0" />
 
@@ -304,9 +304,9 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
             </div>
 
             {/* ================= LAYER 2: SVG CONCENTRIC ARCS, CURVED SHAPES & FLOWING LINES ================= */}
-            <svg 
-              viewBox="0 0 1024 576" 
-              fill="none" 
+            <svg
+              viewBox="0 0 1024 576"
+              fill="none"
               className="absolute inset-0 w-full h-full pointer-events-none z-0 overflow-visible"
             >
               <defs>
@@ -332,9 +332,9 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
               </defs>
 
               {/* 1. Large Abstract Curved Crescent framing the Person */}
-              <path 
-                d="M 120 576 C 110 380, 180 230, 310 130 C 410 50, 540 40, 660 70 C 580 120, 460 160, 380 230 C 280 320, 240 440, 240 576 Z" 
-                fill="url(#crescentGrad)" 
+              <path
+                d="M 120 576 C 110 380, 180 230, 310 130 C 410 50, 540 40, 660 70 C 580 120, 460 160, 380 230 C 280 320, 240 440, 240 576 Z"
+                fill="url(#crescentGrad)"
               />
 
               {/* 2. Concentric Circular Arcs Centered around Person's Torso (400, 350) */}
@@ -343,63 +343,63 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
 
               {/* Inner Solid Circular Line - Anti-Clockwise Rotation (22s) */}
               <g className="animate-orbit-inner-ccw">
-                <path 
-                  d="M 180 440 A 240 240 0 0 1 480 120" 
-                  stroke="url(#arcStrokeGrad)" 
-                  strokeWidth="3.5" 
-                  strokeLinecap="round" 
-                  opacity="0.75" 
+                <path
+                  d="M 180 440 A 240 240 0 0 1 480 120"
+                  stroke="url(#arcStrokeGrad)"
+                  strokeWidth="3.5"
+                  strokeLinecap="round"
+                  opacity="0.75"
                 />
               </g>
 
               {/* Outer Dashed Circular Orbit Ring - Clockwise Rotation (40s) */}
               <g className="animate-orbit-outer-cw">
-                <path 
-                  d="M 120 460 A 300 300 0 0 1 540 60" 
-                  stroke="#0866FF" 
-                  strokeWidth="1.5" 
-                  strokeDasharray="8 6" 
-                  opacity="0.35" 
+                <path
+                  d="M 120 460 A 300 300 0 0 1 540 60"
+                  stroke="#0866FF"
+                  strokeWidth="1.5"
+                  strokeDasharray="8 6"
+                  opacity="0.35"
                 />
               </g>
 
               {/* Inner Dashed Accent Ring - Subtle Orbit (50s) */}
               <g className="animate-orbit-accent-cw">
-                <path 
-                  d="M 230 420 A 185 185 0 0 1 460 175" 
-                  stroke="#0062FF" 
-                  strokeWidth="1.5" 
-                  strokeDasharray="4 4" 
-                  opacity="0.45" 
+                <path
+                  d="M 230 420 A 185 185 0 0 1 460 175"
+                  stroke="#0062FF"
+                  strokeWidth="1.5"
+                  strokeDasharray="4 4"
+                  opacity="0.45"
                 />
               </g>
 
               {/* 3. Delicate Flowing Architectural Lines extending across the Parliament Dome */}
-              <path 
-                d="M 440 370 C 540 240, 680 160, 960 130" 
-                stroke="#0866FF" 
-                strokeWidth="2" 
-                strokeDasharray="8 5" 
-                opacity="0.32" 
+              <path
+                d="M 440 370 C 540 240, 680 160, 960 130"
+                stroke="#0866FF"
+                strokeWidth="2"
+                strokeDasharray="8 5"
+                opacity="0.32"
               />
-              <path 
-                d="M 490 410 C 590 290, 740 210, 1024 180" 
-                stroke="#0062FF" 
-                strokeWidth="1.2" 
-                opacity="0.28" 
+              <path
+                d="M 490 410 C 590 290, 740 210, 1024 180"
+                stroke="#0062FF"
+                strokeWidth="1.2"
+                opacity="0.28"
               />
-              <path 
-                d="M 600 480 C 720 370, 840 290, 1024 270" 
-                stroke="#38BDF8" 
-                strokeWidth="1" 
-                strokeDasharray="5 5" 
-                opacity="0.22" 
+              <path
+                d="M 600 480 C 720 370, 840 290, 1024 270"
+                stroke="#38BDF8"
+                strokeWidth="1"
+                strokeDasharray="5 5"
+                opacity="0.22"
               />
 
               {/* 4. Subtle Curved Ribbon behind Parliament Base */}
-              <path 
-                d="M 640 200 C 760 160, 880 190, 1024 260 L 1024 576 L 680 576 Z" 
-                fill="url(#domeRibbonGrad)" 
+              <path
+                d="M 640 200 C 760 160, 880 190, 1024 260 L 1024 576 L 680 576 Z"
+                fill="url(#domeRibbonGrad)"
               />
             </svg>
 
@@ -408,9 +408,9 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
             <div className="absolute top-24 right-12 w-20 h-8 rounded-xl bg-white/20 backdrop-blur-md border border-white/40 rotate-12 shadow-[0_4px_16px_rgba(8,102,255,0.03)] pointer-events-none hidden 2xl:block opacity-50 z-0" />
 
             {/* ================= LAYER 3: FOREGROUND HERO VISUAL ================= */}
-            <img 
-              src="/assets/hero_user_provided.png" 
-              alt="AB Consultancy Government Scheme Advisory & Business Loan Facilitation" 
+            <img
+              src="/assets/hero_user_provided.png"
+              alt="AB Consultancy Government Scheme Advisory & Business Loan Facilitation"
               className="w-full max-h-[255px] xs:max-h-[275px] sm:max-h-[340px] lg:max-h-none h-auto object-contain object-bottom select-none pointer-events-none relative z-10 drop-shadow-[0_12px_36px_rgba(8,102,255,0.10)]"
               loading="eager"
             />
@@ -425,7 +425,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
 
       {/* ===================== 3. FULL-WIDTH TRUST & BENEFITS FEATURE STRIP (DARK THEME LIKE FOOTER) ===================== */}
       <section className="relative z-20 w-full flex-shrink-0 bg-gradient-to-b from-[#0A0F1D] via-[#0F172A] to-[#080D1A] border-t border-b border-slate-800/90 py-2 xs:py-2.5 sm:py-3.5 lg:py-5 shadow-2xl overflow-hidden">
-        
+
         {/* Creative Pattern & Depth Layers (Matching Footer) */}
         {/* 1. Precision Top Border Glow Line with Gliding Shimmer Beam */}
         <div className="absolute top-0 left-0 right-0 h-[1px] bg-slate-800/80 pointer-events-none z-10 overflow-hidden">
@@ -434,21 +434,21 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 max-w-2xl h-12 bg-[#0062FF]/15 blur-2xl pointer-events-none z-0 animate-footer-glow" />
 
         {/* 2. Architectural Blueprint Grid Pattern with Breathing Depth */}
-        <div 
-          className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] [mask-image:radial-gradient(ellipse_80%_70%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none z-0 opacity-40 animate-footer-grid" 
+        <div
+          className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:3.5rem_3.5rem] [mask-image:radial-gradient(ellipse_80%_70%_at_50%_50%,#000_70%,transparent_100%)] pointer-events-none z-0 opacity-40 animate-footer-grid"
         />
 
         {/* 3. Subtle Bottom Edge Border */}
         <div className="absolute bottom-0 left-0 right-0 h-[1px] bg-slate-800/60 pointer-events-none z-10" />
 
         <div className="relative z-10 w-full max-w-[1440px] mx-auto px-1.5 xs:px-3 sm:px-8 lg:px-12">
-          
+
           {/* Mobile: Sleek 3-Column Strip with Dividers (Matching exact mobile design) */}
           <div className="lg:hidden w-full grid grid-cols-3 divide-x divide-slate-800/80 items-stretch">
             {mobileFeatures.map((item) => {
               const Icon = item.icon;
               return (
-                <div 
+                <div
                   key={item.id}
                   onClick={() => onFeatureClick && onFeatureClick(item)}
                   className="flex flex-col items-center text-center px-1 xs:px-2 group cursor-pointer transition-all duration-200"
@@ -478,7 +478,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
             {features.map((item) => {
               const Icon = item.icon;
               return (
-                <div 
+                <div
                   key={item.id}
                   onClick={() => onFeatureClick && onFeatureClick(item)}
                   className="flex flex-col items-center text-center px-3 group cursor-pointer transition-all duration-200"
