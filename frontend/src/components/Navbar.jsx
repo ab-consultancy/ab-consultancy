@@ -688,7 +688,7 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
           <div className="hidden md:flex items-center gap-1.5 sm:gap-2">
             {/* Instagram */}
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/ab.consultancy14022026/?utm_source=qr&r=nametag"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Follow on Instagram"
@@ -984,7 +984,7 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
                   <WhatsAppIcon className="w-4 h-4" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/ab.consultancy14022026/?utm_source=qr&r=nametag"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Instagram"

@@ -169,7 +169,7 @@ export default function Footer({ onOpenEligibility, onOpenConsultant }) {
                   <WhatsAppIcon className="w-4 h-4 text-[#25D366] group-hover:text-white transition-colors" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/ab.consultancy14022026/?utm_source=qr&r=nametag"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-9 h-9 rounded-xl bg-slate-800/90 hover:bg-[#E4405F] text-slate-300 hover:text-white flex items-center justify-center transition-all border border-slate-700/60 shadow-xs group"
