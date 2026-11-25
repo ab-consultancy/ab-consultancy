@@ -62,13 +62,13 @@ export default function SchemesSection({ onSelectScheme }) {
   ];
 
   return (
-    <section id="services" className="py-7 sm:py-9 lg:py-20 bg-slate-50/70 border-t border-slate-100 scroll-mt-20">
+    <section id="services" className="pt-4 pb-7 sm:py-9 lg:py-20 bg-slate-50/70 border-t border-slate-100 scroll-mt-20">
       {/* Container aligned with Navbar & Hero (1440px grid) */}
       <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12">
         
         {/* Section Header */}
-        <div className="text-center max-w-2xl lg:max-w-3xl mx-auto mb-5 sm:mb-7 lg:mb-14">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 lg:px-3.5 lg:py-1.5 rounded-full bg-brand-50 text-brand-600 text-[10.5px] lg:text-xs font-bold uppercase tracking-wider mb-1.5 lg:mb-3">
+        <div className="text-center max-w-2xl lg:max-w-3xl mx-auto mb-4 sm:mb-7 lg:mb-14">
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 lg:px-3.5 lg:py-1.5 rounded-full bg-brand-50 text-brand-600 text-[10.5px] lg:text-xs font-bold uppercase tracking-wider mb-1 lg:mb-3">
             <Zap className="w-3 h-3 lg:w-3.5 lg:h-3.5" />
             Core Advisory Offerings
           </div>
