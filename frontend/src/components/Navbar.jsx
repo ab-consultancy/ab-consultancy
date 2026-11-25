@@ -382,11 +382,11 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
       ref={navRef}
       className={`w-full sticky top-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.06)] border-b border-slate-200/80 py-2.5 sm:py-3' 
-          : 'bg-[#E6F0FE]/90 backdrop-blur-sm border-b border-transparent py-3.5 sm:pt-4 sm:pb-3'
+          ? 'bg-white/95 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.06)] border-b border-slate-200/80 py-2 sm:py-3' 
+          : 'bg-[#E6F0FE]/90 backdrop-blur-sm border-b border-transparent py-2.5 xs:py-3 sm:pt-4 sm:pb-3'
       }`}
     >
-      <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-12 flex items-center justify-between">
+      <div className="w-full max-w-[1440px] mx-auto px-4 xs:px-6 sm:px-10 lg:px-12 flex items-center justify-between">
         
         {/* Left: Brand Logo */}
         <div 
@@ -684,20 +684,8 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
         {/* Right: Social Media Icons + Book Appointment (Primary CTA) + Mobile Hamburger */}
         <div className="flex items-center gap-2 sm:gap-3">
           
-          {/* Social Icons (WhatsApp, Instagram, Facebook) - visible on xs (480px) and up */}
-          <div className="hidden xs:flex items-center gap-1.5 sm:gap-2">
-            {/* WhatsApp */}
-            <a
-              href="https://wa.me/919130894308?text=Hello%20AB%20Consultancy,%20I%20would%20like%20to%20know%20more%20about%20government%20subsidies."
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Chat on WhatsApp"
-              title="Chat on WhatsApp"
-              className="w-8 h-8 rounded-full bg-white/95 hover:bg-[#25D366] text-[#25D366] hover:text-white border border-slate-200/90 shadow-xs flex items-center justify-center transition-all duration-200 hover:scale-110 active:scale-95 group cursor-pointer"
-            >
-              <WhatsAppIcon className="w-4 h-4 text-[#25D366] group-hover:text-white transition-colors" />
-            </a>
-
+          {/* Social Icons (Instagram, Facebook) - visible on md (768px) and up */}
+          <div className="hidden md:flex items-center gap-1.5 sm:gap-2">
             {/* Instagram */}
             <a
               href="https://instagram.com"
@@ -723,16 +711,16 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
             </a>
           </div>
 
-          {/* Direct WhatsApp Quick-Chat on compact mobile (<480px) */}
+          {/* WhatsApp - Always visible with clean soft green rounded styling matching Screenshot 2 */}
           <a
             href="https://wa.me/919130894308?text=Hello%20AB%20Consultancy,%20I%20would%20like%20to%20know%20more%20about%20government%20subsidies."
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Chat on WhatsApp"
             title="Chat on WhatsApp"
-            className="xs:hidden w-8 h-8 rounded-full bg-emerald-50 text-[#25D366] border border-emerald-200/80 shadow-xs flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all active:scale-95 cursor-pointer"
+            className="w-8 h-8 xs:w-8.5 xs:h-8.5 rounded-full bg-emerald-50 text-[#25D366] border border-emerald-200/80 shadow-xs flex items-center justify-center hover:bg-[#25D366] hover:text-white transition-all active:scale-95 cursor-pointer"
           >
-            <WhatsAppIcon className="w-4 h-4" />
+            <WhatsAppIcon className="w-4 h-4 xs:w-4.5 xs:h-4.5" />
           </a>
 
           {/* Book Appointment CTA Button */}
