@@ -209,7 +209,7 @@ export default function Hero({ onCheckEligibility, onTalkConsultant, onBookAppoi
       <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 xs:px-5 sm:px-10 lg:px-12 pt-2 xs:pt-2.5 sm:pt-6 lg:pt-2 pb-0 flex flex-col justify-between lg:grid lg:grid-cols-12 gap-0 lg:gap-2 lg:items-end flex-1">
 
         {/* Left Column: Eyebrow + 3-line Headline + Subtitle + CTAs + Micro Trust */}
-        <div className="lg:col-span-5 xl:col-span-5 flex flex-col justify-start lg:justify-center translate-y-0 lg:-translate-y-16 xl:-translate-y-20 z-20">
+        <div className="lg:col-span-5 xl:col-span-5 flex flex-col justify-start lg:justify-center translate-y-[19px] sm:translate-y-0 lg:-translate-y-16 xl:-translate-y-20 z-20">
 
           {/* Eyebrow Pill Tag with Clean Reveal */}
           <div
