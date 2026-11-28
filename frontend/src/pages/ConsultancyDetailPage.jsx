@@ -761,22 +761,45 @@ export default function ConsultancyDetailPage({
   );
 }
 
-// Named Exports for Individual Service Pages
+// Named Exports for 7 Core Consultancy Service Pages
+export function BusinessDevelopmentConsultancyPage(props) {
+  return <ConsultancyDetailPage serviceId="business-development-consultancy" {...props} />;
+}
+export function FranchiseModelConsultancyPage(props) {
+  return <ConsultancyDetailPage serviceId="franchise-model-consultancy" {...props} />;
+}
+export function MarketLinkagePage(props) {
+  return <ConsultancyDetailPage serviceId="market-linkage" {...props} />;
+}
+export function ImportExportPage(props) {
+  return <ConsultancyDetailPage serviceId="import-export" {...props} />;
+}
+export function BusinessFinancePage(props) {
+  return <ConsultancyDetailPage serviceId="business-finance" {...props} />;
+}
+export function LicensesApprovalsPage(props) {
+  return <ConsultancyDetailPage serviceId="licenses-approvals" {...props} />;
+}
+export function RocRegistrationPage(props) {
+  return <ConsultancyDetailPage serviceId="roc-registration" {...props} />;
+}
+
+// Backward Compatibility Aliases for Legacy Links
 export function BusinessConsultancyPage(props) {
-  return <ConsultancyDetailPage serviceId="business-consultancy" {...props} />;
+  return <ConsultancyDetailPage serviceId="business-development-consultancy" {...props} />;
 }
 export function BusinessSetupGuidancePage(props) {
-  return <ConsultancyDetailPage serviceId="business-setup-guidance" {...props} />;
+  return <ConsultancyDetailPage serviceId="licenses-approvals" {...props} />;
 }
 export function FinancialConsultancyPage(props) {
-  return <ConsultancyDetailPage serviceId="financial-consultancy" {...props} />;
+  return <ConsultancyDetailPage serviceId="business-finance" {...props} />;
 }
 export function ProjectReportPreparationPage(props) {
-  return <ConsultancyDetailPage serviceId="project-report-preparation" {...props} />;
+  return <ConsultancyDetailPage serviceId="business-finance" {...props} />;
 }
 export function GovernmentSchemeApplicationAssistancePage(props) {
-  return <ConsultancyDetailPage serviceId="government-scheme-application-assistance" {...props} />;
+  return <ConsultancyDetailPage serviceId="licenses-approvals" {...props} />;
 }
 export function SubsidyApplicationAssistancePage(props) {
-  return <ConsultancyDetailPage serviceId="subsidy-application-assistance" {...props} />;
+  return <ConsultancyDetailPage serviceId="business-finance" {...props} />;
 }

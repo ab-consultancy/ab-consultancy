@@ -268,17 +268,18 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
     other: {
       id: 'other',
       title: 'Other Consultancy Services',
-      desc: 'Statutory registration, DPR modeling & advisory',
+      desc: 'Business development, franchise, market linkage & ROC',
       icon: FileCheck,
-      countBadge: '6 Solutions',
-      categoryQuery: 'DPR & Financial Reports',
+      countBadge: '7 Solutions',
+      categoryQuery: 'Business & Regulatory Consultancy',
       items: [
-        { title: 'Business Consultancy', query: 'Business Consultancy' },
-        { title: 'Business Setup Guidance', query: 'Business Setup Guidance' },
-        { title: 'Financial Consultancy', query: 'Financial Consultancy' },
-        { title: 'Project Report Preparation', query: 'Project Report Preparation' },
-        { title: 'Government Scheme Application Assistance', query: 'Government Scheme Application Assistance' },
-        { title: 'Subsidy Application Assistance', query: 'Subsidy Application Assistance' }
+        { title: 'Business Development Consultancy', query: 'Business Development Consultancy' },
+        { title: 'Franchise Model Consultancy', query: 'Franchise Model Consultancy' },
+        { title: 'Market Linkage', query: 'Market Linkage' },
+        { title: 'Import & Export', query: 'Import & Export' },
+        { title: 'Business & Finance', query: 'Business & Finance' },
+        { title: 'Licenses & Approvals', query: 'Licenses & Approvals' },
+        { title: 'ROC Registration', query: 'ROC Registration' }
       ]
     }
   };
@@ -320,18 +321,20 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
       navigate('/services/nhm');
     } else if (searchTerm === 'PSI' || searchTerm === 'Package Scheme of Incentives' || searchTerm === 'psi') {
       navigate('/services/psi');
-    } else if (searchTerm === 'Business Consultancy' || searchTerm === 'business-consultancy') {
-      navigate('/services/business-consultancy');
-    } else if (searchTerm === 'Business Setup Guidance' || searchTerm === 'business-setup-guidance') {
-      navigate('/services/business-setup-guidance');
-    } else if (searchTerm === 'Financial Consultancy' || searchTerm === 'financial-consultancy') {
-      navigate('/services/financial-consultancy');
-    } else if (searchTerm === 'Project Report Preparation' || searchTerm === 'project-report-preparation') {
-      navigate('/services/project-report-preparation');
-    } else if (searchTerm === 'Government Scheme Application Assistance' || searchTerm === 'government-scheme-application-assistance') {
-      navigate('/services/government-scheme-application-assistance');
-    } else if (searchTerm === 'Subsidy Application Assistance' || searchTerm === 'subsidy-application-assistance') {
-      navigate('/services/subsidy-application-assistance');
+    } else if (searchTerm === 'Business Development Consultancy' || searchTerm === 'business-development-consultancy' || searchTerm === 'Business Consultancy' || searchTerm === 'business-consultancy') {
+      navigate('/services/business-development-consultancy');
+    } else if (searchTerm === 'Franchise Model Consultancy' || searchTerm === 'franchise-model-consultancy') {
+      navigate('/services/franchise-model-consultancy');
+    } else if (searchTerm === 'Market Linkage' || searchTerm === 'market-linkage') {
+      navigate('/services/market-linkage');
+    } else if (searchTerm === 'Import & Export' || searchTerm === 'import-export') {
+      navigate('/services/import-export');
+    } else if (searchTerm === 'Business & Finance' || searchTerm === 'business-finance' || searchTerm === 'Financial Consultancy' || searchTerm === 'financial-consultancy' || searchTerm === 'Project Report Preparation' || searchTerm === 'project-report-preparation' || searchTerm === 'Subsidy Application Assistance' || searchTerm === 'subsidy-application-assistance') {
+      navigate('/services/business-finance');
+    } else if (searchTerm === 'Licenses & Approvals' || searchTerm === 'licenses-approvals' || searchTerm === 'Business Setup Guidance' || searchTerm === 'business-setup-guidance' || searchTerm === 'Government Scheme Application Assistance' || searchTerm === 'government-scheme-application-assistance') {
+      navigate('/services/licenses-approvals');
+    } else if (searchTerm === 'ROC Registration' || searchTerm === 'roc-registration') {
+      navigate('/services/roc-registration');
     } else {
       navigate(`/services?q=${encodeURIComponent(searchTerm)}`);
     }
@@ -866,7 +869,7 @@ export default function Navbar({ onBookAppointment, onCheckEligibility }) {
                       <div className="flex items-center gap-2">
                         <FileCheck className="w-4 h-4 text-[#0062FF]" />
                         <span>Other Consultancy Services</span>
-                        <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-blue-50 text-[#0062FF] font-bold">6</span>
+                        <span className="text-[10px] px-1.5 py-0.2 rounded-full bg-blue-50 text-[#0062FF] font-bold">7</span>
                       </div>
                       <ChevronDown className={`w-3.5 h-3.5 text-slate-400 transition-transform duration-200 ${mobileOtherOpen ? 'rotate-180 text-[#0062FF]' : ''}`} />
                     </button>

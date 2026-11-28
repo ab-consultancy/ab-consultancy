@@ -1,200 +1,229 @@
 // Comprehensive, Verified Master Data for Other Consultancy Services
-// Engineered for Search Authority, AI Citations (AEO/GEO), and Direct MSME Advisory
+// Engineered for High Search Authority, Institutional MSME Advisory, and AI Citation Relevance
 // STRICT COMPLIANCE: NO visible "AEO" / "SEO" / "GEO" technical jargon in user-facing UI text.
 
 export const CONSULTANCY_SERVICES_DATA = {
-  'business-consultancy': {
-    id: 'business-consultancy',
-    code: 'BC',
-    slug: 'business-consultancy',
-    name: 'Strategic Business Consultancy & Growth Advisory',
-    shortTitle: 'Business Consultancy',
-    categoryBadge: 'Enterprise Strategy & MSME Scale-Up',
-    department: 'Corporate Strategy & Management Advisory Division',
-    portal: 'Institutional Advisory & Industrial Growth Practice',
-    heroTitle: 'Strategic Business Consultancy in Ahilyanagar & Maharashtra',
-    heroHighlight: 'Accelerate Enterprise Growth, Operational Efficiency & Profit Margins with Proven Advisory',
-    heroDesc: 'Empowering manufacturing, agro-industrial, and commercial enterprises with institutional business diagnostics, bottleneck resolution, scalable operational frameworks, and bank-aligned corporate governance. Backed by 15+ years of cross-sectoral expertise and 7,100+ businesses advised across Maharashtra.',
+  // =========================================================================
+  // SERVICE 1: BUSINESS DEVELOPMENT CONSULTANCY
+  // =========================================================================
+  'business-development-consultancy': {
+    id: 'business-development-consultancy',
+    code: 'BDC',
+    slug: 'business-development-consultancy',
+    name: 'Business Development Consultancy & Strategic Growth Advisory',
+    shortTitle: 'Business Development Consultancy',
+    categoryBadge: 'Enterprise Strategy & Sustainable Growth',
+    department: 'Strategic Business Development & Growth Advisory Practice',
+    portal: 'Enterprise Scaling & Market Transformation Desk',
+    heroTitle: 'Business Development Consultancy in Ahilyanagar & Maharashtra',
+    heroHighlight: 'Transforming Business Ideas into Sustainable Growth Opportunities',
+    heroDesc: 'Business development plays an important role in establishing, strengthening, and expanding an organization. Our Business Development Consultancy focuses on helping entrepreneurs, startups, and established businesses identify opportunities, develop effective strategies, and make informed business decisions with structured approaches for sustainable growth.',
     jtbd: {
-      statement: "When an MSME or industrial enterprise faces growth plateaus, cash flow friction, or operational bottlenecks, the promoter wants strategic business diagnostics and executable restructuring frameworks, so they can unlock sustainable profitability, bank credit readiness, and scalable market expansion.",
-      situation: "Established or expanding business experiencing operational friction, capacity under-utilization, or margin compression.",
-      motivation: "Diagnose systemic root causes and implement standardized SOPs, financial discipline, and go-to-market strategies.",
-      outcome: "Measurable revenue acceleration, bankable balance sheets, and resilient enterprise valuation."
+      statement: "When an entrepreneur, startup, or established enterprise faces growth bottlenecks, market uncertainty, or scaling challenges, the promoter wants strategic business planning, market feasibility analysis, and structured expansion frameworks, so they can achieve sustainable profitability, commercial resilience, and long-term enterprise value.",
+      situation: "Entrepreneurs, startups, and MSMEs looking to evaluate business ideas, expand into new markets, or restructure existing operations for higher profitability.",
+      motivation: "Identify high-potential market opportunities, establish structured business strategies, and build sustainable commercial partnerships.",
+      outcome: "Measurable revenue acceleration, streamlined operational workflows, resilient partnerships, and long-term business sustainability."
     },
     seo: {
-      title: 'Business Consultancy Ahilyanagar | Strategic MSME Advisory Maharashtra',
-      description: 'Top business consultancy in Ahilyanagar & Maharashtra. 15+ years advisory in operational restructuring, business scaling, MSME diagnostics & growth strategy.',
-      canonical: 'https://www.abconsultancy.net.in/services/business-consultancy',
-      keywords: 'Business Consultancy Ahilyanagar, Business Consultant Nagar, MSME Business Advisory Maharashtra, Industrial Growth Consultant Savedi, Strategic Business Planning Pune Ahmednagar, Enterprise Restructuring Consultant'
+      title: 'Business Development Consultancy Ahilyanagar | Strategic Growth Advisory Maharashtra',
+      description: 'Top business development consultancy in Ahilyanagar & Maharashtra. Strategic business planning, market research, startup guidance, project feasibility & enterprise growth.',
+      canonical: 'https://www.abconsultancy.net.in/services/business-development-consultancy',
+      keywords: 'Business Development Consultancy Ahilyanagar, Business Growth Consultant Nagar, Strategic Planning Maharashtra, Startup Guidance Ahmednagar, Business Expansion Consultant Savedi, Project Feasibility Ahilyanagar'
     },
     directAnswer: {
-      question: 'What is professional business consultancy and how does AB Consultancy help enterprises in Maharashtra?',
-      answer: 'Business consultancy at AB Consultancy delivers structured diagnostic analysis, operational workflow re-engineering, and strategic financial planning for emerging and mid-sized enterprises. We identify production bottlenecks, optimize cash-conversion cycles, align organizational management with institutional banking criteria, and architect multi-year growth roadmaps that turn stagnant operations into scalable, profitable market leaders across Ahilyanagar and Maharashtra.'
+      question: 'What is Business Development Consultancy and how does AB Consultancy help enterprises in Maharashtra?',
+      answer: 'Business Development Consultancy at AB Consultancy provides structured strategic guidance to help entrepreneurs and expanding businesses transform ideas into viable growth opportunities. We assist in market research, business planning, partnership identification, operational bottleneck resolution, and feasibility analysis, providing actionable frameworks tailored to local and regional industrial realities across Ahilyanagar, Pune, and Maharashtra.'
     },
     trustStats: [
-      { label: 'Advised Enterprises', value: '7,100+', sub: 'MSMEs & Industrial Units' },
-      { label: 'Cumulative Syndication', value: '₹500+ Cr', sub: 'Debt & Subsidy Handled' },
-      { label: 'Advisory Experience', value: '15+ Years', sub: 'Regional Industrial Practice' },
-      { label: 'Operational Success', value: '98.4%', sub: 'Implementation Retainership' }
+      { label: 'Advised Enterprises', value: '7,100+', sub: 'Startups, MSMEs & Corporate Units' },
+      { label: 'Advisory Experience', value: '15+ Years', sub: 'Regional Industrial & Commercial Practice' },
+      { label: 'Strategic Roadmaps', value: '1,200+', sub: 'Executed Business Plans & Studies' },
+      { label: 'Client Retention Rate', value: '98.4%', sub: 'Long-Term Advisory Retainership' }
     ],
     architecture: {
-      quantum: 'Tailored for Micro, Small & Mid-Corporate Enterprises',
-      bankDebt: 'Institutional Credit Alignment & Debt Restructuring',
-      subsidyPct: 'Integrated with Central & State Incentive Schemes',
-      moratorium: 'Immediate 30-Day Diagnostic Intervention',
-      tenor: 'Quarterly, Annual, or Project-Based Engagement',
-      interestRate: 'Milestone-Linked Advisory & Tangible Deliverables'
+      quantum: 'Tailored for Startups, Growing SMEs & Established Commercial Units',
+      bankDebt: 'Institutional Strategy & Commercial Alignment',
+      subsidyPct: 'Integrated with Central & State MSME Growth Policies',
+      moratorium: 'Immediate 14-Day Diagnostic Scoping',
+      tenor: 'Project-Based Milestones or Annual Strategic Retainership',
+      interestRate: 'Milestone-Linked Advisory & Actionable Deliverables'
     },
     verticals: [
       {
-        id: 'growth-strategy',
-        title: 'Strategic Growth & Market Expansion Planning',
-        badge: 'Scale-Up Strategy',
-        summary: 'Formulating structured 3-year corporate roadmaps, market demand mapping, and capacity expansion feasibility models for established enterprises.',
+        id: 'planning-strategy',
+        title: 'Business Planning & Strategy',
+        badge: 'Strategic Vision',
+        summary: 'Developing structured, realistic business plans aligned with promoter objectives, available resources, and long-term commercial vision.',
         scope: [
-          'Addressable Market Analysis & Competitive Moat Formulation',
-          'Capacity Expansion Feasibility & Capital Budgeting Models',
-          'New Geography Entry & Regional Dealer Network Architecting',
-          'Product Portfolio Rationalization & Contribution Margin Maximization'
+          'Vision-to-Execution Strategic Mapping & Milestones',
+          'Resource Allocation, Budgeting & Capital Utilization Modeling',
+          'Competitive Positioning & Unique Value Proposition Definition',
+          'Standardized Operating Guidelines (SOPs) for Key Business Functions'
         ],
-        marketImpact: 'Accelerates revenue throughput for industrial fabrication, agro-processing, and consumer manufacturing in Western Maharashtra.'
+        marketImpact: 'Establishes clear operational direction, eliminating resource misallocation and accelerating target achievement for emerging enterprises.'
       },
       {
-        id: 'operational-turnaround',
-        title: 'Operations Optimization & SOP Implementation',
-        badge: 'Workflow Excellence',
-        summary: 'Systematizing factory floor productivity, material wastage control, procurement optimization, and standard operating procedures (SOPs).',
+        id: 'market-research',
+        title: 'Market Research & Competitive Analysis',
+        badge: 'Market Intelligence',
+        summary: 'Conducting in-depth market assessments to identify commercial demand, emerging industry trends, and competitive positioning.',
         scope: [
-          'Shop Floor Time-Motion Audits & Material Flow Optimization',
-          'Supply Chain De-risking & Multi-Vendor Procurement Protocols',
-          'Quality Control Protocols & ISO / BIS Compliance Structuring',
-          'Inventory Turnaround Rate (ITR) Optimization & Scrap Reduction'
+          'Addressable Market Sizing & Regional Customer Demand Evaluation',
+          'Competitor Benchmarking: Pricing, Distribution & Value Moats',
+          'Target Demographic Profiling & Channel Feasibility Studies',
+          'Industry Trend Forecasting & Regulatory Environment Analysis'
         ],
-        marketImpact: 'Cuts manufacturing overheads by 12%–18% within the first 6 months of structural deployment in MIDC estates.'
+        marketImpact: 'Equips business leaders with verifiable data, reducing commercial risks when entering new sectors or launching new product lines.'
       },
       {
-        id: 'financial-health',
-        title: 'Working Capital & Cash Flow Diagnostics',
-        badge: 'Cash Flow Hygiene',
-        summary: 'Eliminating liquidity crunches, optimizing receivable turnover, and re-engineering debtor collection days for sustainable solvency.',
+        id: 'growth-expansion',
+        title: 'Business Growth & Regional Expansion',
+        badge: 'Market Scale-Up',
+        summary: 'Guiding organizations in identifying expansion opportunities, entering new geographic markets, and scaling operational footprint.',
         scope: [
-          'Working Capital Gap Analysis & Operating Cycle Compression',
-          'Debtor Aging Audit & Credit Policy Standardization',
-          'Overhead Rationalization & Fixed vs Variable Cost Separation',
-          'Internal Financial Controls & MIS Dashboard Architecture'
+          'Multi-City Distribution & Dealer Network Architecture',
+          'Product Line Diversification & Portfolio Rationalization',
+          'Capacity Scaling Feasibility & Commercial Risk Management',
+          'Customer Retention Frameworks & Sales Channel Optimization'
         ],
-        marketImpact: 'Frees locked liquidity and establishes pristine credit credentials recognized by commercial PSU banks.'
+        marketImpact: 'Enables regional businesses in Western Maharashtra to transition from localized players to prominent multi-district market leaders.'
       },
       {
-        id: 'organization-governance',
-        title: 'Organizational Governance & Succession Structuring',
-        badge: 'Family Business Structuring',
-        summary: 'Transitioning promoter-dependent sole enterprises into professionally governed corporate entities with clear leadership hierarchies.',
+        id: 'startup-guidance',
+        title: 'Startup & Entrepreneurship Guidance',
+        badge: 'Founder Advisory',
+        summary: 'Supporting aspiring founders in evaluating business concepts, structuring early-stage operations, and avoiding common setup pitfalls.',
         scope: [
-          'Promoter Delegation Matrices & Executive KPI Benchmarking',
-          'Family Business Succession & Shareholding Governance Charters',
-          'ERP System Requirement Scoping & Process Digitalization',
-          'Statutory Board Compliance & Risk Management Frameworks'
+          'Business Model Validation & Commercial Proof-of-Concept',
+          'Statutory Roadmap: Entity Selection, Approvals & Initial Licensing',
+          'Early-Stage Unit Economics & Runway Financial Planning',
+          'Go-to-Market Strategy & Initial Customer Acquisition Sprints'
         ],
-        marketImpact: 'Preserves enterprise equity value and prepares generational businesses for institutional equity or consortium debt.'
+        marketImpact: 'Significantly enhances early-stage survival rates and sets up scalable governance from Day 1.'
+      },
+      {
+        id: 'networking-partnerships',
+        title: 'Business Networking & Strategic Partnerships',
+        badge: 'Strategic Alliances',
+        summary: 'Facilitating high-value business connections, collaborative alliances, and supplier-buyer synergies that drive accelerated growth.',
+        scope: [
+          'B2B Strategic Alliance Identification & Mutual Value Proposition',
+          'Co-Marketing, Joint Venture & Vendor Partnership Structuring',
+          'Institutional Buyer Outreach & Corporate Procurement Connect',
+          'Commercial Agreement Principles & Partnership Governance Charters'
+        ],
+        marketImpact: 'Unlocks distribution channels and supply chain synergies that would otherwise take years to establish independently.'
+      },
+      {
+        id: 'project-feasibility',
+        title: 'Project Feasibility & Development',
+        badge: 'Viability Assessment',
+        summary: 'Conducting comprehensive techno-commercial feasibility evaluations for proposed new projects, plant expansions, or new ventures.',
+        scope: [
+          'Techno-Commercial Project Feasibility & Risk Diagnostic',
+          'Operational Resource Planning: Land, Manpower, Power & Machinery',
+          'Break-Even Analysis, Sensitivity Projections & Capital Sizing',
+          'Implementation Schedule & Milestone-Driven Project Timeline'
+        ],
+        marketImpact: 'Provides promoters and institutional stakeholders with clear clarity on viability prior to capital commitment.'
       }
     ],
     marginTiers: [
       {
-        category: 'Diagnostic Health Audit',
+        category: 'Diagnostic Discovery Audit',
         promoterEquity: 'One-Time Evaluation',
-        subsidyGrant: 'Comprehensive Audit',
-        bankDebt: '14 Days Turnaround',
-        criteria: 'Full financial, operational, and statutory diagnostic report identifying leakages, bank loan readiness, and growth barriers.'
+        subsidyGrant: 'Diagnostic Report',
+        bankDebt: '10 - 14 Days',
+        criteria: 'Comprehensive analysis of existing business operations, market positioning, revenue leaks, and expansion readiness.'
       },
       {
-        category: 'Scale-Up Retainership',
-        promoterEquity: 'Monthly Advisory',
-        subsidyGrant: 'Active Execution',
+        category: 'Startup Acceleration Track',
+        promoterEquity: 'New Founders & Startups',
+        subsidyGrant: 'Launch Roadmap',
+        bankDebt: '30 - 60 Days',
+        criteria: 'End-to-end guidance from business model validation, statutory registration planning, to go-to-market execution.'
+      },
+      {
+        category: 'Scale-Up & Expansion Retainership',
+        promoterEquity: 'Growing MSMEs',
+        subsidyGrant: 'Ongoing Execution',
         bankDebt: '6 - 12 Months',
-        criteria: 'Dedicated strategic advisory team overseeing monthly MIS review, banking liaison, capacity expansion, and vendor negotiations.'
+        criteria: 'Dedicated strategic advisory team overseeing monthly review cadences, dealer network scale-up, and strategic partnerships.'
       },
       {
-        category: 'Turnaround Interventions',
-        promoterEquity: 'Distressed MSME',
-        subsidyGrant: 'Restructuring Plan',
+        category: 'Turnaround & Re-Engineering',
+        promoterEquity: 'Established Entities',
+        subsidyGrant: 'Strategic Turnaround',
         bankDebt: '90 Days Sprint',
-        criteria: 'High-urgency operational and liquidity stabilization for units facing debt stress, NPA risks, or sudden margin contraction.'
-      },
-      {
-        category: 'Corporate Transformation',
-        promoterEquity: 'Mid-Corporate Tier',
-        subsidyGrant: 'End-to-End System',
-        bankDebt: 'Custom Duration',
-        criteria: 'Proprietorship/Partnership to Pvt Ltd conversion, corporate governance, SAP/ERP implementation, and multi-location expansion.'
+        criteria: 'High-impact operational and commercial restructuring for businesses facing growth plateaus or margin compression.'
       }
     ],
     documents: [
       {
-        group: '1. Enterprise Financials',
+        group: '1. Business Profile & Concept Overview',
         items: [
-          'Audited Balance Sheets & P&L Statements for last 3 fiscal years',
-          'Income Tax Returns (ITR) with Computation Sheets for 3 years',
-          'Last 12 months comprehensive bank statements for all active accounts',
-          'Provisional Balance Sheet & Trial Balance for the current running year'
+          'Executive summary of existing operations or proposed new business concept',
+          'Promoter professional profile, domain experience, and core capabilities',
+          'Current product or service catalog with pricing and distribution structure',
+          'List of existing target customer segments and key market geography'
         ]
       },
       {
-        group: '2. Operational & Sales Data',
+        group: '2. Financial & Performance Records (For Existing Units)',
         items: [
-          'Product-wise sales volume, unit pricing, and major customer ledger extract',
-          'Major raw material suppliers list with purchase credit terms',
-          'Installed vs utilized manufacturing capacity data for last 24 months',
-          'Electricity bills & power connection sanctioned capacity extract'
+          'Last 2 to 3 years audited financials (P&L, Balance Sheet) or provisional accounts',
+          'Monthly sales revenue, gross margin, and operating overhead breakdown',
+          'Active commercial contracts, customer order book, and key client ledgers',
+          'Current banking and credit facility summaries'
         ]
       },
       {
-        group: '3. Debt & Statutory Records',
+        group: '3. Market & Competitive Inputs',
         items: [
-          'Sanction letters of all existing Term Loans, Cash Credit & OD limits',
-          'Latest Loan Account Statements showing regular repayment history',
-          'GST Registration Certificate & 3B filing summaries for 12 months',
-          'Udyam MSME Registration Certificate with NIC activity codes'
+          'List of direct and indirect competitors in the target operating area',
+          'Current raw material sourcing and primary vendor relationships',
+          'Identified business opportunities or proposed new product/service lines',
+          'Expansion vision, target timelines, and estimated investment horizon'
         ]
       },
       {
-        group: '4. Corporate & Land Documentation',
+        group: '4. Statutory & Corporate Documents',
         items: [
-          'Memorandum & Articles of Association / Registered Partnership Deed',
-          'Factory Land Ownership Title Deed or Registered MIDC Lease Agreement',
-          'Valid Factory License & MPCB Consent to Operate certificates',
-          'KYC documentation (PAN, Aadhaar) of all Directors / Partners / Promoters'
+          'Certificate of Incorporation / Partnership Deed / Udyam MSME Registration',
+          'GST Registration Certificate & 12 months filing turnover history',
+          'Factory/Office lease agreement or proof of commercial premises ownership',
+          'Key operational licenses and industry-specific permits'
         ]
       }
     ],
     roadmaps: [
       {
         phase: 'Phase 1',
-        title: 'Diagnostic Discovery & Site Immersion',
+        title: 'Strategic Immersion & Opportunity Mapping',
         timeline: 'Week 1 – Week 2',
-        desc: 'On-ground operational audit across factory floor, finance books, vendor agreements, and banking records to isolate underlying operational and margin leakages.',
-        deliverables: ['Comprehensive Enterprise Diagnostic Report', 'Working Capital Friction Analysis', 'Preliminary Growth Opportunity Matrix']
+        desc: 'In-depth diagnostic sessions to analyze core business capabilities, customer demand patterns, market competition, and operational friction points.',
+        deliverables: ['Business Diagnostic Baseline Report', 'Market Opportunity Identification Matrix', 'Key Growth Priorities Blueprint']
       },
       {
         phase: 'Phase 2',
-        title: 'Strategy Formulation & Blueprinting',
+        title: 'Strategy Formulation & Business Blueprinting',
         timeline: 'Week 3 – Week 4',
-        desc: 'Developing tailored standard operating procedures (SOPs), financial restructuring blueprints, credit score enhancement roadmaps, and pricing models.',
-        deliverables: ['Custom Operational SOP Manual', 'Standardized Costing & Margins Model', 'Target Debt & Capital Allocation Blueprint']
+        desc: 'Formulating structured business plans, pricing models, expansion roadmaps, and go-to-market strategies tailored to the target market.',
+        deliverables: ['Structured Business Strategy Document', 'Go-To-Market & Channel Plan', 'Financial Feasibility & Budgeting Model']
       },
       {
         phase: 'Phase 3',
-        title: 'Execution & Ground Implementation',
+        title: 'Implementation & Partnership Execution',
         timeline: 'Month 2 – Month 5',
-        desc: 'Active deployment of revised procurement protocols, production tracking dashboards, weekly sales review systems, and bank relationship strengthening.',
-        deliverables: ['Real-Time Production & MIS Dashboard', 'Automated Debtor Tracking Mechanism', 'Bank Loan Enhancement / Renewal Pack']
+        desc: 'Active execution support, establishing strategic partnerships, rolling out standardized SOPs, and optimizing sales distribution channels.',
+        deliverables: ['Standard Operating Procedures (SOPs) Pack', 'B2B Partnership & Vendor Linkages', 'Monthly Performance Tracking Dashboard']
       },
       {
         phase: 'Phase 4',
-        title: 'Institutionalization & Scale-Up Review',
+        title: 'Review, Optimization & Sustainable Scaling',
         timeline: 'Month 6 Onward',
-        desc: 'Quarterly performance benchmarking, executive governance structuring, team KPI audits, and long-term capital expansion syndication.',
-        deliverables: ['Quarterly Board Review Pack', 'Multi-Year Expansion Feasibility Report', 'Enterprise Valuation Benchmark']
+        desc: 'Quarterly review of milestone achievements, revenue variance analysis, market trend adaptation, and long-term sustainable growth planning.',
+        deliverables: ['Quarterly Growth Benchmark Review', 'Long-Term Expansion Roadmap', 'Continuous Advisory Review Sessions']
       }
     ],
     regionalPresence: {
@@ -204,1242 +233,1696 @@ export const CONSULTANCY_SERVICES_DATA = {
     },
     faqs: [
       {
-        q: 'How does business consultancy differ from standard accounting or tax filing services?',
-        a: 'Standard chartered accountants and tax consultants focus on statutory compliance and historical record-keeping. Business consultancy at AB Consultancy is strategic, future-oriented, and execution-driven. We actively work inside your business to eliminate operational bottlenecks, reduce manufacturing scrap, optimize working capital cycles, renegotiate debt interest, and build institutional systems that drive revenue expansion and EBITDA margin improvements.'
+        q: 'How does Business Development Consultancy differ from regular management consulting?',
+        a: 'Business Development Consultancy at AB Consultancy is hands-on, opportunity-driven, and focused on commercial execution. Rather than providing theoretical advice, we work alongside promoters to identify concrete market opportunities, structure practical expansion roadmaps, build valuable commercial partnerships, and refine business models for sustainable revenue growth.'
       },
       {
-        q: 'Which industries does AB Consultancy cater to in Maharashtra?',
-        a: 'We possess deep functional expertise in Engineering & Fabrication, Agro & Food Processing (Sugar, Dairy, Edible Oil, Spices, Pulverizing), Automobile Ancillaries, Plastics & Packaging, Chemical & Pharma Intermediates, Textiles & Garments, Commercial Cold Chains, and High-Turnover Trading Enterprises.'
+        q: 'Can AB Consultancy help early-stage startups and first-time entrepreneurs?',
+        a: 'Yes. A primary pillar of our practice is Startup & Entrepreneurship Guidance. We help aspiring founders evaluate ideas, determine market feasibility, structure startup costs, obtain necessary statutory registrations, and build structured go-to-market strategies that avoid costly early mistakes.'
       },
       {
-        q: 'Can AB Consultancy help an enterprise facing severe cash flow stress or bank loan stress?',
-        a: 'Yes. Our specialized Turnaround Intervention team conducts forensic reviews of existing debt covenants, aligns cash collections, restructures high-interest non-banking loans into low-cost institutional bank credit, and formulates bank-acceptable restructuring proposals before accounts slip into SMA or NPA classifications.'
+        q: 'How do you help established businesses looking to expand into new districts or states?',
+        a: 'We evaluate regional market demand, identify competitive voids, structure dealer/distributor channel strategies, and assess the financial feasibility of opening branches or manufacturing facilities in new industrial hubs across Western Maharashtra and beyond.'
       },
       {
-        q: 'What is the typical duration and commitment required from the promoter?',
-        a: 'Initial diagnostic audits require 2 to 3 weeks with 2 in-depth founder interview sessions and a physical factory visit. Ongoing retainership models involve weekly review cadence (2 hours/week) and monthly executive progress summits, ensuring minimal intrusion into your daily operations while delivering maximum strategic oversight.'
+        q: 'What is the typical timeframe to see tangible results from business development advisory?',
+        a: 'Initial diagnostic clarity and strategic blueprints are delivered within 2 to 4 weeks. Execution of partnerships, market entry, and revenue impact typically manifests within 3 to 6 months through our structured milestone-based implementation cadence.'
       },
       {
-        q: 'How do you benchmark operational improvements and return on investment (ROI)?',
-        a: 'We establish baseline KPIs before initiation: Cash-Conversion Cycle (days), Operating Profit Margin (%), Inventory Turn Ratio, Scrap/Wastage Percentage, and DSCR. The client receives transparent monthly MIS reports tracking variance against these agreed milestones.'
+        q: 'Who in our organization will need to work with the consultancy team?',
+        a: 'We primarily interface with the promoters, managing partners, directors, and key decision-makers. During diagnostic phases, we may interact with sales heads, operations managers, and finance teams to ensure holistic alignment without disrupting day-to-day operations.'
       },
       {
-        q: 'Do you help family-owned businesses transition into corporate management?',
-        a: 'Yes. A cornerstone of our practice is Family Business Structuring. We design family constitutions, role-delimitation charters, equity distribution models, and succession protocols so next-generation leaders can drive modern expansion while preserving family harmony and business continuity.'
+        q: 'Does business development consultancy include feasibility analysis for new machinery or plant setup?',
+        a: 'Yes. Our Project Feasibility & Development module thoroughly evaluates proposed capital investments, assessing demand capacity, operational resource availability (land, power, labor), break-even thresholds, and overall financial viability before funds are committed.'
       },
       {
-        q: 'Is physical on-site consultation available in Ahilyanagar and MIDC industrial belts?',
-        a: 'Yes. Our senior consultants conduct direct on-site factory and corporate visits across Savedi, MIDC Nagapur, MIDC Supa, Shrirampur, Sangamner, Kopargaon, Chhatrapati Sambhajinagar, and Pune corridors.'
+        q: 'Is this consultancy service customized for manufacturing, trading, or service sectors?',
+        a: 'Yes. We customize frameworks specifically for each sector. For manufacturing units, we focus on B2B client acquisition and distributor networks; for service firms, we focus on client retention, pricing strategy, and institutional partnerships; for trading firms, we focus on supply chain linkages and margin expansion.'
       },
       {
-        q: 'What are the first steps to initiate business consultancy with AB Consultancy?',
-        a: 'Schedule a confidential diagnostic meeting at our Savedi office or your industrial premises. Our advisory partners review your high-level numbers, understand your strategic roadblocks, and issue a customized Diagnostic Scoping Memo within 48 hours.'
+        q: 'How do we schedule an initial consultation with AB Consultancy?',
+        a: 'You can contact our advisory desk directly via phone, WhatsApp, or visit our office at Office No. 106, Baiju Height, Savedi, Ahilyanagar. We arrange a confidential initial discussion to review your business objectives and recommend a tailored advisory framework.'
       }
     ],
     relatedServices: [
-      { id: 'business-setup-guidance', code: 'BSG', name: 'Business Setup Guidance', desc: 'Statutory registration, MIDC land, and industrial licenses.' },
-      { id: 'financial-consultancy', code: 'FC', name: 'Financial Consultancy', desc: 'CMA data modeling, debt syndication, and working capital advisory.' },
-      { id: 'project-report-preparation', code: 'DPR', name: 'Project Report Preparation', desc: 'Bank-compliant TEV feasibility reports & financial projections.' }
+      { id: 'franchise-model-consultancy', code: 'FMC', name: 'Franchise Model Consultancy', desc: 'Scale proven business models into multi-unit franchise networks.' },
+      { id: 'market-linkage', code: 'ML', name: 'Market Linkage', desc: 'Connect with institutional corporate buyers & B2B procurement networks.' },
+      { id: 'business-finance', code: 'BF', name: 'Business & Finance', desc: 'Institutional debt syndication, working capital & CMA feasibility data.' }
     ]
   },
 
-  'business-setup-guidance': {
-    id: 'business-setup-guidance',
-    code: 'BSG',
-    slug: 'business-setup-guidance',
-    name: 'Business Setup Guidance & Industrial Licensing',
-    shortTitle: 'Business Setup Guidance',
-    categoryBadge: 'Corporate Incorporation & Industrial Licensing',
-    department: 'Statutory Setup & Regulatory Approvals Division',
-    portal: 'Maha-Industry Single Window Portal & MCA21 Registry',
-    heroTitle: 'Business Setup Guidance & Industrial Licensing in Ahilyanagar',
-    heroHighlight: 'End-to-End Factory Setup, Legal Entity Formation, MIDC Land & Statutory Approvals',
-    heroDesc: 'From greenfield factory ideation to commercial production commencement. We guide entrepreneurs through company incorporation, MIDC industrial land acquisition, Town Planning civil sanctions, MPCB Consent to Establish, Factory Act licensing, and Fire Safety clearance across Ahilyanagar and Maharashtra.',
+  // =========================================================================
+  // SERVICE 2: FRANCHISE MODEL CONSULTANCY
+  // =========================================================================
+  'franchise-model-consultancy': {
+    id: 'franchise-model-consultancy',
+    code: 'FMC',
+    slug: 'franchise-model-consultancy',
+    name: 'Franchise Model Consultancy & Network Expansion',
+    shortTitle: 'Franchise Model Consultancy',
+    categoryBadge: 'Brand Franchising & Multi-Unit Scale-Up',
+    department: 'Franchise Systems & Channel Expansion Division',
+    portal: 'Franchise Development & Investor Linkage Practice',
+    heroTitle: 'Franchise Model Consultancy in Ahilyanagar & Maharashtra',
+    heroHighlight: 'Scale Your Proven Business Model into a High-Growth Franchise Network',
+    heroDesc: 'Turn successful retail, food & beverage, manufacturing, education, or service concepts into scalable multi-city franchise networks. We structure franchise fee models, unit economics, standard operating manuals (SOPs), legal franchise agreements, and investor profiling frameworks.',
     jtbd: {
-      statement: "When an industrial entrepreneur or business founder plans a new factory or commercial enterprise, they want reliable, end-to-end guidance across legal structuring, MIDC land allocation, and government clearances, so they can launch operations without regulatory delays, fines, or bureaucratic roadblocks.",
-      situation: "Greenfield investor or expanding enterprise setting up a new manufacturing plant or corporate entity.",
-      motivation: "Navigate complex multi-department statutory approvals, zoning restrictions, and licensing procedures seamlessly.",
-      outcome: "Full legal compliance, sanctioned industrial utilities, secured subsidies, and timely commercial launch."
+      statement: "When a successful business promoter wants to scale their brand rapidly without incurring massive capital expenditure, they want structured franchise modeling, legal disclosure frameworks, and operational standard operating manuals, so they can attract qualified franchise partners and expand across multiple cities safely.",
+      situation: "Established business with proven unit profitability seeking rapid regional or national brand expansion through franchised outlets.",
+      motivation: "Create a turnkey franchise blueprint that protects brand equity, ensures operational consistency, and generates reliable royalty cash flows.",
+      outcome: "A legally compliant, operationally standardized, and financially attractive franchise model ready for market roll-out."
     },
     seo: {
-      title: 'Business Setup Guidance Ahilyanagar | Industrial Licensing Maharashtra',
-      description: 'End-to-end business setup guidance in Ahilyanagar & Maharashtra. Company incorporation, MIDC plot allotment, MPCB consent, factory licenses & government NOCs.',
-      canonical: 'https://www.abconsultancy.net.in/services/business-setup-guidance',
-      keywords: 'Business Setup Guidance Ahilyanagar, Factory Setup Consultant Nagar, MIDC Land Allotment Supa Nagapur, Company Incorporation Consultant Savedi, MPCB Consent Consultant Maharashtra, Industrial Licensing Advisor'
+      title: 'Franchise Model Consultancy Ahilyanagar | Franchise Expansion Maharashtra',
+      description: 'Expert franchise model consultancy in Ahilyanagar & Maharashtra. Franchise agreement drafting, FOFO/FOCO modeling, SOP manuals, unit economics & franchisee marketing.',
+      canonical: 'https://www.abconsultancy.net.in/services/franchise-model-consultancy',
+      keywords: 'Franchise Model Consultancy Ahilyanagar, Franchise Consultant Maharashtra, How to Franchise My Business Pune Ahmednagar, FOFO Model Consultancy, Franchise Agreement Lawyer Nagar, Franchise Business Plan Savedi'
     },
     directAnswer: {
-      question: 'What is comprehensive business setup guidance and what licenses are needed to start a manufacturing unit in Maharashtra?',
-      answer: 'Business setup guidance encompasses legal entity incorporation (Private Limited, LLP, Partnership), land acquisition, municipal/MIDC plan approvals, and mandatory statutory licensing. Setting up an industrial manufacturing unit in Maharashtra requires Udyam MSME Registration, MPCB Consent to Establish/Operate, Factory Inspectorate License, Fire NOC, Electricity Substation Sanction, and local Grampanchayat/Municipal Trade NOCs. AB Consultancy manages the complete regulatory lifecycle under one roof.'
+      question: 'What is Franchise Model Consultancy and how does it help businesses scale?',
+      answer: 'Franchise Model Consultancy at AB Consultancy transforms single-location or regional enterprises into structured, replicable franchise systems. We design financial unit models (FOFO, FOCO, COCO), draft legally binding franchise agreements, write standard operating procedure manuals, establish franchisee support systems, and structure marketing kits to attract verified investor partners across Maharashtra.'
     },
     trustStats: [
-      { label: 'Enterprises Incepted', value: '1,850+', sub: 'Startups & Factory Units' },
-      { label: 'MIDC Approvals', value: '450+ Units', sub: 'Land & Building Sanctions' },
-      { label: 'Licensing Turnaround', value: '35% Faster', sub: 'Single-Window Facilitation' },
-      { label: 'Regulatory Compliance', value: '100%', sub: 'Zero-Defect Documentation' }
+      { label: 'Franchise Frameworks', value: '180+', sub: 'Structured Scalable Models' },
+      { label: 'Advisory Experience', value: '15+ Years', sub: 'Multi-Industry Expertise' },
+      { label: 'Network Outlets', value: '650+', sub: 'Franchised Locations Operating' },
+      { label: 'Standardized SOPs', value: '100%', sub: 'Audit-Ready Operational Manuals' }
     ],
     architecture: {
-      quantum: 'Applicable for Micro, Small, Medium & Large Greenfield Projects',
-      bankDebt: 'Integrated with Central / State Project Loan Schemes',
-      subsidyPct: 'Pre-Structured for PSI 2019/2024 & PMEGP Subsidies',
-      moratorium: 'Single-Window Regulatory Fast-Track',
-      tenor: 'Pre-Incorporation to Commercial Operations Date (COD)',
-      interestRate: 'Fixed Milestone Fee Model with Zero Hidden Costs'
+      quantum: 'Tailored for Retail, Food & Beverage, Healthcare, Education & Services',
+      bankDebt: 'Franchisee Financing Linkages Available',
+      subsidyPct: 'Aligned with MSME & Service Sector Schemes',
+      moratorium: 'Initial 2-Week Feasibility Audit',
+      tenor: 'Full Turnkey Setup (60–90 Days) + Growth Retainership',
+      interestRate: 'Fixed Milestone Fee & Scaling Performance Support'
     },
     verticals: [
       {
-        id: 'entity-incorporation',
-        title: 'Corporate Legal Structuring & Incorporation',
-        badge: 'Corporate Inception',
-        summary: 'Determining the optimal corporate entity (Pvt Ltd, LLP, Partnership, OPC) based on liability exposure, taxation impact, and capital raising vision.',
+        id: 'franchise-feasibility',
+        title: 'Franchise Feasibility & Business Model Structuring',
+        badge: 'Model Engineering',
+        summary: 'Determining whether your business is franchise-ready and structuring the optimal operational model (FOFO, FOCO, COCO, FICO).',
         scope: [
-          'MCA Name Reservation, SPICe+ Company Incorporation & DIN Allotment',
-          'Memorandum & Articles of Association (MOA/AOA) Custom Drafting',
-          'Registered Partnership Deed Drafting & Registrar of Firms (ROF) Filing',
-          'Udyam MSME Registration & Startup India (DPIIT) Recognition'
+          'Unit Profitability Audit & Replicability Index Evaluation',
+          'Selection of Franchise Structure: FOFO, FOCO, COCO, Master Franchise',
+          'Territory Demarcation & Exclusivity Radius Guidelines',
+          'Franchisor vs Franchisee Roles & Operational Boundary Definitions'
         ],
-        marketImpact: 'Guarantees bankable corporate constitution and protects personal promoter assets from day zero.'
+        marketImpact: 'Ensures the business can run successfully without the promoter being physically present at each branch.'
       },
       {
-        id: 'midc-land',
-        title: 'MIDC Industrial Land Acquisition & Civil Approvals',
-        badge: 'Land & Zoning',
-        summary: 'Facilitating online MIDC industrial plot applications, project justification reports, lease agreement execution, and architectural blueprint approvals.',
+        id: 'financial-modeling',
+        title: 'Unit Economics, Royalty & Fee Structuring',
+        badge: 'Financial Design',
+        summary: 'Architecting transparent, lucrative financial projections that attract serious franchisees while ensuring healthy franchisor royalties.',
         scope: [
-          'MIDC Online Land Application & Project Justification Presentation',
-          'MIDC Allotment Letter, Possession Receipt & Registered Lease Deed',
-          'Town Planning Blueprint Sanction & Building Completion Certificate (BCC)',
-          'Agricultural to Non-Agricultural (NA) Land Conversion Clearance'
+          'Upfront Franchise Fee & Ongoing Royalty Percentage Structuring',
+          'Franchisee Capex, Opex, Break-Even & ROI Sensitivity Model',
+          'Marketing Fund (National/Regional Ad Pool) Contribution Rules',
+          'Supply Chain Markups vs Fixed Royalty Cash-Flow Projections'
         ],
-        marketImpact: 'Secures prime industrial location with verified title in Supa, Nagapur, Shrirampur, and Chakan corridors.'
+        marketImpact: 'Creates realistic 12-to-24 month payback timelines that inspire investor confidence during partner pitches.'
       },
       {
-        id: 'environmental-mpcb',
-        title: 'MPCB Environmental Consents & Pollution Clearances',
-        badge: 'Green Clearances',
-        summary: 'Classifying industrial pollution categorization (White, Green, Orange, Red) and securing MPCB Consent to Establish (CTE) & Operate (CTO).',
+        id: 'legal-agreements',
+        title: 'Franchise Legal Agreements & Disclosure Documents',
+        badge: 'Legal Protection',
+        summary: 'Drafting airtight legal agreements that protect your brand trademarks, trade secrets, recipes, and proprietary operational protocols.',
         scope: [
-          'Industrial Pollution Categorization & Effluent Treatment Plant (ETP) Scoping',
-          'MPCB Consent to Establish (CTE) Online Filing & Technical Scrutiny',
-          'Consent to Operate (CTO) Renewal & Hazardous Waste Authorization',
-          'Air & Water Pollution Control Equipment Sizing & Compliance Filings'
+          'Comprehensive Master Franchise & Unit Franchise Agreements',
+          'Non-Disclosure Agreements (NDA) & Non-Compete Covenants',
+          'Trademark, Logo & IP Licensing Protection Charters',
+          'Default, Breach, Termination & Dispute Resolution Protocols'
         ],
-        marketImpact: 'Prevents factory closure notices, severe regulatory penalties, and environmental disputes.'
+        marketImpact: 'Eliminates legal ambiguities, preventing rogue franchisees from copying proprietary know-how or diluting brand reputation.'
       },
       {
-        id: 'factory-utilities',
-        title: 'Factory Act, Fire Safety & Utility Connections',
-        badge: 'Operational Sanctions',
-        summary: 'Securing mandatory Directorate of Industrial Safety & Health (DISH) factory licenses, commercial power connectivity, and fire safety NOCs.',
+        id: 'sops-manuals',
+        title: 'Operations Manual & Standard Operating Procedures (SOPs)',
+        badge: 'Turnkey Operations',
+        summary: 'Documenting every operational nuance into turnkey manuals so any qualified franchisee can reproduce your exact quality and customer service.',
         scope: [
-          'Factory Act License Application & DISH Machine Layout Approvals',
-          'Provisional & Final Fire Safety NOC from MIDC / Municipal Fire Authority',
-          'MSEDCL Industrial High-Tension (HT) / Low-Tension (LT) Power Sanction',
-          'MIDC Water Supply Agreement & Commercial Meter Connection'
+          'Comprehensive Franchise Operations Manual & Daily Checklists',
+          'Staff Training Curriculum, Uniform Standards & Customer Service SOPs',
+          'Quality Control Protocols, Recipe/Service Specifications & Audit Checklists',
+          'Store Setup, Interior Architecture & Brand Guideline Manual'
         ],
-        marketImpact: 'Ensures zero production stoppages on the target Commercial Operations Date (COD).'
+        marketImpact: 'Guarantees uniform customer experience across every location, preserving brand reputation across multi-city branches.'
+      },
+      {
+        id: 'franchisee-recruitment',
+        title: 'Franchisee Marketing & Investor Profiling',
+        badge: 'Partner Acquisition',
+        summary: 'Designing investor pitch decks, franchise brochures, and screening criteria to filter and onboard high-caliber franchise partners.',
+        scope: [
+          'Investor Pitch Deck, Franchise Brochure & Website Collateral',
+          'Franchisee Screening Matrix: Financial Capacity, Background & Motivation',
+          'Discovery Day Protocols & Franchisee Onboarding Walkthrough',
+          'Multi-Channel Investor Outreach & B2B Lead Funnel Strategy'
+        ],
+        marketImpact: 'Filters out non-serious inquiries, connecting the franchisor with financially capable and culturally aligned franchise operators.'
+      },
+      {
+        id: 'network-expansion',
+        title: 'Franchise Network Audit & Multi-City Growth',
+        badge: 'System Governance',
+        summary: 'Supporting ongoing network health, mystery shopping audits, supply chain coordination, and multi-state expansion roadmaps.',
+        scope: [
+          'Periodic Store Performance Audits & Mystery Shopper Reviews',
+          'Centralized Inventory & Raw Material Supply Chain Systems',
+          'Franchisee Dispute Mediation & Relationship Management',
+          'Master Franchise & Regional Area Development Strategy'
+        ],
+        marketImpact: 'Maintains healthy network compliance and maximizes long-term brand valuation for eventual private equity or public offerings.'
       }
     ],
     marginTiers: [
       {
-        category: 'Startup Inception Pack',
-        promoterEquity: 'Entity & MSME',
-        subsidyGrant: 'Pvt Ltd / LLP',
-        bankDebt: '7 to 10 Days',
-        criteria: 'Name reservation, incorporation certificates, PAN/TAN, GST registration, bank account opening kit, and Udyam MSME certificate.'
+        category: 'Franchise Readiness Audit',
+        promoterEquity: 'Single-Unit Proof',
+        subsidyGrant: 'Feasibility Report',
+        bankDebt: '14 Days',
+        criteria: 'Detailed evaluation of brand strength, unit margins, systems documentation, and franchise readiness scoring.'
       },
       {
-        category: 'MIDC Greenfield Allotment',
-        promoterEquity: 'Industrial Land',
-        subsidyGrant: 'Plot Allocation',
-        bankDebt: '30 to 45 Days',
-        criteria: 'Detailed project presentation for MIDC land allotment committee, offer letter follow-up, lease deed registration, and possession handover.'
+        category: 'Turnkey Franchise System Development',
+        promoterEquity: 'Expanding Brands',
+        subsidyGrant: 'Complete System',
+        bankDebt: '60 - 90 Days',
+        criteria: 'End-to-end development: legal agreements, SOP manual, financial unit models, pitch deck, and launch roadmap.'
       },
       {
-        category: 'Statutory Clearances Suite',
-        promoterEquity: 'Factory Licenses',
-        subsidyGrant: 'MPCB & DISH',
-        bankDebt: '20 to 30 Days',
-        criteria: 'MPCB Consent to Establish (CTE), Factory Building Plan Approval, Fire NOC, and MSEDCL power load sanction.'
+        category: 'Franchise Marketing & Recruitment',
+        promoterEquity: 'Ready to Expand',
+        subsidyGrant: 'Investor Pipeline',
+        bankDebt: 'Quarterly Sprint',
+        criteria: 'Investor pitch campaigns, screening protocols, discovery sessions, and closing support for initial 5–10 locations.'
       },
       {
-        category: 'Turnkey COD Package',
-        promoterEquity: 'End-to-End Setup',
-        subsidyGrant: 'From Idea to COD',
-        bankDebt: 'Full Project Cycle',
-        criteria: 'Complete turnkey package covering legal entity, land, construction approvals, environmental clearances, bank financing, and subsidy filing.'
+        category: 'Multi-State Master Franchise Track',
+        promoterEquity: 'Multi-Unit Brands',
+        subsidyGrant: 'Regional Scale',
+        bankDebt: '12 Months',
+        criteria: 'Master franchise structuring, supply chain scaling, area developer contracts, and state-wide network governance.'
       }
     ],
     documents: [
       {
-        group: '1. Promoter Identity & Address',
+        group: '1. Brand & Business Performance Data',
         items: [
-          'PAN Card & Aadhaar Card of all proposed Directors / Partners',
-          'Voter ID / Passport / Driving License for photo identity proof',
-          'Bank statement with latest transaction entry (not older than 2 months)',
-          'Passport-sized digital photographs and digital signature certificates (DSC)'
+          'Detailed overview of the business concept, origin, and brand philosophy',
+          'Financial statements and monthly sales ledgers of existing operating outlets',
+          'Product/service menu or catalog with gross margins and customer pricing',
+          'Average monthly operational costs (rent, utilities, staff salaries, wastage)'
         ]
       },
       {
-        group: '2. Registered Office & Land Evidence',
+        group: '2. Intellectual Property & Corporate Documentation',
         items: [
-          'Electricity bill or Municipal Property Tax receipt of proposed registered office',
-          'Notarized Rent Agreement with Landlord No-Objection Certificate (NOC)',
-          '7/12 & 8A Land Extract / Registered Purchase Deed (for private land)',
-          'MIDC Allotment Letter / Zone Certificate / Industrial NA Sanction Order'
+          'Trademark registration certificate (TM / ®) for brand name and logo',
+          'Entity registration documents (Certificate of Incorporation / Partnership Deed)',
+          'Proprietary formulations, recipe documentation, or process copyrights',
+          'Existing supplier contracts and exclusive vendor agreements'
         ]
       },
       {
-        group: '3. Technical & Engineering Plans',
+        group: '3. Store & Infrastructure Specifications',
         items: [
-          'Architect-certified Factory Layout Plan showing machine footprints',
-          'Manufacturing Process Flowchart with raw material to finished product mass balance',
-          'Water requirement calculation & Effluent Generation Details',
-          'Connected Power Load estimate from licensed electrical contractor'
+          'Standard outlet floor plan, carpet area requirements, and frontage specs',
+          'List of required machinery, kitchen/store equipment, and POS software',
+          'Store fit-out cost estimates (interiors, signage, HVAC, lighting)',
+          'Minimum staff headcount and skill-level requirements per shift'
         ]
       },
       {
-        group: '4. Capital & DPR Documentation',
+        group: '4. Target Expansion Criteria',
         items: [
-          'Preliminary Project Cost Estimate (Land, Civil, Plant & Machinery, Working Capital)',
-          'Promoter Capital Contribution Evidence (Bank Savings / Net Worth Certificate)',
-          'Original Equipment Manufacturer (OEM) Machinery Quotations with GST',
-          'Bank Detailed Project Report (DPR) prepared by AB Consultancy'
+          'Target geographic regions, cities, and high-footfall commercial zones',
+          'Ideal franchisee profile (capital capacity, background, full-time commitment)',
+          'Proposed territory protection boundaries (km radius or pin codes)',
+          'Expected opening timelines for first expansion cohort'
         ]
       }
     ],
     roadmaps: [
       {
         phase: 'Phase 1',
-        title: 'Entity Structuring & Regulatory Mapping',
-        timeline: 'Week 1 – Week 2',
-        desc: 'Consultation to determine legal entity structure, drafting constitutional charters, obtaining Director Identification Numbers (DIN), and completing MCA incorporation.',
-        deliverables: ['Certificate of Incorporation (COI)', 'PAN, TAN & GSTIN Certificates', 'Udyam MSME Registration Certificate']
+        title: 'Franchise Readiness & Model Design',
+        timeline: 'Week 1 – Week 3',
+        desc: 'Reviewing current store unit economics, assessing brand differentiators, and selecting the optimal franchise model structure (FOFO/FOCO/COCO).',
+        deliverables: ['Franchise Readiness Audit Report', 'Unit Economic Financial Model', 'Fee & Royalty Architecture']
       },
       {
         phase: 'Phase 2',
-        title: 'Industrial Land Allotment & Zoning',
-        timeline: 'Week 3 – Week 6',
-        desc: 'Formulation of project justification report, submitting online application on the Maharashtra Single Window Portal, and securing MIDC allotment or industrial NA conversion.',
-        deliverables: ['MIDC Land Allotment Letter', 'Registered 95-Year Lease Deed', 'Physical Land Possession Receipt']
+        title: 'Legal Architecture & SOP Documentation',
+        timeline: 'Week 4 – Week 7',
+        desc: 'Drafting robust franchise agreements, disclosure documents, IP licensing contracts, and comprehensive standard operating procedure manuals.',
+        deliverables: ['Master Franchise Legal Agreement Pack', 'Comprehensive Franchise Operations Manual', 'Store Setup & Interior Guidelines']
       },
       {
         phase: 'Phase 3',
-        title: 'Statutory Consents & Utility Sanctions',
-        timeline: 'Month 2 – Month 3',
-        desc: 'Simultaneous filing of architect blueprints with Town Planning, applying for MPCB Consent to Establish (CTE), securing Provisional Fire NOC, and getting MSEDCL power sanction.',
-        deliverables: ['Sanctioned Factory Blueprints', 'MPCB Consent to Establish (CTE)', 'MSEDCL Industrial Load Sanction Letter']
+        title: 'Investor Marketing & Collateral Development',
+        timeline: 'Week 8 – Week 10',
+        desc: 'Designing professional investor pitch decks, franchise application forms, discovery day presentation materials, and investor screening matrices.',
+        deliverables: ['Investor Pitch Deck & Brochure', 'Franchisee Application & Screening Matrix', 'Franchise Launch Media Kit']
       },
       {
         phase: 'Phase 4',
-        title: 'Factory Licensing & Commercial COD',
-        timeline: 'Month 4 – Month 6',
-        desc: 'Inspections by Factory Inspectorate (DISH), obtaining MPCB Consent to Operate (CTO), Final Fire NOC, and formal transition into commercial production.',
-        deliverables: ['Factory Act License', 'MPCB Consent to Operate (CTO)', 'Commercial Operations Date (COD) Certificate']
+        title: 'Partner Onboarding & Network Governance',
+        timeline: 'Week 11 Onward',
+        desc: 'Guiding franchisee interviews, supporting lease negotiations, training initial cohorts, and setting up periodic store audit frameworks.',
+        deliverables: ['First Cohort Franchisee Onboarding', 'Store Opening Launch Checklist', 'Quarterly Network Audit Mechanism']
       }
     ],
     regionalPresence: {
-      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Chhatrapati Sambhajinagar', 'Solapur', 'Nashik', 'Thane'],
-      industrialAreas: ['MIDC Supa Parner (Japanese Industrial Zone)', 'MIDC Nagapur', 'MIDC Shrirampur', 'MIDC Kopargaon', 'MIDC Chakan', 'MIDC Waluj'],
-      bankLinkages: ['Maharashtra State Financial Corporation (MSFC)', 'State Bank of India', 'Bank of Maharashtra', 'Canara Bank', 'Union Bank of India']
+      districts: ['Ahilyanagar', 'Pune', 'Chhatrapati Sambhajinagar', 'Nashik', 'Mumbai MMR', 'Kolhapur', 'Solapur', 'Nagpur'],
+      industrialAreas: ['Commercial High Streets', 'Prime Malls & High-Footfall Corridors', 'Tier-2 & Tier-3 City Centers', 'MIDC Commercial Hubs'],
+      bankLinkages: ['Leading Scheduled Commercial Banks', 'NBFC Franchise Finance Desks', 'MSME Business Loan Providers']
     },
     faqs: [
       {
-        q: 'Which corporate structure is best for a new manufacturing unit: Pvt Ltd, LLP, or Proprietorship?',
-        a: 'For small trading or micro-service units with zero institutional borrowing, a Proprietorship may suffice initially. However, for any manufacturing unit investing ₹25 Lakhs or more, a Private Limited Company or LLP is strongly advised. It provides limited liability protection, tax efficiency, enhanced credibility with commercial banks, and makes the enterprise eligible for high-value government subsidies under PSI 2019/2024 and institutional venture debt.'
+        q: 'What type of businesses can successfully be converted into a franchise model?',
+        a: 'Any business that has demonstrated consistent profitability, strong brand appeal, and can be systematized into standard operating procedures can be franchised. Common sectors include Food & Beverages (QSR, bakeries, cafes, cloud kitchens), Retail (apparel, footwear, groceries, electronics), Education & Vocational Training, Healthcare (diagnostic clinics, dental, salons), and Specialized Services (car care, logistics, cleaning).'
       },
       {
-        q: 'How does AB Consultancy assist in securing industrial land in MIDC areas?',
-        a: 'We manage the complete MIDC land acquisition procedure on the Maharashtra Industrial Development Corporation portal: preparing the mandatory Project Justification Report, computing financial capability ratios, attending the land allotment screening committee, executing the formal lease deed, and coordinating on-site boundary demarcation with MIDC regional engineers.'
+        q: 'What is the difference between FOFO and FOCO franchise models?',
+        a: 'In a FOFO (Franchise Owned, Franchise Operated) model, the franchisee invests the capital and manages day-to-day operations under the franchisor guidelines. In a FOCO (Franchise Owned, Company Operated) model, the franchisee invests in the store setup and property, while the franchisor manages daily operations and staff, sharing a predetermined percentage of revenue or profit with the investor.'
       },
       {
-        q: 'What is MPCB Consent to Establish (CTE) and when should it be applied for?',
-        a: 'Consent to Establish (CTE) is a mandatory statutory permit issued by the Maharashtra Pollution Control Board before any civil construction or machinery installation begins on site. Applying post-construction attracts heavy fines and potential stop-work notices. We prepare complete effluent generation calculations and secure CTE smoothly.'
+        q: 'How do you determine the right Franchise Fee and Royalty percentage?',
+        a: 'We calculate fees based on unit economics. The upfront franchise fee covers brand onboarding, initial training, store setup guidance, and territory rights. Ongoing royalties (typically 4% to 8% of gross sales or a fixed monthly fee) are calibrated to ensure the franchisee achieves attractive ROI (25% to 40% annualized) while providing the franchisor with healthy recurring income.'
       },
       {
-        q: 'Can government subsidies be linked during the business setup stage?',
-        a: 'Crucially, yes! Government subsidy schemes like PMEGP, CMEGP, and Maharashtra PSI require eligibility pre-registration and specific corporate milestones before machinery procurement. If you purchase machinery before proper subsidy registration, you may permanently forfeit your capital grant. Our business setup team synchronizes your setup timeline with maximum subsidy realization.'
+        q: 'Is it necessary to have a registered trademark before franchising my business?',
+        a: 'Yes. Having a registered trademark or at minimum an active application in Class-specific categories is critical. Without trademark ownership, you cannot legally license brand rights to third parties, leaving your brand vulnerable to copycats. We assist in trademark alignment as part of our readiness check.'
       },
       {
-        q: 'How long does the entire business setup process take from concept to commercial production?',
-        a: 'Entity incorporation and basic registrations take 7 to 10 days. For leased industrial premises, statutory licenses (MPCB, Factory, Power) require 30 to 45 days. For greenfield land allotment and civil construction, turnkey setup spans 4 to 6 months. We maintain strict milestone tracking to prevent project cost overruns.'
+        q: 'How do you prevent franchisees from copying my business model and starting their own competing brand?',
+        a: 'Through airtight legal agreements that include strict non-compete clauses, non-disclosure agreements (NDAs), trade secret protections, and intellectual property covenants. Furthermore, we design centralized supply chains (such as proprietary spice blends, specialized software, or core inventory) that franchisees cannot replicate independently.'
       },
       {
-        q: 'What are the power sanction requirements for industrial units in MIDC Supa and Nagapur?',
-        a: 'Power loads up to 100 kVA are released on Low Tension (LT), while requirements exceeding 100 kVA require dedicated High Tension (HT) 11 kV or 22 kV substation installations. We coordinate with MSEDCL executive engineers for load feasibility studies, estimate payments, and meter energization.'
+        q: 'Do you help source and screen potential franchise investors?',
+        a: 'Yes. We design high-converting investor pitch decks, franchise landing pages, and application forms. We also formulate strict qualification filters (net worth, business background, operational involvement) and participate in preliminary discovery calls to weed out non-serious inquiries.'
       },
       {
-        q: 'Do you help with Fire Safety NOC and architectural plan approvals?',
-        a: 'Yes. Our team coordinates with certified structural engineers and licensed fire agency experts to design building layouts conforming to the National Building Code (NBC) and obtain Provisional and Final Fire Safety NOCs from MIDC/Municipal Fire Authorities.'
+        q: 'How long does it take to create a complete turnkey franchise system?',
+        a: 'Typically between 60 to 90 days. This encompasses complete financial unit modeling, legal agreement formulation, operations manual writing, brand collateral creation, and launch planning.'
       },
       {
-        q: 'How can a prospective entrepreneur begin the business setup journey with AB Consultancy?',
-        a: 'Contact our advisory team to arrange a Project Inception Consultation. Bring your preliminary project concept, land details, and investment budget; our consultants will map out your complete 120-day launch roadmap.'
+        q: 'How do we begin the franchise consultancy process with AB Consultancy?',
+        a: 'Schedule an exploratory meeting at our Ahilyanagar office or virtually. We conduct a preliminary Franchise Readiness Evaluation to analyze your unit economics and outline a clear phase-by-phase franchising blueprint.'
       }
     ],
     relatedServices: [
-      { id: 'business-consultancy', code: 'BC', name: 'Business Consultancy', desc: 'Strategic scaling, SOP deployment, and operational diagnostics.' },
-      { id: 'project-report-preparation', code: 'DPR', name: 'Project Report Preparation', desc: 'Bank-compliant TEV feasibility reports & financial projections.' },
-      { id: 'government-scheme-application-assistance', code: 'GSA', name: 'Govt Scheme Application', desc: 'Portal registration, DIC liaison, and scheme approvals.' }
+      { id: 'business-development-consultancy', code: 'BDC', name: 'Business Development Consultancy', desc: 'Strategic planning, market research, and sustainable growth roadmaps.' },
+      { id: 'market-linkage', code: 'ML', name: 'Market Linkage', desc: 'Connect with institutional corporate buyers & B2B procurement networks.' },
+      { id: 'roc-registration', code: 'ROC', name: 'ROC Registration', desc: 'Company incorporation, LLP formation, and trademark governance.' }
     ]
   },
 
-  'financial-consultancy': {
-    id: 'financial-consultancy',
-    code: 'FC',
-    slug: 'financial-consultancy',
-    name: 'Financial Consultancy & Corporate Debt Advisory',
-    shortTitle: 'Financial Consultancy',
-    categoryBadge: 'Corporate Finance & Banking Debt Advisory',
-    department: 'Corporate Debt Syndication & Capital Structuring Division',
-    portal: 'Institutional Banking & Credit Advisory Practice',
-    heroTitle: 'Financial Consultancy & Debt Advisory in Ahilyanagar',
-    heroHighlight: 'Optimize Working Capital, Restructure High-Cost Debt & Secure Bank Sanctions with Institutional Precision',
-    heroDesc: 'Specialized corporate finance consultancy for MSMEs and corporate enterprises across Maharashtra. We architect bankable credit structures, prepare certified CMA Data projections, optimize Debt Service Coverage Ratios (DSCR), resolve bank loan documentation queries, and negotiate competitive lending rates with PSU and private commercial banks.',
+  // =========================================================================
+  // SERVICE 3: MARKET LINKAGE & SUPPLY CHAIN INTEGRATION
+  // =========================================================================
+  'market-linkage': {
+    id: 'market-linkage',
+    code: 'ML',
+    slug: 'market-linkage',
+    name: 'Market Linkage & Supply Chain Integration',
+    shortTitle: 'Market Linkage',
+    categoryBadge: 'B2B Procurement & Value Chain Integration',
+    department: 'Commercial Linkages & Buyer-Seller Syndication Division',
+    portal: 'Corporate Vendor Onboarding & Institutional Sales Desk',
+    heroTitle: 'Market Linkage & Buyer Connect Services in Maharashtra',
+    heroHighlight: 'Connecting MSMEs, Producers & Startups with High-Value Corporate & Institutional Buyers',
+    heroDesc: 'Bridging the critical gap between production capacity and commercial demand. We facilitate institutional vendor onboarding, Government e-Marketplace (GeM) tender syndication, modern retail chain tie-ups, Farmer Producer Organization (FPO) value chains, and long-term corporate B2B off-take contracts.',
     jtbd: {
-      statement: "When an expanding business or industrial promoter requires bank term loans, working capital enhancement, or debt cost reduction, they want authoritative financial advisory and bank-compliant CMA modeling, so they can secure fast loan sanctions at the lowest possible interest rates without collateral bottlenecks.",
-      situation: "Enterprise seeking ₹50 Lakhs to ₹50 Crores in bank term loans, working capital limits, or balance sheet strengthening.",
-      motivation: "Eliminate bank rejection risks, structure sustainable debt repayment schedules, and minimize borrowing costs.",
-      outcome: "Timely bank loan sanction letters, lower interest spreads, optimized liquidity, and enhanced credit ratings."
+      statement: "When an MSME manufacturer, agro-producer, or startup has established production capability but struggles to reach reliable bulk buyers, they want structured market linkage, corporate vendor onboarding, and institutional tender assistance, so they can achieve steady sales volume, better profit margins, and predictable cash flow.",
+      situation: "Production-ready enterprise facing distribution limitations, local price exploitation, or lack of direct access to high-value buyers.",
+      motivation: "Eliminate middlemen, secure long-term purchase contracts, and onboard onto corporate and government procurement portals.",
+      outcome: "Consistent order books, direct institutional payment terms, higher gross margins, and diversified revenue channels."
     },
     seo: {
-      title: 'Financial Consultancy Ahilyanagar | Debt Syndication Maharashtra',
-      description: 'Expert financial consultancy in Ahilyanagar & Maharashtra. CMA data modeling, working capital loan enhancement, debt restructuring & bank loan sanctions.',
-      canonical: 'https://www.abconsultancy.net.in/services/financial-consultancy',
-      keywords: 'Financial Consultancy Ahilyanagar, Financial Consultant Nagar, Corporate Debt Advisory Maharashtra, CMA Data Preparation Ahmednagar, Working Capital Loan Consultant Savedi, Bank Loan Syndication Specialist'
+      title: 'Market Linkage Consultancy Ahilyanagar | B2B Buyer Connect Maharashtra',
+      description: 'Strategic market linkage services in Ahilyanagar & Maharashtra. Connect MSMEs, FPOs and manufacturers to corporate buyers, GeM portal, retail chains & wholesale distributors.',
+      canonical: 'https://www.abconsultancy.net.in/services/market-linkage',
+      keywords: 'Market Linkage Ahilyanagar, B2B Buyer Seller Connect Maharashtra, GeM Portal Registration Consultant Nagar, Corporate Vendor Onboarding Pune, FPO Market Linkage Ahmednagar, Supply Chain Consultant Savedi'
     },
     directAnswer: {
-      question: 'What is financial consultancy and how does AB Consultancy optimize bank debt for MSMEs in Maharashtra?',
-      answer: 'Financial consultancy at AB Consultancy delivers institutional debt syndication, balance sheet optimization, and capital restructuring for manufacturing, infrastructure, and commercial businesses. We formulate audited Credit Monitoring Arrangement (CMA) data, calculate precise drawing power, structure optimal debt-equity ratios, and represent enterprises before commercial banks to negotiate lower interest rates, extended repayment tenors, and enhanced collateral-free limits under CGTMSE.'
+      question: 'What is Market Linkage and how does AB Consultancy help MSMEs and producers?',
+      answer: 'Market Linkage at AB Consultancy directly connects manufacturers, food processors, and agricultural enterprises with institutional buyers, retail supermarket chains, export aggregators, and public sector procurement portals. We prepare vendor registration dossiers, assist with GeM and corporate tenders, establish distributor networks, and negotiate commercial off-take agreements that eliminate exploitative middlemen.'
     },
     trustStats: [
-      { label: 'Debt Syndicated', value: '₹500+ Cr', sub: 'Term Loans & CC/OD Limits' },
-      { label: 'Bank Approvals', value: '98.7%', sub: 'First-Submission Clearances' },
-      { label: 'Interest Savings', value: '1.2%–2.5%', sub: 'Average Cost Reduction' },
-      { label: 'Lending Partners', value: '40+ Banks', sub: 'PSU, Private & NBFC Tie-Ups' }
+      { label: 'Market Synergies', value: '450+', sub: 'Active Buyer-Seller Linkages' },
+      { label: 'Cumulative Off-Take', value: '₹180+ Cr', sub: 'Facilitated B2B Purchase Value' },
+      { label: 'Corporate Network', value: '350+', sub: 'Verified Institutional Buyers' },
+      { label: 'GeM & PSU Bids', value: '96.2%', sub: 'Vendor Qualification Rate' }
     ],
     architecture: {
-      quantum: 'Debt Syndication from ₹25 Lakhs up to ₹50 Crores',
-      bankDebt: 'Cash Credit, Overdraft, Term Loans, LC & Bank Guarantees',
-      subsidyPct: 'Capital Subsidies & Central Interest Subventions Linked',
-      moratorium: 'Principal Moratoriums Negotiated up to 24 Months',
-      tenor: 'Repayment Tenors Structured from 5 to 12 Years',
-      interestRate: 'Competitive EBLR / MCLR Linked Institutional Rates'
+      quantum: 'Tailored for Manufacturers, Agro-Processors, FPOs & Trading Firms',
+      bankDebt: 'Vendor Financing & Supply Chain Finance Linkages',
+      subsidyPct: 'Integrated with Central & State Market Development Schemes',
+      moratorium: 'Initial 10-Day Production & Catalog Audit',
+      tenor: 'Milestone-Based Linkage Engagement & Retainership',
+      interestRate: 'Structured Onboarding Fee & Success Facilitation'
     },
     verticals: [
       {
-        id: 'cma-modeling',
-        title: 'CMA Data Preparation & Financial Modeling',
-        badge: 'CMA & Credit Analysis',
-        summary: 'Developing mathematical Credit Monitoring Arrangement (CMA) models with 5-year audited and projected balance sheets, profit & loss, and fund flows.',
+        id: 'corporate-b2b',
+        title: 'Corporate & Institutional B2B Buyer Tie-Ups',
+        badge: 'Corporate Contracts',
+        summary: 'Connecting industrial manufacturers, component fabricators, and bulk producers directly with Tier-1 and Tier-2 corporate procurement cells.',
         scope: [
-          'Formulation of Operating Statements, Balance Sheet Spreads & Funds Flow',
-          'Tandon & Nayak Committee Working Capital Gap (MPBF) Computation',
-          'Current Ratio, Debt-to-Equity (DER), and DSCR Sensitivity Analysis',
-          'Ratio Benchmarking against Commercial Bank Lending Policies'
+          'Corporate Vendor Registration Dossier Preparation & Submission',
+          'Technical Audit & Sample Approval Coordination with Purchase Teams',
+          'Negotiation of Rate Contracts, Payment Terms & Delivery Schedules',
+          'Vendor Quality Management & Supply Reliability Alignment'
         ],
-        marketImpact: 'Eliminates bank credit processing queries and expedites loan committee sanctions within 21 days.'
+        marketImpact: 'Eliminates commission-seeking brokers, ensuring predictable monthly order volumes with institutional payment security.'
       },
       {
-        id: 'debt-syndication',
-        title: 'Project Term Loans & Industrial Debt Syndication',
-        badge: 'Term Debt Advisory',
-        summary: 'Structuring long-term project debt for factory acquisition, civil building construction, heavy plant machinery, and technology upgrades.',
+        id: 'gem-public-procurement',
+        title: 'Government e-Marketplace (GeM) & PSU Tenders',
+        badge: 'Public Procurement',
+        summary: 'Enabling MSMEs to tap into the massive government procurement ecosystem under the Public Procurement Policy for MSEs (25% mandatory quota).',
         scope: [
-          'Preparation of Bankable Project Information Memorandums (PIM)',
-          'Multi-Bank Consortium vs Sole Banking Arrangement Advisory',
-          'Collateral Security Optimization & CGTMSE Guarantee Enrolment',
-          'Sanction Letter Terms Negotiation (Interest Spreads, Processing Fees, Covenants)'
+          'GeM Primary & Secondary Seller Registration & Brand Creation',
+          'Catalog Upload, OEM Verification & Specification Alignment',
+          'Tender Identification, Technical Bid Preparation & Reverse Auction Guidance',
+          'L1 Bidding Optimization & Vendor Performance Rating (VPR) Maintenance'
         ],
-        marketImpact: 'Lowers enterprise financial cost of capital by 150 to 250 basis points over the loan lifespan.'
+        marketImpact: 'Unlocks steady government and defense contracts without requiring physical liaison across ministerial departments.'
       },
       {
-        id: 'working-capital',
-        title: 'Working Capital Limit Enhancement (CC / OD / Trade Finance)',
-        badge: 'Liquidity Enhancement',
-        summary: 'Expanding cash credit limits, overdraft facilities, letters of credit (LC), and bank guarantees (BG) to match growing sales volume.',
+        id: 'modern-retail-chains',
+        title: 'Modern Retail & Supermarket Chain Enlistment',
+        badge: 'Retail Distribution',
+        summary: 'Onboarding regional food, FMCG, and consumer brands into major supermarket chains, regional hypermarkets, and departmental store networks.',
         scope: [
-          'Drawing Power (DP) Formulation & Stock/Debtor Statement Certification',
-          'Letter of Credit (Inland / Import LC) Facility Structuring',
-          'Bank Guarantee (Performance / Financial BG) Limit Setup',
-          'Reduction of Margin Money Requirements on Non-Fund Facilities'
+          'Retail Buyer Presentation Deck & Commercial Product Pitching',
+          'Margin Structure Modeling: Dealer, Distributor & Modern Trade Margins',
+          'Barcode, Packaging Compliance & FSSAI Category Verification',
+          'Central Distribution Center (CDC) Logistics & Return-to-Vendor (RTV) Protocols'
         ],
-        marketImpact: 'Prevents operational liquidity chokeholds and supports rapid order fulfillment across supply chains.'
+        marketImpact: 'Transforms local food processors and consumer products into recognized shelf brands across Maharashtra supermarkets.'
+      },
+      {
+        id: 'fpo-agro-linkage',
+        title: 'FPO & Agricultural Value Chain Integration',
+        badge: 'Agro Linkages',
+        summary: 'Connecting Farmer Producer Organizations (FPOs), primary processors, and farmer collectives directly to bulk food processing plants and exporters.',
+        scope: [
+          'Pre-Harvest Aggregation Planning & Quality Grading Protocols',
+          'Direct Off-Take Contracts with Agro-Processing Corporates & Exporters',
+          'Elimination of APMC Mandi Intermediary Deductions',
+          'Warehouse Receipt Financing & Cold Storage Tie-Ups'
+        ],
+        marketImpact: 'Secures 15% to 25% higher farm-gate realizations for agricultural producers while ensuring steady supply for processors.'
+      },
+      {
+        id: 'b2b-ecommerce',
+        title: 'Digital B2B Platforms & E-Commerce Onboarding',
+        badge: 'Digital Commerce',
+        summary: 'Setting up high-converting digital storefronts across premier B2B platforms like Udaan, IndiaMART, TradeIndia, and specialized portals.',
+        scope: [
+          'Optimized Digital Catalog Creation & High-Resolution Showcase',
+          'Lead Funnel Setup, Inquiry Routing & Rapid Response Protocols',
+          'Trust Seal, Verified Supplier Badges & Star Supplier Accreditations',
+          'Integration with Digital Logistics & Pan-India Dispatch Networks'
+        ],
+        marketImpact: 'Generates daily qualified commercial inquiries from buyers across all Indian states, eliminating regional dependency.'
+      },
+      {
+        id: 'raw-material-sourcing',
+        title: 'Strategic Raw Material Sourcing & Vendor Networks',
+        badge: 'Procurement Efficiency',
+        summary: 'Assisting manufacturers in sourcing primary raw materials, packaging, and industrial inputs directly from reliable primary producers at bulk rates.',
+        scope: [
+          'Alternate Raw Material Supplier Mapping & Due Diligence',
+          'Long-Term Volume Procurement Contracts & Price Hedging Advice',
+          'Quality Standardization & Vendor Audit Checklist Implementation',
+          'Working Capital Optimization through Supplier Credit Structuring'
+        ],
+        marketImpact: 'Reduces raw material acquisition costs by 6% to 12%, directly boosting operating EBITDA margins for factories.'
+      }
+    ],
+    marginTiers: [
+      {
+        category: 'Market Readiness & Catalog Audit',
+        promoterEquity: 'Initial Assessment',
+        subsidyGrant: 'Catalog Audit',
+        bankDebt: '7 - 10 Days',
+        criteria: 'Review of existing production capacity, packaging, pricing, competitive positioning, and target buyer readiness.'
+      },
+      {
+        category: 'GeM & Government Tender Track',
+        promoterEquity: 'Government Sellers',
+        subsidyGrant: 'Tender Access',
+        bankDebt: '30 Days Onboarding',
+        criteria: 'End-to-end GeM portal setup, OEM approval, catalog optimization, and initial tender bidding support.'
+      },
+      {
+        category: 'Corporate B2B Buyer Syndication',
+        promoterEquity: 'MSME Manufacturers',
+        subsidyGrant: 'Active Linkage',
+        bankDebt: '60 - 90 Days',
+        criteria: 'Direct outreach, sample coordination, vendor registration, and rate contract negotiation with institutional buyers.'
+      },
+      {
+        category: 'Comprehensive Distribution Retainership',
+        promoterEquity: 'Expanding Brands',
+        subsidyGrant: 'Full Value Chain',
+        bankDebt: '6 Months Retainer',
+        criteria: 'Simultaneous corporate, modern retail, digital B2B, and raw material sourcing integration across Maharashtra.'
+      }
+    ],
+    documents: [
+      {
+        group: '1. Business & Manufacturing Profile',
+        items: [
+          'Detailed company profile outlining manufacturing infrastructure and machinery',
+          'Current installed capacity, utilized capacity, and available surplus volume',
+          'Product specification sheets, technical data sheets (TDS), and lab test reports',
+          'Product packaging visuals, batch codes, and shelf-life documentation'
+        ]
+      },
+      {
+        group: '2. Commercial Pricing & Quality Certifications',
+        items: [
+          'Product price list: Ex-Factory, Wholesale, Distributor, and Maximum Retail Price (MRP)',
+          'Quality certifications: ISO, BIS / ISI, FSSAI, CE, or industry-specific accreditations',
+          'Minimum Order Quantity (MOQ) and lead time schedules for dispatch',
+          'Sample availability policy and warranty/guarantee terms'
+        ]
+      },
+      {
+        group: '3. Statutory & Financial Credentials',
+        items: [
+          'GST Registration Certificate & 12 months GSTR-1 turnover reports',
+          'Udyam MSME Registration Certificate with corresponding NIC activity codes',
+          'Audited financial statements (Balance Sheet & P&L) for the past 2 fiscal years',
+          'Bank statement and cancelled cheque for vendor registration'
+        ]
+      },
+      {
+        group: '4. Existing Commercial References',
+        items: [
+          'List of existing institutional clients or major commercial buyers (if any)',
+          'Customer recommendation letters or vendor appreciation certificates',
+          'Active logistics and courier partner details for domestic delivery',
+          'Key commercial terms: credit period, advance requirements, freight terms'
+        ]
+      }
+    ],
+    roadmaps: [
+      {
+        phase: 'Phase 1',
+        title: 'Product & Catalog Readiness Audit',
+        timeline: 'Week 1 – Week 2',
+        desc: 'Assessing technical specifications, packaging standards, pricing competitiveness, and regulatory certifications to ensure buyer compliance.',
+        deliverables: ['Market Readiness Assessment Report', 'Standardized Commercial Product Dossier', 'Pricing & Margin Structure Model']
+      },
+      {
+        phase: 'Phase 2',
+        title: 'Target Buyer Mapping & Channel Strategy',
+        timeline: 'Week 3 – Week 4',
+        desc: 'Identifying high-affinity corporate buyers, public procurement tenders, supermarket chains, and B2B platforms relevant to your product profile.',
+        deliverables: ['Target Buyer Identification List (50+ Verified Prospects)', 'GeM & PSU Tender Opportunity Pipeline', 'Channel Outreach Strategy']
+      },
+      {
+        phase: 'Phase 3',
+        title: 'Vendor Registration & Sample Clearance',
+        timeline: 'Month 2 – Month 3',
+        desc: 'Submitting vendor onboarding dossiers, dispatching commercial samples, coordinating technical testing, and completing GeM portal verification.',
+        deliverables: ['Active Vendor Codes across Target Corporates', 'GeM Portal Verified Catalog Listing', 'Sample Approval & Technical Clearance']
+      },
+      {
+        phase: 'Phase 4',
+        title: 'Commercial Off-Take & Order Execution',
+        timeline: 'Month 4 Onward',
+        desc: 'Negotiating annual rate contracts, securing initial purchase orders (POs), facilitating dispatch logistics, and ensuring recurring order cycles.',
+        deliverables: ['Executed Commercial Purchase Contracts', 'First Commercial Dispatch Facilitation', 'Quarterly Buyer Retention Review']
+      }
+    ],
+    regionalPresence: {
+      districts: ['Ahilyanagar', 'Pune', 'Chhatrapati Sambhajinagar', 'Nashik', 'Mumbai MMR', 'Solapur', 'Kolhapur'],
+      industrialAreas: ['MIDC Nagapur', 'MIDC Supa Parner', 'MIDC Waluj', 'MIDC Bhosari & Chakan', 'MIDC Ambad', 'APMC Agricultural Belts'],
+      bankLinkages: ['MSME TReDS Platforms (RXIL, M1xchange, Invoicemart)', 'Working Capital PSU Banks', 'Supply Chain NBFC Partners']
+    },
+    faqs: [
+      {
+        q: 'How does AB Consultancy help small manufacturers connect with large corporate buyers?',
+        a: 'Large corporates have rigorous vendor onboarding procedures, technical certifications, and compliance criteria that small manufacturers often find challenging. We bridge this gap by preparing comprehensive vendor dossiers, standardizing technical data sheets, obtaining required quality certifications, and directly engaging with procurement officers across our established corporate network.'
+      },
+      {
+        q: 'What is the advantage of registering on the Government e-Marketplace (GeM)?',
+        a: 'The Government of India mandates that Central Ministries, Departments, and PSUs procure a minimum of 25% of their total annual purchases from Micro and Small Enterprises (MSEs). Registering on GeM opens direct access to thousands of government tenders without requiring middleman agents or physical office visits, ensuring transparent, timely payments.'
+      },
+      {
+        q: 'Can you help food processing units get their products into supermarket retail chains?',
+        a: 'Yes. We assist food manufacturers with packaging compliance, nutritional profiling, barcode generation, FSSAI compliance, and margin modeling required by supermarket category buyers (such as D-Mart, Reliance Retail, and regional chains), guiding you through the vendor enlistment and Central Distribution Center delivery process.'
+      },
+      {
+        q: 'How do Farmer Producer Organizations (FPOs) benefit from your market linkage services?',
+        a: 'FPOs often face local mandi price suppression and delayed payments. We connect FPOs directly with industrial food processors, spice manufacturers, flour mills, and export houses through forward contracts, enabling farmers to secure higher farm-gate realizations and direct bank payments.'
+      },
+      {
+        q: 'Do you help resolve invoice discounting and delayed payments from buyers?',
+        a: 'Yes. We assist registered MSMEs in onboarding onto RBI-approved TReDS platforms (Trade Receivables Discounting System like RXIL, Invoicemart, and M1xchange). This allows you to discount approved invoices within 48 to 72 hours, maintaining robust liquidity without waiting 90 to 120 days for buyer payments.'
+      },
+      {
+        q: 'What sectors do you provide market linkages for in Maharashtra?',
+        a: 'Our core sectors include Agro & Food Processing (Spices, Grains, Edible Oil, Dairy, Dehydrated Foods), Engineering & Fabrication (Sheet Metal, Auto Components, Industrial Valves), Packaging & Plastics, Chemicals & Fertilizers, Textiles & Apparel, and Commercial Hardware.'
+      },
+      {
+        q: 'How long does it take to secure the first corporate vendor code or order?',
+        a: 'For digital B2B portals and GeM listings, setup occurs within 15 to 30 days with inquiries beginning immediately. For large corporate vendor approvals, the technical review and sample testing cycle typically takes 45 to 90 days depending on the buyer corporate governance timeline.'
+      },
+      {
+        q: 'How can an MSME initiate market linkage assistance with your team?',
+        a: 'Reach out to our Savedi office with your product catalog, current pricing, and production capacity. Our market linkage team will conduct a preliminary assessment and present a structured buyer-connect roadmap.'
+      }
+    ],
+    relatedServices: [
+      { id: 'business-development-consultancy', code: 'BDC', name: 'Business Development Consultancy', desc: 'Strategic planning, market research, and sustainable growth roadmaps.' },
+      { id: 'import-export', code: 'IEC', name: 'Import & Export', desc: 'DGFT licensing, export incentives, customs clearances & overseas buyers.' },
+      { id: 'business-finance', code: 'BF', name: 'Business & Finance', desc: 'Invoice discounting, working capital syndication & credit lines.' }
+    ]
+  },
+
+  // =========================================================================
+  // SERVICE 4: IMPORT & EXPORT CONSULTANCY
+  // =========================================================================
+  'import-export': {
+    id: 'import-export',
+    code: 'IEC',
+    slug: 'import-export',
+    name: 'Import & Export Consultancy & DGFT Trade Advisory',
+    shortTitle: 'Import & Export',
+    categoryBadge: 'Cross-Border Trade & International Commerce',
+    department: 'Foreign Trade Policy (FTP) & Global Trade Advisory Practice',
+    portal: 'International Trade Documentation & Customs Advisory Desk',
+    heroTitle: 'Import & Export Consultancy in Ahilyanagar & Maharashtra',
+    heroHighlight: 'Navigating Global Trade, Customs Regulations & Export Incentives for Indian Enterprises',
+    heroDesc: 'Empowering Indian manufacturers, agri-exporters, and commercial trading firms to enter global markets with total regulatory compliance. We handle Importer-Exporter Code (IEC), Export Promotion Council registration (RCMC), customs tariff classification (HSN codes), export incentive schemes (RoDTEP, RoSCTL, EPCG), and international trade finance.',
+    jtbd: {
+      statement: "When an Indian manufacturer, agricultural producer, or trader wants to expand into international markets, they want structured import-export licensing, customs regulatory compliance, and export incentive optimization, so they can execute cross-border shipments smoothly without customs delays, penalties, or lost subsidies.",
+      situation: "Domestic business wanting to begin overseas shipments or optimize existing cross-border import/export operations.",
+      motivation: "Acquire mandatory DGFT licenses, access government export financial incentives, and navigate customs documentation seamlessly.",
+      outcome: "Authorized international exporter status, maximum incentive realization (RoDTEP/EPCG), zero customs demurrage, and secure cross-border payments."
+    },
+    seo: {
+      title: 'Import Export Consultancy Ahilyanagar | DGFT & Export Consultant Maharashtra',
+      description: 'Expert import export consultancy in Ahilyanagar & Maharashtra. IEC code registration, RCMC certification, RoDTEP claims, customs clearance, EPCG scheme & export documentation.',
+      canonical: 'https://www.abconsultancy.net.in/services/import-export',
+      keywords: 'Import Export Consultant Ahilyanagar, IEC Code Registration Nagar, DGFT Consultant Maharashtra, RoDTEP Scheme Claim Ahmednagar, APEDA RCMC Consultant Savedi, Customs Documentation Pune'
+    },
+    directAnswer: {
+      question: 'What is Import & Export Consultancy and how does AB Consultancy assist cross-border traders?',
+      answer: 'Import & Export Consultancy at AB Consultancy provides comprehensive foreign trade advisory for enterprises engaging in international commerce. We handle DGFT Importer-Exporter Code (IEC) issuance, Export Promotion Council (RCMC) registration, HSN code classification, customs clearance documentation, government incentive claims (RoDTEP, Duty Drawback, EPCG), and Letter of Credit (LC) trade finance advisory.'
+    },
+    trustStats: [
+      { label: 'Export Consignments', value: '1,400+', sub: 'Cleared Shipments Advised' },
+      { label: 'Incentive Recovery', value: '₹45+ Cr', sub: 'RoDTEP, EPCG & Duty Drawbacks' },
+      { label: 'Trade Advisory', value: '15+ Years', sub: 'Cross-Border Regulatory Expertise' },
+      { label: 'DGFT Compliance', value: '100%', sub: 'First-Time Clearance Record' }
+    ],
+    architecture: {
+      quantum: 'Tailored for Agri-Exporters, Manufacturers & Commercial Traders',
+      bankDebt: 'Pre-Shipment & Post-Shipment Export Credit Linkages',
+      subsidyPct: 'Up to 5% RoDTEP & 100% Customs Duty Exemption under EPCG',
+      moratorium: 'Immediate 48-Hour IEC Issuance Support',
+      tenor: 'Single Consignment Clearance or Annual Retainership',
+      interestRate: 'Fixed Milestone Fee & Incentive Recovery Alignment'
+    },
+    verticals: [
+      {
+        id: 'iec-dgft-licensing',
+        title: 'Importer-Exporter Code (IEC) & DGFT Registration',
+        badge: 'DGFT Licensing',
+        summary: 'Obtaining and updating the mandatory 10-digit Importer-Exporter Code (IEC) from the Directorate General of Foreign Trade (DGFT).',
+        scope: [
+          'Online IEC Application Filing via DGFT Portal & PAN Verification',
+          'Annual Mandatory IEC Online Updation & Profile Validation',
+          'Resolution of DGFT Deficiencies, Query Handling & Portal Approvals',
+          'Linking Digital Signature Certificates (DSC Class-3) with DGFT Profile'
+        ],
+        marketImpact: 'Establishes lawful legal authorization for commercial import-export operations within 48 to 72 hours.'
+      },
+      {
+        id: 'rcmc-promotion-councils',
+        title: 'Export Promotion Council (RCMC) Registration',
+        badge: 'Export Incentives',
+        summary: 'Securing Registration-cum-Membership Certificates (RCMC) across competent Export Promotion Councils and Commodity Boards.',
+        scope: [
+          'Identification of Applicable Council (APEDA, FIEO, EEPC, Chemexcil, TEXPROCIL, etc.)',
+          'RCMC Application Dossier Preparation & Membership Fee Processing',
+          'Endorsement of Primary Product Lines & Manufacturer/Merchant Categorization',
+          'Timely Annual Renewals & Council Compliance Filing'
+        ],
+        marketImpact: 'Mandatory prerequisite for claiming Central Government export benefits, duty drawbacks, and foreign buyer subsidies.'
+      },
+      {
+        id: 'export-incentive-schemes',
+        title: 'Export Incentive Schemes (RoDTEP, EPCG & Advance Auth)',
+        badge: 'Cash Incentives',
+        summary: 'Maximizing non-repayable government cash incentives and customs duty exemptions under the Foreign Trade Policy (FTP 2023).',
+        scope: [
+          'RoDTEP (Remission of Duties and Taxes on Exported Products) Scrip Claims',
+          'EPCG (Export Promotion Capital Goods) Scheme: 0% Customs Duty on Imported Machinery',
+          'Advance Authorization Scheme for Duty-Free Import of Raw Materials',
+          'Duty Drawback (DBK) Filing & ICEGATE Portal Ledger Monitoring'
+        ],
+        marketImpact: 'Directly recovers 2% to 6% of FOB export value into the exporter bank account, significantly increasing profit margins.'
+      },
+      {
+        id: 'customs-documentation',
+        title: 'Customs Clearance & Trade Documentation',
+        badge: 'Customs Compliance',
+        summary: 'Preparing flawless shipping and customs documentation to avoid port demurrage, customs queries, or shipment rejection.',
+        scope: [
+          'Commercial Invoice, Packing List & Certificate of Origin (COO / Preferential)',
+          'Accurate HSN Tariff Classification & Customs Duty Rate Computation',
+          'Bill of Lading (B/L) & Airway Bill (AWB) Coordination with Freight Forwarders',
+          'FSSAI, Phytosanitary, Fumigation & Pre-Shipment Inspection Certificates'
+        ],
+        marketImpact: 'Ensures zero shipment hold-ups at JNPT, Mumbai Port, or Air Cargo terminals, saving substantial detention costs.'
+      },
+      {
+        id: 'trade-finance-fema',
+        title: 'Letter of Credit (LC) & Trade Finance Advisory',
+        badge: 'Trade Financing',
+        summary: 'Structuring secure international payment instruments and ensuring strict adherence to RBI Foreign Exchange Management Act (FEMA) guidelines.',
+        scope: [
+          'Irrevocable Confirmed Letter of Credit (LC) Vetting & Risk Elimination',
+          'Pre-Shipment Packing Credit (EPC) & Post-Shipment Export Bill Discounting',
+          'EDPMS (Export Data Processing and Monitoring System) Reconciliation',
+          'Foreign Inward Remittance Certificate (FIRC / e-BRC) Bank Issuance Coordination'
+        ],
+        marketImpact: 'Protects the exporter against international buyer payment defaults while maintaining pristine RBI compliance.'
+      },
+      {
+        id: 'global-market-research',
+        title: 'Global Market Identification & Buyer Connect',
+        badge: 'Global Outreach',
+        summary: 'Analyzing global trade databases to identify high-demand overseas markets, tariff preferences, and verified international buyers.',
+        scope: [
+          'Country-Wise Import Demand Trends & Free Trade Agreement (FTA) Tariff Benefits',
+          'Overseas Buyer Background Check & Dun & Bradstreet / ECGC Credit Rating Verification',
+          'ECGC (Export Credit Guarantee Corporation) Credit Insurance Policy Setup',
+          'Participation in International Trade Fairs & Embassy Commercial Desk Linkages'
+        ],
+        marketImpact: 'Guides Indian producers toward the most profitable global destinations while eliminating non-payment risks.'
+      }
+    ],
+    marginTiers: [
+      {
+        category: 'IEC & Regulatory Registration Pack',
+        promoterEquity: 'New Exporters',
+        subsidyGrant: 'IEC + RCMC',
+        bankDebt: '3 - 5 Days',
+        criteria: 'DGFT portal setup, IEC issuance, Class-3 DSC linking, and RCMC council membership for new export businesses.'
+      },
+      {
+        category: 'Single Consignment Clearance Pack',
+        promoterEquity: 'Per Shipment Basis',
+        subsidyGrant: 'Customs Ready',
+        bankDebt: 'Per Dispatch',
+        criteria: 'Complete shipping documentation, HSN code verification, packing list, certificate of origin, and customs checklist.'
+      },
+      {
+        category: 'Export Incentive Recovery Sprint',
+        promoterEquity: 'Active Exporters',
+        subsidyGrant: 'Cash Scrip Release',
+        bankDebt: '30 Days Sprint',
+        criteria: 'Filing, tracking, and monetizing accumulated RoDTEP, Duty Drawback, and EPCG fulfillment certificates.'
+      },
+      {
+        category: 'Annual International Trade Retainership',
+        promoterEquity: 'Corporate Exporters',
+        subsidyGrant: 'Comprehensive Trade',
+        bankDebt: '12 Months Retainer',
+        criteria: 'Full-spectrum foreign trade compliance, LC vetting, EDPMS reconciliation, trade finance advisory, and DGFT audits.'
+      }
+    ],
+    documents: [
+      {
+        group: '1. Basic Statutory Identity',
+        items: [
+          'Company PAN Card & Certificate of Incorporation / Partnership Deed',
+          'Aadhaar & PAN cards of all Directors, Partners, or the Proprietor',
+          'Cancelled company bank cheque with pre-printed account name and IFSC code',
+          'Electricity bill or registered property lease agreement for the official business address'
+        ]
+      },
+      {
+        group: '2. Product & Technical Details',
+        items: [
+          'List of products intended for import or export with common and commercial names',
+          'Proposed 8-digit HSN (Harmonized System of Nomenclature) classification codes',
+          'Product catalog, technical specifications, and packaging dimensions',
+          'Food / Organic / Chemical test reports (if dealing in agri, food, or chemical sectors)'
+        ]
+      },
+      {
+        group: '3. Digital & Portal Credentials',
+        items: [
+          'Valid Class-3 Digital Signature Certificate (DSC) for DGFT portal registration',
+          'Active business email address and mobile number linked with Aadhaar OTP',
+          'Bank authorized dealer (AD Code) letter on bank letterhead for port registration',
+          'ICEGATE portal registration credentials (if existing)'
+        ]
+      },
+      {
+        group: '4. Commercial & Shipping Records (For Active Exporters)',
+        items: [
+          'Proforma Invoice / Purchase Order received from the international buyer',
+          'Draft Letter of Credit (LC) or agreed commercial payment terms',
+          'Previous Shipping Bills, Bills of Lading, and e-BRC statements (for incentive claims)',
+          'ECGC insurance policy copy (if covered)'
+        ]
+      }
+    ],
+    roadmaps: [
+      {
+        phase: 'Phase 1',
+        title: 'DGFT Licensing & Portal Registration',
+        timeline: 'Week 1',
+        desc: 'Filing for the Importer-Exporter Code (IEC), linking Class-3 DSC, and registering AD code at key ports (JNPT, Mumbai Air Cargo, ICD).',
+        deliverables: ['Issued Importer-Exporter Code (IEC)', 'Active DGFT & ICEGATE Registered Profiles', 'Bank AD Code Port Registration']
+      },
+      {
+        phase: 'Phase 2',
+        title: 'Council Membership (RCMC) & Tariff Classification',
+        timeline: 'Week 2',
+        desc: 'Submitting RCMC applications to relevant Export Promotion Councils (APEDA, FIEO, EEPC) and establishing verified 8-digit HSN codes.',
+        deliverables: ['Active RCMC Council Certificate', 'Validated HSN Code & Customs Tariff Schedule', 'Export Incentive Eligibility Matrix']
+      },
+      {
+        phase: 'Phase 3',
+        title: 'Shipment Documentation & Customs Clearance',
+        timeline: 'Week 3 – Week 4',
+        desc: 'Preparing commercial invoices, packing lists, certificates of origin, and coordinating with freight forwarding partners for customs clearance.',
+        deliverables: ['Full Export Shipping Documentation Dossier', 'Checklist for Customs Shipping Bill Clearance', 'Phytosanitary / Lab Certificate Clearance']
+      },
+      {
+        phase: 'Phase 4',
+        title: 'Incentive Monetization & EDPMS Closure',
+        timeline: 'Post-Shipment',
+        desc: 'Claiming RoDTEP scrips, ensuring timely e-BRC generation through commercial banks, and closing EDPMS entries on the RBI portal.',
+        deliverables: ['Credited RoDTEP / Duty Drawback Benefits', 'Bank e-BRC / FIRC Issuance Confirmation', 'Complete EDPMS Audit Closure']
+      }
+    ],
+    regionalPresence: {
+      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Nashik', 'Chhatrapati Sambhajinagar', 'Mumbai & Navi Mumbai', 'Solapur'],
+      industrialAreas: ['MIDC Nagapur', 'MIDC Supa Parner', 'Agri-Export Zones (AEZ)', 'JNPT Nhava Sheva Port', 'Mumbai Air Cargo Terminal'],
+      bankLinkages: ['Authorized Dealer Category-1 Commercial Banks', 'Export-Import Bank of India (EXIM Bank)', 'ECGC Limited']
+    },
+    faqs: [
+      {
+        q: 'Is an Importer-Exporter Code (IEC) mandatory for all foreign trade from India?',
+        a: 'Yes. Under the Foreign Trade (Development and Regulation) Act, no commercial import or export shipment can be processed through Indian customs without a valid 10-digit Importer-Exporter Code (IEC) issued by the DGFT. An IEC is issued once for a PAN and remains valid indefinitely, subject to mandatory annual online profile confirmation.'
+      },
+      {
+        q: 'What is RoDTEP and how can exporters in Maharashtra benefit from it?',
+        a: 'RoDTEP (Remission of Duties and Taxes on Exported Products) is a premier government incentive scheme that refunds embedded central, state, and local taxes (such as electricity duty, stamp duty, VAT on fuel used in transportation) that are not refunded through GST. Exporters receive duty credit scrips (typically 0.5% to 4.3% of FOB value) that can be used to pay customs duties or traded for cash.'
+      },
+      {
+        q: 'What is an RCMC and why do I need it if I already have an IEC?',
+        a: 'While the IEC is a statutory license to trade, an RCMC (Registration-cum-Membership Certificate) from an Export Promotion Council (such as APEDA for agricultural products or EEPC for engineering items) is required to claim export subsidies, duty concessions under Foreign Trade Policy, and participate in subsidized international trade delegations.'
+      },
+      {
+        q: 'How does the EPCG Scheme help manufacturers importing machinery?',
+        a: 'The Export Promotion Capital Goods (EPCG) Scheme allows manufacturers to import modern production machinery at 0% customs duty. In return, the unit undertakes an export obligation equivalent to 6 times the duty saved over a 6-year period. We assist in filing EPCG applications, tracking fulfillment, and securing final Redemption Letters from DGFT.'
+      },
+      {
+        q: 'Can you assist agricultural exporters in Ahilyanagar with onion, grape, and sugar exports?',
+        a: 'Yes. Ahilyanagar and Western Maharashtra are prominent agricultural belts. We specialize in APEDA registrations, phytosanitary certifications, quarantine documentation, export quality testing coordination, and Letter of Credit verification for agri-commodities including fresh onions, pomegranates, grapes, jaggery, and processed foods.'
+      },
+      {
+        q: 'How do you protect exporters from foreign buyer payment fraud?',
+        a: 'We guide exporters on utilizing Irrevocable Letters of Credit (LC) confirmed by top-tier international banks, establishing advance payment terms, and securing comprehensive export credit insurance policies through the Export Credit Guarantee Corporation of India (ECGC), which protects up to 90% of losses from foreign buyer insolvency or political defaults.'
+      },
+      {
+        q: 'What is an AD Code and why is port registration required?',
+        a: 'An Authorized Dealer (AD) Code is a 14-digit code issued by your bank branch where your foreign exchange transactions occur. This code must be registered at every specific port of export (e.g. JNPT Nhava Sheva or Air Cargo Mumbai) on the ICEGATE portal before customs can generate shipping bills for your consignments.'
+      },
+      {
+        q: 'How do I start my export journey with AB Consultancy?',
+        a: 'Schedule a consultation with our foreign trade advisory desk. We will evaluate your product line, verify HSN classifications, handle your IEC and council memberships, and structure a seamless roadmap for your first international shipment.'
+      }
+    ],
+    relatedServices: [
+      { id: 'market-linkage', code: 'ML', name: 'Market Linkage', desc: 'Connect with institutional corporate buyers & B2B procurement networks.' },
+      { id: 'business-finance', code: 'BF', name: 'Business & Finance', desc: 'Pre-shipment packing credit, LC discounting & export trade finance.' },
+      { id: 'licenses-approvals', code: 'LA', name: 'Licenses & Approvals', desc: 'FSSAI, environmental clearances, and factory licenses for export units.' }
+    ]
+  },
+
+  // =========================================================================
+  // SERVICE 5: BUSINESS & FINANCE ADVISORY
+  // =========================================================================
+  'business-finance': {
+    id: 'business-finance',
+    code: 'BF',
+    slug: 'business-finance',
+    name: 'Business & Financial Advisory Services',
+    shortTitle: 'Business & Finance',
+    categoryBadge: 'Capital Syndication & Debt Structuring',
+    department: 'Project Finance, CMA Modeling & Credit Syndication Practice',
+    portal: 'Institutional Debt Advisory & Ex-Bank Credit Appraisal Desk',
+    heroTitle: 'Business & Financial Advisory in Ahilyanagar & Maharashtra',
+    heroHighlight: 'Institutional Financial Structuring, Bank Loan Syndication & CMA Feasibility Modeling',
+    heroDesc: 'Led by ex-bank credit appraisal specialists, we provide end-to-end corporate financial advisory. From bank-compliant CMA data and Detailed Project Reports (DPR) to working capital optimization, machinery term loans, debt restructuring, and promoter equity structuring across 40+ scheduled banks.',
+    jtbd: {
+      statement: "When an expanding business, manufacturing plant, or commercial enterprise needs institutional bank funding or faces financial friction, they want ex-banker grade credit appraisal, CMA financial modeling, and debt syndication, so they can secure low-interest loans, optimize working capital, and eliminate bank sanction rejections.",
+      situation: "Enterprise requiring capital expansion debt, working capital enhancements, or financial restructuring to eliminate balance sheet stress.",
+      motivation: "Present pristine techno-economic reports and CMA data that meet commercial bank credit committee appraisal criteria.",
+      outcome: "Quick bank sanction, competitive interest pricing, optimized Drawing Power (DP), and structured long-term balance sheet health."
+    },
+    seo: {
+      title: 'Business & Finance Advisory Ahilyanagar | Project Loan & CMA Consultant Maharashtra',
+      description: 'Premier business & financial consultancy in Ahilyanagar & Maharashtra. Bank loan syndication, CMA data modeling, project finance, working capital optimization & debt restructuring.',
+      canonical: 'https://www.abconsultancy.net.in/services/business-finance',
+      keywords: 'Business and Finance Consultant Ahilyanagar, Project Finance Consultant Nagar, CMA Data Preparation Maharashtra, Working Capital Loan Consultant Savedi, Bank Loan Syndication Pune, Debt Restructuring Ahmednagar'
+    },
+    directAnswer: {
+      question: 'What is Business & Finance Advisory and how does AB Consultancy ensure bank loan sanctions?',
+      answer: 'Business & Finance Advisory at AB Consultancy delivers institutional-grade financial modeling and bank debt syndication. Led by former senior bank credit managers, we prepare RBI-compliant CMA data, techno-economic feasibility studies (TEV), working capital assessments (MPBF), and coordinate directly with bank credit committees across 40+ scheduled public and private commercial banks to achieve seamless credit sanctions.'
+    },
+    trustStats: [
+      { label: 'Syndicated Debt', value: '₹500+ Cr', sub: 'Sanctioned Term Loans & Working Capital' },
+      { label: 'Bank Approvals', value: '99.4%', sub: 'First-Time Credit Committee Clearance' },
+      { label: 'Advisory Experience', value: '15+ Years', sub: 'Ex-Bank Credit Appraisal Leadership' },
+      { label: 'Partner Banks', value: '40+', sub: 'PSU, Private & Cooperative Institutions' }
+    ],
+    architecture: {
+      quantum: '₹25 Lakhs up to ₹50 Crores Project Debt',
+      bankDebt: 'Term Loans, CC / OD, Machinery Loans & Infrastructure Debt',
+      subsidyPct: 'Integrated with Central & State Interest Subventions',
+      moratorium: 'Up to 24 Months Construction / Gestation Moratorium',
+      tenor: '5 to 10 Years Repayment Amortization',
+      interestRate: 'Competitive EBLR / RLLR Linked Commercial Rates'
+    },
+    verticals: [
+      {
+        id: 'cma-dpr-modeling',
+        title: 'CMA Data Modeling & Detailed Project Reports (DPR)',
+        badge: 'Credit Modeling',
+        summary: 'Compiling bank-compliant Credit Monitoring Arrangement (CMA) data and Techno-Economic Feasibility Reports vetted against strict underwriting norms.',
+        scope: [
+          '10-Year Projected Balance Sheets, P&L Statements & Cash Flow Sensitivity',
+          'Calculation of Key Ratios: DSCR, Current Ratio, TOL/TNW, DER & ROCE',
+          'Techno-Economic Feasibility (TEV) Justification & Market Feasibility',
+          'Pre-Appraisal Audit against Target Bank Credit Policy Norms'
+        ],
+        marketImpact: 'Eliminates typical bank queries and credit officer rejections, cutting loan sanction turnaround times by half.'
+      },
+      {
+        id: 'term-loan-syndication',
+        title: 'Bank Term Loans & Machinery Finance Syndication',
+        badge: 'Term Lending',
+        summary: 'Securing long-term institutional debt for industrial land, factory building construction, solar plants, and specialized plant machinery.',
+        scope: [
+          'Project Cost Sizing & Debt-to-Equity Capital Structuring',
+          'Liaison with PSU Commercial Banks, Private Banks & Financial Institutions',
+          'Negotiation of Interest Rate Spreads, Processing Fees & Moratorium Periods',
+          'Disbursement Documentation & Stage-Wise Escrow Release Management'
+        ],
+        marketImpact: 'Optimizes debt repayment terms, ensuring positive debt service coverage (DSCR > 1.5) throughout the project gestation cycle.'
+      },
+      {
+        id: 'working-capital-optimization',
+        title: 'Working Capital Optimization (CC, OD & Non-Fund Limits)',
+        badge: 'Liquidity Engineering',
+        summary: 'Structuring maximum permissible bank finance (MPBF) turnover limits, cash credit lines, overdrafts, and trade instruments (LC / BG).',
+        scope: [
+          'Operating Cycle & Drawing Power (DP) Deficit Reconciliation',
+          'Cash Credit (CC) & Overdraft (OD) Sanctions against Primary Hypothecation',
+          'Letter of Credit (LC) & Bank Guarantee (BG) Non-Fund Credit Lines',
+          'Stock Statement Audits & Debtor Aging Reconciliation Protocols'
+        ],
+        marketImpact: 'Frees trapped balance sheet liquidity, allowing industrial enterprises to accept larger supplier orders and execute seamlessly.'
       },
       {
         id: 'debt-restructuring',
-        title: 'Debt Restructuring & Stress Resolution',
+        title: 'Financial Restructuring & High-Cost Debt Consolidation',
         badge: 'Balance Sheet Repair',
-        summary: 'Consolidating high-cost unsecured business loans and NBFC facilities into single low-interest institutional bank facilities.',
+        summary: 'Refinancing expensive non-banking debt, swapping high-interest credit lines, and resolving operational liquidity stress before SMA classifications.',
         scope: [
-          'High-Interest Debt Consolidation into Long-Term Low-Cost Term Loans',
-          'Tenor Extension & Repayment Rescheduling Proposals for Banks',
-          'Resolution of Pre-NPA (SMA-0, SMA-1, SMA-2) Account Irregularities',
-          'Collateral Release & Primary Security Realignment Negotiations'
+          'High-Cost Loan Takeover & Low-Interest Institutional Replacement',
+          'Tenor Extension & Repayment Rescheduling Negotiations',
+          'Collateral Optimization & Release of Excess Pledged Mortgages',
+          'Preventive Resolution to Avoid Special Mention Account (SMA) Slips'
         ],
-        marketImpact: 'Immediate reduction in monthly debt service obligations, revitalizing cash flows for business continuity.'
+        marketImpact: 'Lowers annual interest expense by 3% to 6%, restoring cash solvency and protecting promoter credit ratings.'
+      },
+      {
+        id: 'ex-banker-appraisal',
+        title: 'Ex-Banker Credit Appraisal & Risk Alignment',
+        badge: 'Institutional Appraisal',
+        summary: 'Direct internal review by former Chief Managers and Scale-IV bank credit underwriters to identify credit flaws prior to formal submission.',
+        scope: [
+          'Mock Credit Committee Evaluation & Weakness Rectification',
+          'CIBIL Commercial & Personal Credit Score Cleansing Strategies',
+          'Formulation of Mitigation Strategies for Project Vulnerabilities',
+          'Direct Coordination with Bank Zonal Credit Processing Centers (ZCPC)'
+        ],
+        marketImpact: 'Transforms borderline loan proposals into AAA-rated credit files that breeze through bank appraisal committees.'
+      },
+      {
+        id: 'cash-flow-budgeting',
+        title: 'Capital Budgeting & Corporate Financial Controls',
+        badge: 'Financial Governance',
+        summary: 'Implementing automated MIS reporting, cash flow sensitivity models, and internal financial controls for emerging corporate entities.',
+        scope: [
+          'Automated Monthly MIS Dashboard & Working Capital Variance Tracking',
+          'Fixed vs Variable Cost Segregation & Contribution Margin Audits',
+          'Tax-Efficient Capital Structuring & Promoter Equity Infusion Planning',
+          'Bank Relationship Management & Annual Facility Renewal Coordination'
+        ],
+        marketImpact: 'Establishes institutional financial discipline, preparing family-run units for consortium banking or external private equity.'
       }
     ],
     marginTiers: [
+      {
+        category: 'Credit Appraisal & CMA Preparation',
+        promoterEquity: 'Document Pack',
+        subsidyGrant: 'CMA + DPR',
+        bankDebt: '7 - 10 Days',
+        criteria: 'Comprehensive financial modeling, 10-year projections, DSCR analysis, and bank-ready CMA data pack.'
+      },
       {
         category: 'Working Capital Enhancement',
-        promoterEquity: 'Existing Units',
-        subsidyGrant: 'CC / OD Facility',
-        bankDebt: '₹50L to ₹10 Cr',
-        criteria: 'Comprehensive renewal, limit enhancement, and drawing power restructuring based on turnover growth.'
+        promoterEquity: 'Active Units',
+        subsidyGrant: 'Limit Increase',
+        bankDebt: '30 - 45 Days',
+        criteria: 'Turnover-based MPBF calculation, drawing power audit, stock audit coordination, and CC/OD enhancement.'
       },
       {
-        category: 'Greenfield Project Debt',
-        promoterEquity: 'New Factory Setup',
-        subsidyGrant: 'Term Loan + CC',
-        bankDebt: '₹1 Cr to ₹50 Cr',
-        criteria: 'End-to-end DPR formulation, CMA data submission, bank selection, and sanction letter procurement.'
+        category: 'End-to-End Term Loan Syndication',
+        promoterEquity: 'Capex Projects',
+        subsidyGrant: 'Full Sanction',
+        bankDebt: '45 - 60 Days',
+        criteria: 'Complete project financing from DPR drafting, bank pitching, ZCPC defense, to sanction letter and disbursement.'
       },
       {
-        category: 'High-Cost Debt Consolidation',
-        promoterEquity: 'Debt Rationalization',
-        subsidyGrant: 'Cost Reduction',
-        bankDebt: 'Custom Quantum',
-        criteria: 'Replacing expensive 16%–22% NBFC unsecured debt with 9.5%–11.0% institutional bank mortgage credit.'
-      },
-      {
-        category: 'Retainer Financial Advisory',
-        promoterEquity: 'Corporate Practice',
-        subsidyGrant: 'CFO-as-a-Service',
-        bankDebt: 'Annual Retainer',
-        criteria: 'Quarterly banking review, stock audit facilitation, credit rating management, and multi-bank liaison.'
+        category: 'Financial Turnaround & Debt Swap',
+        promoterEquity: 'Stressed Units',
+        subsidyGrant: 'Restructuring',
+        bankDebt: '60 Days Sprint',
+        criteria: 'High-cost loan consolidation, bank takeover syndication, collateral restructuring, and interest subvention mapping.'
       }
     ],
     documents: [
       {
-        group: '1. Financial Statements & Tax Returns',
+        group: '1. Financial & Tax Statements',
         items: [
-          'Audited Balance Sheet, Profit & Loss A/c, and Audit Reports for last 3 years',
-          'Income Tax Returns (ITR) of Enterprise and Promoters with computation sheets',
-          'GST returns (GSTR-1 and GSTR-3B) for the preceding 12 months',
-          'Current year provisional balance sheet and trial balance certified by CA'
+          'Audited Balance Sheets & Profit & Loss statements with all schedules for last 3 years',
+          'Income Tax Returns (ITR) with complete Computation of Income for 3 assessment years',
+          'Last 12 months comprehensive bank statements for all current, CC, OD, and saving accounts',
+          'Provisional Balance Sheet & Trial Balance for the current ongoing financial year'
         ]
       },
       {
-        group: '2. Banking & Borrowing Track Record',
+        group: '2. Project & Capex Quotations',
         items: [
-          'Bank account statements of all current, CC, OD, and term loan accounts for 12 months',
-          'Sanction letters of all existing credit facilities from all banks/NBFCs',
-          'No-Dues Certificates or Account Closure Letters for closed loan accounts',
-          'Latest CIBIL / Experian commercial and personal credit score reports'
+          'Detailed quotation/proforma invoices for all proposed plant, machinery, and equipment',
+          'Civil architect detailed cost estimates & layout plan for factory/building construction',
+          'Electricity sanction letter / power quotation from MSEDCL',
+          'Industrial land registered sale deed / 95-year MIDC lease agreement with possession receipt'
         ]
       },
       {
-        group: '3. Collateral & Property Title Records',
+        group: '3. Existing Debt & Credit Details',
         items: [
-          'Registered Sale Deed / Title Deed / Lease Agreement of primary factory land',
-          'Registered Title Deeds of collateral immovable properties offered as security',
-          'Latest 7/12 Extracts, City Survey (CTS) extracts, and Non-Agricultural (NA) orders',
-          'Architect Valuation Report and Legal Search Title Report for 30 years'
+          'Sanction letters of all existing Term Loans, CC, OD, and car/personal loans',
+          'Latest Loan Account Statements (LAS) showing punctual EMI repayment track',
+          'Latest stock statement & book debt statement (for working capital applications)',
+          'CIBIL credit report / score authorization of all directors and promoters'
         ]
       },
       {
-        group: '4. Project & Quotation Data',
+        group: '4. KYC & Corporate Registrations',
         items: [
-          'Plant & Machinery quotations with detailed technical specifications and GST',
-          'Civil construction estimate signed by licensed architect or chartered engineer',
-          'Confirmed sales orders / Letter of Intent (LOI) from institutional buyers',
-          'Detailed Project Report (DPR) drafted by AB Consultancy'
+          'PAN & Aadhaar cards of all Directors, Partners, and Promoters',
+          'Certificate of Incorporation / Registered Partnership Deed / LLP Agreement',
+          'GST Registration Certificate & 12 months GSTR-3B filing summaries',
+          'Udyam MSME Registration Certificate with corresponding manufacturing NIC codes'
         ]
       }
     ],
     roadmaps: [
       {
         phase: 'Phase 1',
-        title: 'Financial Health Audit & Borrowing Assessment',
-        timeline: 'Day 1 – Day 5',
-        desc: 'Reviewing past 3 years financials, analyzing current debt service burden, assessing CIBIL track record, and determining optimal borrowing quantum and bank product mix.',
-        deliverables: ['Financial Health Diagnostic Card', 'Maximum Borrowing Capacity Calculation', 'Target Bank Shortlisting']
-      },
-      {
-        phase: 'Phase 2',
-        title: 'CMA Data Engineering & DPR Integration',
-        timeline: 'Day 6 – Day 12',
-        desc: 'Formulating rigorous CMA data sheets, testing DSCR thresholds under varying revenue scenarios, and aligning project metrics with specific bank credit policies.',
-        deliverables: ['Audited-Standard CMA Data Model (5 Years)', 'Debt Service Schedule & Sensitivity Analysis', 'Bank-Compliant Project Proposal']
-      },
-      {
-        phase: 'Phase 3',
-        title: 'Bank Submission & Appraisal Liaison',
-        timeline: 'Day 13 – Day 25',
-        desc: 'Submitting loan dossiers to chosen PSU/Private commercial banks, handling credit officer queries, facilitating site inspections, and presenting proposals at zonal credit committees.',
-        deliverables: ['Pre-Sanction Inspection Report', 'Credit Processing Response Memo', 'Formal Bank Sanction Letter (In-Principle)']
-      },
-      {
-        phase: 'Phase 4',
-        title: 'Sanction Optimization & Disbursement',
-        timeline: 'Day 26 – Day 35',
-        desc: 'Negotiating interest rate spreads, resolving loan agreement covenants, completing equitable mortgage documentation, and executing final fund disbursement.',
-        deliverables: ['Optimized Final Sanction Letter', 'Equitable Mortgage & ROC Charge Filing', 'Disbursement of Funds into Escrow / Account']
-      }
-    ],
-    regionalPresence: {
-      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Chhatrapati Sambhajinagar', 'Nashik', 'Solapur', 'Kolhapur'],
-      industrialAreas: ['MIDC Nagapur', 'MIDC Supa', 'MIDC Shrirampur', 'MIDC Kopargaon', 'MIDC Bhosari', 'MIDC Ranjangaon'],
-      bankLinkages: ['State Bank of India', 'Bank of Maharashtra', 'Punjab National Bank', 'Union Bank of India', 'Bank of Baroda', 'SIDBI']
-    },
-    faqs: [
-      {
-        q: 'What is CMA data and why is it critical for bank loan approvals?',
-        a: 'CMA stands for Credit Monitoring Arrangement. It is the standardized financial framework used by commercial banks to evaluate the creditworthiness of a business. It presents historical financials alongside 5-year future projections, computing key lending metrics like Net Working Capital, Current Ratio, DSCR, and Maximum Permissible Bank Finance (MPBF). Poorly structured CMA data is the #1 cause of bank loan delays and rejections.'
-      },
-      {
-        q: 'What minimum DSCR (Debt Service Coverage Ratio) do banks require for term loans?',
-        a: 'Commercial banks typically seek an average DSCR between 1.50 and 2.00, with a minimum threshold of 1.25 in any single fiscal year. A DSCR below 1.20 indicates high repayment default risk, whereas an excessively high DSCR indicates conservative under-utilization of leverage. We calibrate your financial projections to hit the sweet spot for rapid loan approval.'
-      },
-      {
-        q: 'Can AB Consultancy help secure collateral-free loans under CGTMSE?',
-        a: 'Yes. Under the Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE), eligible manufacturing and service enterprises can secure collateral-free bank loans up to ₹5 Crores without pledging private residential property. We structure your application specifically to qualify under CGTMSE norms.'
-      },
-      {
-        q: 'How does AB Consultancy negotiate lower bank interest rates for its clients?',
-        a: 'By presenting pristine, auditable CMA data, demonstrating robust DSCR, highlighting eligible government interest subventions (such as 3% under AIF or PSI incentives), and introducing competitive quotes across multiple PSU and private banking partners, we create institutional leverage that typically reduces borrowing interest spreads by 100 to 250 basis points.'
-      },
-      {
-        q: 'My business has multiple high-interest unsecured loans. Can you help consolidate them?',
-        a: 'Yes. We specialize in Debt Consolidation Advisory. We evaluate your aggregate outstanding debt, identify available primary or collateral assets, and structure a long-term commercial Mortgage Loan or Term Loan at 9.5%–11.0% interest to pay off expensive 18%–24% unsecured loans, instantly slashing your monthly EMI outflow by up to 40%.'
-      },
-      {
-        q: 'Do you assist with non-fund-based facilities like Letters of Credit (LC) and Bank Guarantees (BG)?',
-        a: 'Yes. For industrial contractors, EPC firms, and import/export enterprises, we structure Letter of Credit and Bank Guarantee limits with minimal 10%–15% cash margin requirements and competitive issuance charges.'
-      },
-      {
-        q: 'How long does the financial consultancy and loan sanction process take?',
-        a: 'CMA data formulation takes 3 to 5 business days. Once submitted to the bank, initial sanction letters are secured within 15 to 25 business days, followed by mortgage documentation and fund disbursement.'
-      },
-      {
-        q: 'What are the charges for financial consultancy and debt syndication?',
-        a: 'Our fee structure is transparent, ethical, and predominantly milestone-linked. We charge a modest upfront file processing fee for CMA data and DPR preparation, with the primary advisory fee payable only upon successful receipt of the formal Bank Sanction Letter.'
-      }
-    ],
-    relatedServices: [
-      { id: 'project-report-preparation', code: 'DPR', name: 'Project Report Preparation', desc: 'Bank-compliant TEV feasibility reports & financial projections.' },
-      { id: 'business-consultancy', code: 'BC', name: 'Business Consultancy', desc: 'Strategic scaling, SOP deployment, and operational diagnostics.' },
-      { id: 'subsidy-application-assistance', code: 'SAA', name: 'Subsidy Assistance', desc: 'Post-sanction capital grant release & interest subventions.' }
-    ]
-  },
-
-  'project-report-preparation': {
-    id: 'project-report-preparation',
-    code: 'DPR',
-    slug: 'project-report-preparation',
-    name: 'Detailed Project Report (DPR) & TEV Study Preparation',
-    shortTitle: 'Project Report Preparation',
-    categoryBadge: 'Bank-Compliant DPR & TEV Feasibility',
-    department: 'Financial Modeling & Techno-Economic Feasibility Division',
-    portal: 'Institutional DPR & Banking CMA Documentation Desk',
-    heroTitle: 'Bank-Compliant Project Report (DPR) Preparation in Ahilyanagar',
-    heroHighlight: 'Mathematically Rigorous, CA-Approved Detailed Project Reports Designed for 100% Bank Approval',
-    heroDesc: 'Preparation of comprehensive, bank-compliant Detailed Project Reports (DPR) and Techno-Economic Viability (TEV) studies for MSME term loans, corporate project finance, and government subsidies. Our reports are custom-tailored to the underwriting standards of SBI, Bank of Maharashtra, PNB, Canara Bank, and private institutional lenders across Maharashtra.',
-    jtbd: {
-      statement: "When an entrepreneur or industrial enterprise applies for a bank term loan or government subsidy, they want a meticulously drafted, bank-compliant Detailed Project Report (DPR) with CMA data and financial projections, so they can satisfy bank credit appraisal committees and secure loan sanctions without delays or technical queries.",
-      situation: "Promoter needing a formal, comprehensive Detailed Project Report for a project loan from ₹20 Lakhs to ₹50+ Crores.",
-      motivation: "Present flawless technical, market, financial, and risk feasibility that inspires complete confidence in bank credit managers.",
-      outcome: "Immediate sanction clearance, zero credit committee rejections, and seamless qualification for government subsidy schemes."
-    },
-    seo: {
-      title: 'Project Report Preparation Ahilyanagar | Bank DPR Consultant Maharashtra',
-      description: 'Professional Detailed Project Report (DPR) preparation in Ahilyanagar & Maharashtra. Bank-compliant TEV studies, CMA data, financial modeling & subsidy DPRs.',
-      canonical: 'https://www.abconsultancy.net.in/services/project-report-preparation',
-      keywords: 'Project Report Preparation Ahilyanagar, Bank DPR Consultant Nagar, Detailed Project Report Maharashtra, TEV Study Consultant Ahmednagar, Bank Loan DPR Savedi, CMA Data Project Report Specialist'
-    },
-    directAnswer: {
-      question: 'What is a Detailed Project Report (DPR) and why is it essential for securing bank loans in Maharashtra?',
-      answer: 'A Detailed Project Report (DPR) is an exhaustive techno-economic feasibility document required by commercial banks and government agencies before sanctioning term loans and capital subsidies. It details the project background, promoter profile, manufacturing process, civil blueprints, plant & machinery specifications, market demand analysis, 5-to-7-year projected financial statements (P&L, Balance Sheet, Cash Flows), DSCR, break-even point, and internal rate of return (IRR). AB Consultancy delivers institutional-grade DPRs that pass stringent credit scrutiny.'
-    },
-    trustStats: [
-      { label: 'DPRs Formulated', value: '3,200+', sub: 'Bank-Sanctioned Reports' },
-      { label: 'Cumulative Project Capex', value: '₹1,200+ Cr', sub: 'Analyzed & Financed' },
-      { label: 'Bank Sanction Ratio', value: '99.2%', sub: 'First-Appraisal Approval' },
-      { label: 'Delivery Turnaround', value: '4 to 7 Days', sub: 'Express Bank Modeling' }
-    ],
-    architecture: {
-      quantum: 'Projects from ₹10 Lakhs (PMEGP) to ₹100+ Crores (Mega Projects)',
-      bankDebt: 'Standardized for All Public Sector & Commercial Bank Formats',
-      subsidyPct: 'Pre-Formatted for PMEGP, CMEGP, PMFME, AIF & PSI Subsidies',
-      moratorium: 'Integrated Principal Moratorium Modeling (6–24 Months)',
-      tenor: 'Financial Forecast Horizon from 5 to 10 Operating Years',
-      interestRate: 'Real-Time Bank Benchmark Sensitivity & Breakeven Analysis'
-    },
-    verticals: [
-      {
-        id: 'manufacturing-dpr',
-        title: 'Manufacturing & Industrial Engineering DPRs',
-        badge: 'Industrial Capex',
-        summary: 'Techno-economic feasibility documentation for engineering workshops, fabrication, plastic moulding, packaging, chemical, and building material plants.',
-        scope: [
-          'Detailed Manufacturing Flowchart, Mass Balance & Machine Specifications',
-          'Civil Construction Blueprints & Plinth Area Cost Computations',
-          'Raw Material Bill of Materials (BOM) & Sourcing Supply Chain Modeling',
-          'Production Capacity Utilization Curves (Year 1 to Year 7)'
-        ],
-        marketImpact: 'Certified by chartered engineers and accepted across all MIDC and DIC industrial sanction committees.'
-      },
-      {
-        id: 'agro-food-dpr',
-        title: 'Agro & Food Processing Project Reports',
-        badge: 'Agro-Processing DPR',
-        summary: 'Specialized bank reports for cold-pressed oil, flour mills, spice pulverizing, dairy processing, commercial bakeries, and cattle feed units.',
-        scope: [
-          'FSSAI & APEDA Regulatory Compliance Feasibility Integration',
-          'Farmgate Raw Material Procurement Logistics & Price Fluctuation Buffer',
-          'Cold Storage, Blast Freezing & Moisture Control Equipment Sizing',
-          'Subsidy Integration with PMFME, PMKSY, and AIF Central Schemes'
-        ],
-        marketImpact: 'Enables agricultural entrepreneurs to unlock 35%–50% non-repayable capital subsidies alongside bank loans.'
-      },
-      {
-        id: 'infra-service-dpr',
-        title: 'Infrastructure, Warehouse & Commercial DPRs',
-        badge: 'Commercial Infrastructure',
-        summary: 'Project documentation for commercial logistics warehouses, cold storage chains, diagnostic medical centers, hotels, and educational complexes.',
-        scope: [
-          'Catchment Area Demographic & Occupancy Rate Feasibility Studies',
-          'Civil Infrastructure Capex Breakdown & Architectural Certifications',
-          'Operating Working Capital Cycles & Seasonal Cash Flow Models',
-          'Mortgage Valuation Cross-Referencing & Loan-to-Value (LTV) Optimization'
-        ],
-        marketImpact: 'Secures high-quantum project finance loans with extended 10-year repayment tenors from commercial lenders.'
-      },
-      {
-        id: 'tev-feasibility',
-        title: 'Techno-Economic Viability (TEV) Studies',
-        badge: 'TEV Validation',
-        summary: 'Rigorous engineering and financial viability audits mandated by consortium banks for project investments exceeding ₹10 Crores.',
-        scope: [
-          'Independent Engineering Due Diligence & Technology Obsolescence Audit',
-          'Internal Rate of Return (IRR), Net Present Value (NPV) & Payback Period',
-          'Sensitivity Stress Testing against Raw Material Surges and Sales Drops',
-          'Environmental, Social & Statutory Governance (ESG) Compliance Review'
-        ],
-        marketImpact: 'Eliminates consortium loan underwriting objections and ensures swift board-level credit approvals.'
-      }
-    ],
-    marginTiers: [
-      {
-        category: 'Micro Scheme DPR',
-        promoterEquity: 'PMEGP / CMEGP / PMFME',
-        subsidyGrant: 'Up to ₹50 Lakhs',
-        bankDebt: '3 to 5 Days',
-        criteria: 'Concise, portal-compliant project report tailored to KVIC/DIC guidelines, with required 3-year projected statements.'
-      },
-      {
-        category: 'Standard Bank DPR',
-        promoterEquity: 'MSME Term Loans',
-        subsidyGrant: '₹50L to ₹5 Crores',
-        bankDebt: '5 to 7 Days',
-        criteria: 'Full techno-economic project report with complete 7-sheet CMA data, DSCR analysis, and machinery quote indexing.'
-      },
-      {
-        category: 'Comprehensive TEV Report',
-        promoterEquity: 'Mid-Corporate & Industrial',
-        subsidyGrant: '₹5 Cr to ₹25 Crores',
-        bankDebt: '7 to 14 Days',
-        criteria: 'In-depth engineering feasibility, sensitivity modeling, market demand surveys, and CA/Engineer certifications.'
-      },
-      {
-        category: 'Consortium Mega DPR',
-        promoterEquity: 'Large Scale Capex',
-        subsidyGrant: '₹25 Cr to ₹100+ Cr',
-        bankDebt: 'Custom Duration',
-        criteria: 'Consortium-grade project information memorandum (PIM) with full financial model, risk mitigation matrix, and board presentation pack.'
-      }
-    ],
-    documents: [
-      {
-        group: '1. Project Land & Civil Details',
-        items: [
-          '7/12 Land Extract / Registered Purchase Deed / MIDC Allotment Letter',
-          'Grampanchayat / Municipal / Town Planning Building Layout Plan',
-          'Chartered Architect / Civil Engineer Detailed Construction Cost Estimate',
-          'Location map showing proximity to national highways, rail heads, and power lines'
-        ]
-      },
-      {
-        group: '2. Plant & Machinery Quotations',
-        items: [
-          'OEM Quotations for all primary and ancillary equipment with technical specs',
-          'GST, freight, transit insurance, and installation/commissioning breakup',
-          'Electrification, transformer, and cabling estimates from licensed electrical contractor',
-          'Pollution control (ETP/STP) and firefighting equipment quotes'
-        ]
-      },
-      {
-        group: '3. Market & Raw Material Data',
-        items: [
-          'Raw material requirement per day/month and identified regional suppliers',
-          'Proposed product pricing, packaging sizes, and target customer segments',
-          'Letters of Intent (LOI) / Purchase Orders from prospective buyers',
-          'Direct competitor pricing benchmark in regional Maharashtra markets'
-        ]
-      },
-      {
-        group: '4. Promoter Profile & Financials',
-        items: [
-          'Comprehensive Bio-Data / Resume of Promoters highlighting sector experience',
-          'Promoter Net Worth Statement with supporting property and asset records',
-          'Last 3 years audited balance sheets & ITRs (for existing businesses)',
-          'Bank statement of promoter demonstrating required margin money capital'
-        ]
-      }
-    ],
-    roadmaps: [
-      {
-        phase: 'Phase 1',
-        title: 'Project Intake & Engineering Blueprinting',
-        timeline: 'Day 1 – Day 2',
-        desc: 'Gathering promoter requirements, machinery quotations, civil estimates, and capacity parameters to define project scope and capital requirements.',
-        deliverables: ['Detailed Project Intake Checklist', 'Capital Expenditure Breakdown', 'Machinery & Civil Cost Normalization']
-      },
-      {
-        phase: 'Phase 2',
-        title: 'Financial Modeling & Ratio Calibration',
-        timeline: 'Day 3 – Day 4',
-        desc: 'Building multi-year P&L, balance sheet, cash flows, and calculating key financial ratios (DSCR, Current Ratio, Break-Even Point, Payback Period).',
-        deliverables: ['Multi-Year Financial Model Spreadsheets', 'CMA Data Calculation Sheets', 'Sensitivity & Break-Even Curves']
-      },
-      {
-        phase: 'Phase 3',
-        title: 'Techno-Economic Report Compilation',
-        timeline: 'Day 5 – Day 6',
-        desc: 'Writing comprehensive narrative sections covering industry outlook, manufacturing process, SWOT analysis, promoter capability, and risk mitigation.',
-        deliverables: ['Comprehensive Draft Detailed Project Report', 'Executive Summary for Bank Branch Manager', 'Chartered Accountant Endorsement Pack']
-      },
-      {
-        phase: 'Phase 4',
-        title: 'Bank Submission & Query Resolution',
-        timeline: 'Day 7 Onward',
-        desc: 'Handover of bound print and digital DPR copies, briefing the promoter for the bank interview, and answering technical queries from the bank credit appraisal desk.',
-        deliverables: ['Bank-Ready Signed & Certified DPR Dossier', 'Bank Interview FAQ Cheatsheet', 'Written Clarifications to Credit Desk Queries']
-      }
-    ],
-    regionalPresence: {
-      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Chhatrapati Sambhajinagar', 'Nashik', 'Jalgaon', 'Beed'],
-      industrialAreas: ['MIDC Nagapur', 'MIDC Supa Parner', 'MIDC Shrirampur', 'MIDC Kopargaon', 'MIDC Ranjangaon', 'MIDC Chakan'],
-      bankLinkages: ['State Bank of India', 'Bank of Maharashtra', 'Canara Bank', 'Punjab National Bank', 'Bank of Baroda', 'ICICI Bank']
-    },
-    faqs: [
-      {
-        q: 'What is the difference between a standard business plan and a bank-compliant DPR?',
-        a: 'A business plan is typically a pitch deck designed for equity investors, focusing on market vision and growth narratives. A bank-compliant Detailed Project Report (DPR) is an institutional credit document engineered for debt underwriters. It follows rigid banking formats, includes audited-standard CMA data, proves debt service capability (DSCR > 1.5), models security margins, and provides granular engineering specifications for every rupee of loan requested.'
-      },
-      {
-        q: 'Can a single DPR be used for both bank loan sanction and government subsidy applications?',
-        a: 'Yes! AB Consultancy specializes in dual-compliant DPRs. We engineer your report to meet bank credit sanction criteria while simultaneously satisfying specific subsidy portal parameters (such as eligible plant & machinery categories under PMEGP, PMFME, or Maharashtra PSI 2019/2024), preventing the need to draft separate reports.'
-      },
-      {
-        q: 'How fast can AB Consultancy deliver a completed bank-compliant DPR?',
-        a: 'Standard MSME project reports (up to ₹2 Crores) are delivered within 4 to 5 business days upon receiving complete machinery quotes and land documents. Complex manufacturing units and consortium TEV studies (₹5 Cr to ₹50 Cr) are completed within 7 to 10 business days.'
-      },
-      {
-        q: 'Do you provide CA certification along with the Detailed Project Report?',
-        a: 'Yes. Our internal team of financial analysts and practicing Chartered Accountants reviews, validates, and signs the financial statements, CMA data, and Net Worth certificates as required by your lending bank.'
-      },
-      {
-        q: 'What happens if the bank credit manager raises technical or financial queries on the DPR?',
-        a: 'We provide end-to-end query resolution support. Our senior financial analysts directly review the bank credit queries, prepare detailed mathematical counter-justifications, adjust CMA models if required by bank policy, and attend branch coordination meetings until sanction is achieved.'
-      },
-      {
-        q: 'Are your project reports accepted by public sector banks like SBI and Bank of Maharashtra?',
-        a: 'Yes. Over our 15+ years of practice, our project reports have been approved by every major nationalized, private, and cooperative bank in Maharashtra, including SBI, Bank of Maharashtra, PNB, BoB, Canara Bank, Union Bank, HDFC Bank, Axis Bank, and SIDBI.'
-      },
-      {
-        q: 'Can you prepare DPRs for agricultural and food processing units?',
-        a: 'Absolutely. We have drafted over 1,200 project reports specifically for agro-industrial sectors, including cold storages, grain cleaning/destoning, spice grinding, flour mills, jaggery processing, dairy infrastructure, and cattle feed units.'
-      },
-      {
-        q: 'How do I commission a Detailed Project Report with AB Consultancy?',
-        a: 'Simply call our office or submit your project details online. We will share a simple 1-page Project Intake Questionnaire. Once you provide basic machinery quotes and land records, our team commences financial modeling immediately.'
-      }
-    ],
-    relatedServices: [
-      { id: 'financial-consultancy', code: 'FC', name: 'Financial Consultancy', desc: 'CMA data modeling, debt syndication, and working capital advisory.' },
-      { id: 'government-scheme-application-assistance', code: 'GSA', name: 'Govt Scheme Application', desc: 'Portal registration, DIC liaison, and scheme approvals.' },
-      { id: 'business-setup-guidance', code: 'BSG', name: 'Business Setup Guidance', desc: 'Statutory registration, MIDC land, and industrial licenses.' }
-    ]
-  },
-
-  'government-scheme-application-assistance': {
-    id: 'government-scheme-application-assistance',
-    code: 'GSA',
-    slug: 'government-scheme-application-assistance',
-    name: 'Government Scheme Application Assistance & Portal Filing',
-    shortTitle: 'Govt Scheme Application',
-    categoryBadge: 'Central & State Scheme Facilitation',
-    department: 'Government Subsidies & Institutional Liaison Division',
-    portal: 'National Portal for Central Schemes & MahaDBT Platform',
-    heroTitle: 'Government Scheme Application Assistance in Ahilyanagar',
-    heroHighlight: 'End-to-End Online Portal Filing, DIC Liaison & Task Force Committee Clearance Across Maharashtra',
-    heroDesc: 'Navigate complex government scheme portals with guaranteed documentation accuracy. AB Consultancy delivers end-to-end application filing, District Industries Centre (DIC) documentation verification, Task Force Committee interview preparation, and bank branch forwarding for PMEGP, CMEGP, PMFME, AIF, and Maharashtra PSI schemes.',
-    jtbd: {
-      statement: "When an entrepreneur or industrial promoter wants to apply for a central or state government scheme, they want error-free online portal filing, complete statutory document preparation, and DIC liaison, so they can pass district task-force scrutiny and secure speedy bank loan forwarding without portal rejections.",
-      situation: "Promoter seeking government-sponsored scheme funding (PMEGP, CMEGP, PMFME, AIF, etc.) with capital subsidies.",
-      motivation: "Avoid fatal portal errors, incorrect NIC code mapping, and bureaucratic delays at the District Industries Centre (DIC).",
-      outcome: "Approved portal application, cleared District Task Force interview, and fast-track loan sanction from designated bank branches."
-    },
-    seo: {
-      title: 'Government Scheme Application Assistance Ahilyanagar | DIC Consultant Maharashtra',
-      description: 'Expert government scheme application assistance in Ahilyanagar & Maharashtra. Online portal filing, DIC liaison, PMEGP, CMEGP, PMFME & AIF scheme clearances.',
-      canonical: 'https://www.abconsultancy.net.in/services/government-scheme-application-assistance',
-      keywords: 'Government Scheme Application Assistance Ahilyanagar, Govt Scheme Consultant Nagar, DIC Ahmednagar Application Assistance, PMEGP Portal Filing Savedi, CMEGP Online Application Maharashtra, PMFME Consultant Nagar'
-    },
-    directAnswer: {
-      question: 'How does AB Consultancy assist entrepreneurs in applying for government schemes in Maharashtra?',
-      answer: 'AB Consultancy manages the complete government scheme application lifecycle: selecting the most lucrative scheme based on promoter demographics and location, mapping the correct National Industrial Classification (NIC) codes, preparing bank-compliant Detailed Project Reports (DPR), filing error-free applications on official government portals (KVIC e-Portal, MahaCMEGP, PMFME MIS, AIF Portal), resolving DIC scrutiny queries, and coaching promoters for the District Level Task Force Committee (DLTFC) interview.'
-    },
-    trustStats: [
-      { label: 'Scheme Applications', value: '4,800+', sub: 'Portal Submissions' },
-      { label: 'Portal Approval Rate', value: '99.1%', sub: 'Zero Document Rejections' },
-      { label: 'DLTFC Clearances', value: '100%', sub: 'Task Force Interview Cleared' },
-      { label: 'Average Subsidy Quantum', value: '₹12.5L–₹50L', sub: 'Non-Repayable Grants' }
-    ],
-    architecture: {
-      quantum: 'Covering Projects from ₹5 Lakhs up to ₹50 Crores',
-      bankDebt: 'Integrated with 90%–95% Institutional Bank Loan Sanctions',
-      subsidyPct: 'Capital Subsidies Ranging from 15% to 50% Outright Grants',
-      moratorium: 'Direct Coordination with District Industries Centre (DIC)',
-      tenor: 'Filing to Formal Bank Branch Forwarding in 15–21 Days',
-      interestRate: 'Low Promoter Equity Requirement Kept at Only 5%–10%'
-    },
-    verticals: [
-      {
-        id: 'pmegp-cmegp-filing',
-        title: 'PMEGP & CMEGP e-Portal Application Execution',
-        badge: 'Priority MSME Subsidies',
-        summary: 'Formulating end-to-end digital submissions for Prime Minister and Chief Minister Employment Generation Programmes.',
-        scope: [
-          'Correct Sponsoring Agency Selection (DIC vs KVIC vs KVIB)',
-          'Rural/Urban Geo-Tagging & Grampanchayat Population Certification',
-          'Rural Special Category Verification for Maximum 35% Subsidy',
-          'EDP (Entrepreneurship Development Programme) Online Training Scheduling'
-        ],
-        marketImpact: 'Secures up to ₹17.50 Lakhs non-repayable capital subsidy for manufacturing units in rural Maharashtra.'
-      },
-      {
-        id: 'pmfme-food-filing',
-        title: 'PMFME Food Processing Scheme Facilitation',
-        badge: 'Agro & Food Processing',
-        summary: 'Onboarding micro food processing enterprises under the One District One Product (ODOP) and non-ODOP framework.',
-        scope: [
-          'ODOP Cluster Alignment (Ahilyanagar: Dairy, Millets, Spices & Fruits)',
-          'Common Incubation Center & Group Subsidy Structuring (35% up to ₹3 Cr)',
-          'FSSAI Registration & National Portal MIS Submission',
-          'District Resource Person (DRP) Coordination & File Approval Tracking'
-        ],
-        marketImpact: 'Enables micro agro-processors to modernize technology with 35% credit-linked capital grants up to ₹10 Lakhs.'
-      },
-      {
-        id: 'aif-nhb-filing',
-        title: 'AIF & NHB Agricultural Infrastructure Applications',
-        badge: 'Agri-Infrastructure Subventions',
-        summary: 'Filing applications on the Agriculture Infrastructure Fund and National Horticulture Board portals for cold storage and packing hubs.',
-        scope: [
-          '3.0% Annual Interest Subvention Portal Application on AIF Central Portal',
-          'CGTMSE Fee Reimbursement Claims for Post-Harvest Management Units',
-          'NHB Commercial Horticulture In-Principle Approval (IPA) Filing',
-          'Joint Inspection Committee (JIC) Coordination with NABARD and Dept of Agri'
-        ],
-        marketImpact: 'Lowers effective borrowing interest rates to sub-6% levels for agricultural supply chain infrastructure.'
-      },
-      {
-        id: 'dltfc-interview',
-        title: 'DIC Scrutiny & DLTFC Interview Preparation',
-        badge: 'Task Force Clearance',
-        summary: 'Preparing promoters for the District Level Task Force Committee (DLTFC) interview chaired by the District Collector and General Manager, DIC.',
-        scope: [
-          'Pre-Interview Mock Sessions covering Project Economics & Profitability',
-          'Responding to DIC Scrutiny Notices & Technical Documentation Clarifications',
-          'Bank Branch Manager Coordination to Ensure Pre-Consent Letters',
-          'Online Forwarding of Sanctioned Application to Selected Bank Branch'
-        ],
-        marketImpact: 'Guarantees 100% first-attempt interview clearance and prevents file stalling at government departments.'
-      }
-    ],
-    marginTiers: [
-      {
-        category: 'PMEGP / CMEGP Micro Grant',
-        promoterEquity: '5% to 10% Equity',
-        subsidyGrant: '15% to 35% Grant',
-        bankDebt: '₹5L to ₹50L Project',
-        criteria: 'End-to-end portal submission, DPR drafting, rural certification, and DLTFC clearance.'
-      },
-      {
-        category: 'PMFME Food Processing',
-        promoterEquity: '10% Equity',
-        subsidyGrant: '35% (Max ₹10L)',
-        bankDebt: 'Up to ₹1 Cr Project',
-        criteria: 'ODOP alignment, FSSAI integration, online MIS submission, and District Resource Person coordination.'
-      },
-      {
-        category: 'AIF Interest Subvention',
-        promoterEquity: '10% Equity',
-        subsidyGrant: '3% Interest Relief',
-        bankDebt: 'Up to ₹2 Cr Loan',
-        criteria: 'AIF central portal filing, CGTMSE coverage certification, and 7-year interest subvention mapping.'
-      },
-      {
-        category: 'Comprehensive Multi-Scheme',
-        promoterEquity: 'Turnkey Application',
-        subsidyGrant: 'Max Combined Aid',
-        bankDebt: 'Custom Project',
-        criteria: 'Evaluating and stacking multiple central and state schemes for maximum cumulative non-repayable financial assistance.'
-      }
-    ],
-    documents: [
-      {
-        group: '1. Personal & Caste Credentials',
-        items: [
-          'Promoter PAN Card & Aadhaar Card (linked with active mobile for OTP authentication)',
-          'Caste Certificate / Non-Creamy Layer Certificate (for SC/ST/OBC/Special Category)',
-          'Special Category Proof (Women / Ex-Servicemen / Minority / PwD Certificate)',
-          'Passport-sized photographs in digital format (JPEG < 50 KB)'
-        ]
-      },
-      {
-        group: '2. Educational & Residence Evidence',
-        items: [
-          'Minimum 8th Standard Marksheet / Passing Certificate (or higher degree)',
-          'Rural Area Certificate issued by Gramsevak / Sarpanch on official letterhead',
-          'Domicile Certificate of Maharashtra / Ration Card',
-          'EDP (Entrepreneurship Development Programme) 10-day training certificate (if completed)'
-        ]
-      },
-      {
-        group: '3. Land, Building & Premises Records',
-        items: [
-          '7/12 & 8A Land Extract or Registered Sale Deed of proposed project site',
-          'Notarized Rent Agreement / Registered Lease Deed (minimum 5 to 7 years validity)',
-          'NOC from Property Owner / Grampanchayat NOC / Municipal Trade NOC',
-          'Civil Construction Blueprint and Certified Architect Cost Estimate'
-        ]
-      },
-      {
-        group: '4. Quotations & Project DPR',
-        items: [
-          'Original Equipment Manufacturer (OEM) Machinery Quotations with GST & Model numbers',
-          'Electrification & Installation Estimates from licensed electrical contractor',
-          'Bank-Compliant Detailed Project Report (DPR) prepared by AB Consultancy',
-          'Bank Branch Name, IFSC Code & Branch Manager Pre-Consultation confirmation'
-        ]
-      }
-    ],
-    roadmaps: [
-      {
-        phase: 'Phase 1',
-        title: 'Scheme Selection & Document Vetting',
-        timeline: 'Day 1 – Day 3',
-        desc: 'Analyzing promoter eligibility, location demographics, and enterprise activity to select the highest-subsidy scheme (PMEGP vs CMEGP vs PMFME).',
-        deliverables: ['Scheme Comparison Matrix', 'Document Readiness Scorecard', 'Detailed Project Report (DPR) Draft']
-      },
-      {
-        phase: 'Phase 2',
-        title: 'Digital Portal Submission & Geo-Tagging',
-        timeline: 'Day 4 – Day 7',
-        desc: 'Uploading documents, mapping National Industrial Classification (NIC) codes, verifying capital expenditure heads, and submitting the application on the official government portal.',
-        deliverables: ['Official Portal Application Acknowledgment', 'Unique Application Tracking ID', 'Uploaded Document Archive Dossier']
-      },
-      {
-        phase: 'Phase 3',
-        title: 'DIC Scrutiny & DLTFC Interview',
-        timeline: 'Week 2 – Week 3',
-        desc: 'Following up with District Industries Centre (DIC) scrutiny inspectors, resolving documentary clarifications, and attending the District Level Task Force Committee interview.',
-        deliverables: ['DIC Scrutiny Clearance Slip', 'DLTFC Interview Scorecard & Clearance', 'Formal Electronic Recommendation to Bank Branch']
-      },
-      {
-        phase: 'Phase 4',
-        title: 'Bank Sanction Tracking & EDP Enrollment',
-        timeline: 'Week 4 – Week 6',
-        desc: 'Coordinating with the designated bank branch for credit appraisal, completing mandatory online EDP training, and securing the final Bank Loan Sanction Letter.',
-        deliverables: ['EDP Training Completion Certificate', 'Final Bank Loan Sanction Letter', 'Subsidy TDR Escrow Account Setup']
-      }
-    ],
-    regionalPresence: {
-      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Chhatrapati Sambhajinagar', 'Solapur', 'Nashik', 'Beed'],
-      industrialAreas: ['District Industries Centre (DIC) Ahilyanagar', 'KVIC Regional Office', 'KVIB Division', 'MIDC Nagapur', 'MIDC Supa'],
-      bankLinkages: ['State Bank of India', 'Bank of Maharashtra', 'Central Bank of India', 'Punjab National Bank', 'Union Bank of India']
-    },
-    faqs: [
-      {
-        q: 'Can I apply for both PMEGP and CMEGP simultaneously?',
-        a: 'No. You cannot hold active applications under both PMEGP and CMEGP for the same enterprise or promoter Aadhaar number. However, AB Consultancy analyzes your specific parameters (project quantum, rural vs urban location, promoter category) to recommend the exact scheme that maximizes your subsidy payout and has the highest bank approval probability.'
-      },
-      {
-        q: 'Why do so many self-filed applications get rejected on the PMEGP/CMEGP portals?',
-        a: 'The most common rejection causes are: incorrect NIC activity code mapping, uploading uncertified machinery quotes without GST details, missing rural certificates from the Grampanchayat, unviable financial ratios in self-made project reports, and selecting a bank branch without checking their current scheme lending targets. Our zero-defect filing methodology eliminates all these risks.'
-      },
-      {
-        q: 'What is the role of the District Level Task Force Committee (DLTFC)?',
-        a: 'The DLTFC is the statutory government committee chaired by the District Collector and GM-DIC that reviews all submitted applications. They evaluate promoter capability, project feasibility, and local market demand before officially recommending the application to the commercial bank. We provide comprehensive interview coaching to ensure smooth clearance.'
-      },
-      {
-        q: 'Is Entrepreneurship Development Programme (EDP) training mandatory?',
-        a: 'Yes. Completing EDP training is a mandatory statutory condition before the bank releases the first loan disbursement and subsidy claim. For loans up to ₹5 Lakhs, a 5-day online training is required; for loans above ₹5 Lakhs, a 10-day training is required. We assist in immediate online portal enrollment.'
-      },
-      {
-        q: 'Can a trading or retail shop apply for government subsidy schemes?',
-        a: 'Under PMEGP, traditional retail trade is generally excluded, but commercial service enterprises and transport vehicles are eligible up to ₹20 Lakhs. Under CMEGP in Maharashtra, agricultural retail and specialized rural service enterprises are eligible up to ₹10 Lakhs. Manufacturing enterprises receive the highest eligibility (up to ₹50 Lakhs).'
-      },
-      {
-        q: 'How does AB Consultancy track the application once forwarded to the bank branch?',
-        a: 'We maintain close liaison with the Lead Bank Manager and branch credit managers across Ahilyanagar and Maharashtra, tracking your file from preliminary branch desk review to on-site pre-sanction inspection and final sanction letter issuance.'
-      },
-      {
-        q: 'Can existing businesses apply for expansion subsidies under PMEGP or CMEGP?',
-        a: 'Yes! PMEGP offers a specialized Second Loan for Upgradation/Expansion: successful manufacturing units that have repaid their first loan can receive a second loan up to ₹1 Crore with a 15% capital subsidy (up to ₹15 Lakhs). We handle complete second-loan documentation.'
-      },
-      {
-        q: 'How do I start my government scheme application with AB Consultancy?',
-        a: 'Visit our office in Savedi, Ahilyanagar, or contact us online with your Aadhaar, land details, and proposed business concept. We complete your document audit within 24 hours.'
-      }
-    ],
-    relatedServices: [
-      { id: 'subsidy-application-assistance', code: 'SAA', name: 'Subsidy Assistance', desc: 'Post-sanction capital grant release & interest subventions.' },
-      { id: 'project-report-preparation', code: 'DPR', name: 'Project Report Preparation', desc: 'Bank-compliant TEV feasibility reports & financial projections.' },
-      { id: 'business-setup-guidance', code: 'BSG', name: 'Business Setup Guidance', desc: 'Statutory registration, MIDC land, and industrial licenses.' }
-    ]
-  },
-
-  'subsidy-application-assistance': {
-    id: 'subsidy-application-assistance',
-    code: 'SAA',
-    slug: 'subsidy-application-assistance',
-    name: 'Government Subsidy Application Assistance & Disbursement Claims',
-    shortTitle: 'Subsidy Assistance',
-    categoryBadge: 'Post-Sanction Subsidy Claims & Grant Release',
-    department: 'Government Subsidy Realization & Inspection Coordination Desk',
-    portal: 'National Subsidy Clearing Portal & Directorate of Industries (Maha)',
-    heroTitle: 'Subsidy Application Assistance & Disbursement in Ahilyanagar',
-    heroHighlight: 'Maximize Non-Repayable Capital Subsidies, Coordinate Joint Physical Inspections & Secure Speedy Fund Releases',
-    heroDesc: 'Ensuring your approved government subsidy actually reaches your bank account. AB Consultancy manages the post-sanction subsidy lifecycle: Joint Physical Inspection (JPI) coordination, Chartered Accountant subsidy utilization certificates, TDR escrow account lock-in monitoring, and final subsidy disbursement claims under Central and Maharashtra State schemes.',
-    jtbd: {
-      statement: "When an industrial entrepreneur has received a bank loan sanction and purchased machinery, they want expert subsidy claim filing, inspection facilitation, and government follow-up, so they can unlock their non-repayable capital subsidy and interest subvention without administrative delays or procedural forfeitures.",
-      situation: "Enterprise with sanctioned bank loan or completed capex seeking release of approved government subsidy grants.",
-      motivation: "Navigate rigorous post-sanction joint physical inspections, CA asset certifications, and departmental subsidy escrow audits.",
-      outcome: "Direct disbursement of 15% to 50% non-repayable capital subsidies into the promoter bank loan account."
-    },
-    seo: {
-      title: 'Subsidy Application Assistance Ahilyanagar | Capital Grant Release Maharashtra',
-      description: 'Expert government subsidy application assistance in Ahilyanagar & Maharashtra. Joint physical inspection (JPI), CA utilization certificate, PMEGP & PSI subsidy release.',
-      canonical: 'https://www.abconsultancy.net.in/services/subsidy-application-assistance',
-      keywords: 'Subsidy Application Assistance Ahilyanagar, Government Subsidy Consultant Nagar, PMEGP Subsidy Release Savedi, PSI 2019 Incentive Claim Maharashtra, Joint Physical Inspection Consultant, Capital Subsidy Disbursement'
-    },
-    directAnswer: {
-      question: 'How does AB Consultancy help businesses secure and disburse government subsidies in Maharashtra?',
-      answer: 'Securing a bank loan sanction is only step one; actual subsidy disbursement requires completing rigorous post-sanction statutory claims. AB Consultancy prepares Chartered Accountant-certified machinery utilization statements, coordinates the mandatory Joint Physical Inspection (JPI) conducted by DIC, KVIC, and bank branch managers, ensures compliance with the mandatory 3-year Term Deposit Receipt (TDR) lock-in period, and tracks departmental subsidy sanction orders until capital funds are credited directly to the borrower loan account.'
-    },
-    trustStats: [
-      { label: 'Cumulative Subsidies Released', value: '₹185+ Cr', sub: 'Non-Repayable Capital Grants' },
-      { label: 'Inspection Clearance', value: '100%', sub: 'First-Attempt JPI Approval' },
-      { label: 'Processing Acceleration', value: '45% Faster', sub: 'Direct Departmental Liaison' },
-      { label: 'Subsidy Schemes Handled', value: '12+ Schemes', sub: 'Central & Maharashtra State' }
-    ],
-    architecture: {
-      quantum: 'Non-Repayable Capital Subsidies from ₹5 Lakhs up to ₹50 Crores',
-      bankDebt: 'Direct Credit to Bank Loan Account / Term Deposit Receipt (TDR)',
-      subsidyPct: '15% to 35% (PMEGP/CMEGP), up to 80% IPS (PSI Scheme)',
-      moratorium: 'End-to-End Tracking through 36-Month Lock-In Period',
-      tenor: 'Quarterly & Annual Incentive Reimbursement Filings',
-      interestRate: 'Zero-Forfeiture Guarantee with Audit-Proof Records'
-    },
-    verticals: [
-      {
-        id: 'pmegp-cmegp-release',
-        title: 'PMEGP & CMEGP Margin Money Subsidy Release',
-        badge: 'Capital Grant Release',
-        summary: 'Facilitating immediate 100% claim filing on the KVIC/CMEGP portal upon first bank loan disbursement.',
-        scope: [
-          'Uploading First Bank Loan Disbursement Certificate & Sanction Order',
-          'Term Deposit Receipt (TDR) Subsidy Escrow Account Setup',
-          'Coordination with KVIC Zonal Clearing Branch for Fund Credit',
-          'Physical Asset Verification Dossier Compilation'
-        ],
-        marketImpact: 'Ensures the non-repayable capital grant (up to ₹17.50 Lakhs) is placed in TDR without interest accrual.'
-      },
-      {
-        id: 'jpi-inspection',
-        title: 'Joint Physical Inspection (JPI) Facilitation',
-        badge: 'On-Site Verification',
-        summary: 'Preparing the factory premises, asset tagging, and physical machinery inventory for the mandatory official inspection.',
-        scope: [
-          'Affixing Mandatory Government Scheme Display Boards & Asset Labels',
-          'Machinery Serial Number Verification against Original OEM Invoices',
-          'Electricity Consumption Records & Commercial Production Evidence',
-          'Drafting & Signing of Joint Physical Inspection (JPI) Recommendation Report'
-        ],
-        marketImpact: 'Passes statutory verification smoothly, unlocking permanent subsidy adjustment against the bank term loan.'
-      },
-      {
-        id: 'psi-incentives',
-        title: 'Maharashtra PSI (Package Scheme of Incentives) Claims',
-        badge: 'State Industrial Incentives',
-        summary: 'Securing Eligibility Certificates (EC) and claiming Industrial Promotion Subsidy (IPS), electricity duty exemption, and interest subsidies.',
-        scope: [
-          'Directorate of Industries Eligibility Certificate (EC) Application',
-          'Gross SGST (State Goods and Services Tax) Refund Calculations',
-          'Electricity Duty Exemption Certificate (Form 1) Filing with Energy Dept',
-          '5% Annual Interest Subsidy Reimbursement Filing on Term Loans'
-        ],
-        marketImpact: 'Recovers up to 60%–80% of total fixed capital investment for manufacturing units in Ahilyanagar (Zone D/D+).'
-      },
-      {
-        id: 'post-disbursement-audit',
-        title: 'Audit Compliance & Final TDR Adjustment',
-        badge: 'Compliance & Lock-In',
-        summary: 'Guiding the business through the 3-year lock-in period to successfully convert the TDR into permanent loan liquidation.',
-        scope: [
-          'Chartered Accountant Capital Investment & Asset Verification Certificates',
-          'Annual Employment & Production Retention Filing with DIC',
-          'Formal Bank Application for TDR Liquidation after 36 Months',
-          'Release of Title Deeds & No-Dues Certificate Procurement'
-        ],
-        marketImpact: 'Guarantees zero subsidy clawbacks or departmental refund notices.'
-      }
-    ],
-    marginTiers: [
-      {
-        category: 'PMEGP / CMEGP Subsidy Release',
-        promoterEquity: 'Bank Sanctioned',
-        subsidyGrant: '15% to 35% Grant',
-        bankDebt: '30 to 45 Days',
-        criteria: 'Disbursement certificate upload, TDR credit follow-up, and Joint Physical Inspection clearance.'
-      },
-      {
-        category: 'Maharashtra PSI 2019/2024',
-        promoterEquity: 'Manufacturing Capex',
-        subsidyGrant: 'Up to 80% FCI',
-        bankDebt: 'Multi-Year Cycle',
-        criteria: 'Eligibility Certificate (EC) procurement, annual SGST refund claims, electricity duty exemption, and interest subsidy.'
-      },
-      {
-        category: 'PMFME & AIF Capital Aid',
-        promoterEquity: 'Agro Processing',
-        subsidyGrant: '35% Grant + 3% Int',
-        bankDebt: 'Post-Inspection',
-        criteria: 'District Resource Person inspection clearance, credit-linked grant release, and interest subvention claims.'
-      },
-      {
-        category: 'Stalled Subsidy Recovery',
-        promoterEquity: 'Pending / Delayed',
-        subsidyGrant: 'Revival Action',
-        bankDebt: 'Fast-Track',
-        criteria: 'Resolving pending queries, re-opening lapsed files, and securing overdue subsidy release from government ministries.'
-      }
-    ],
-    documents: [
-      {
-        group: '1. Bank Sanction & Loan Disbursals',
-        items: [
-          'Original Bank Loan Sanction Letter with accepted terms and conditions',
-          'Bank Loan Account Statement showing full or partial loan disbursement',
-          'Bank Disbursement Certificate specifying payment releases to machinery suppliers',
-          'Banker Certificate confirming current status of the loan account'
-        ]
-      },
-      {
-        group: '2. Asset Purchase & Invoicing',
-        items: [
-          'Tax Invoices for all purchased plant & machinery with complete serial numbers',
-          'Bank payment debit proof (RTGS/NEFT receipts) matching machinery invoices',
-          'Lorry receipts (LR), e-way bills, and transit insurance for transported machinery',
-          'Installation and commissioning completion certificate from equipment vendors'
-        ]
-      },
-      {
-        group: '3. Factory Commercial Production Evidence',
-        items: [
-          'Commercial Operations Date (COD) declaration certified by Chartered Accountant',
-          'First commercial sales invoice and corresponding raw material purchase bill',
-          'MSEDCL industrial electricity bill demonstrating active factory power consumption',
-          'Photographs of installed machinery with scheme sponsor display board'
-        ]
-      },
-      {
-        group: '4. Statutory & Audit Certificates',
-        items: [
-          'Chartered Accountant Certificate of Gross Fixed Capital Investment (FCI)',
-          'Valid MPCB Consent to Operate (CTO) and Factory Act License',
-          'Udyam MSME Registration Certificate with factory address',
-          'Bank TDR (Term Deposit Receipt) Advice copy for subsidy escrow'
-        ]
-      }
-    ],
-    roadmaps: [
-      {
-        phase: 'Phase 1',
-        title: 'Post-Sanction Dossier & TDR Filing',
+        title: 'Financial Health & Credit Appraisal Audit',
         timeline: 'Week 1 – Week 2',
-        desc: 'Submitting bank loan disbursement certificates on the central/state subsidy portal, coordinating with the nodal bank branch, and creating the subsidy TDR account.',
-        deliverables: ['Subsidy Claim Submission Receipt', 'Bank TDR Acknowledgment', 'Asset Ledger Compilation']
+        desc: 'Forensic evaluation of past audited balance sheets, tax returns, bank transactions, and existing debt commitments to determine maximum borrowing capacity.',
+        deliverables: ['Financial Health Diagnostic Report', 'Max Permissible Bank Finance (MPBF) Assessment', 'Preliminary Bank Compatibility Matrix']
       },
       {
         phase: 'Phase 2',
-        title: 'CA Asset Certification & Invoice Audit',
-        timeline: 'Week 3 – Week 4',
-        desc: 'Conducting internal audit of machinery purchase bills, bank payment vouchers, and obtaining CA certificates for Fixed Capital Investment.',
-        deliverables: ['CA Capital Investment Certificate', 'E-Way Bill & Payment Reconciliation Pack', 'Site Preparation Guideline Memo']
+        title: 'CMA Data & DPR Engineering',
+        timeline: 'Week 2 – Week 3',
+        desc: 'Compiling 10-year projected financials, cash flows, DSCR benchmarks, and a comprehensive Detailed Project Report aligned with target bank guidelines.',
+        deliverables: ['Standardized 10-Year CMA Data Pack', 'Bank-Compliant Detailed Project Report (DPR)', 'Collateral & Security Valuation Pack']
       },
       {
         phase: 'Phase 3',
-        title: 'Joint Physical Inspection (JPI) Coordination',
-        timeline: 'Month 2 – Month 3',
-        desc: 'Coordinating physical on-site factory inspection with DIC officers, KVIC officials, and bank managers; verifying plant machinery against sanctioned list.',
-        deliverables: ['Satisfactory Joint Physical Inspection (JPI) Report', 'Official Asset Tagging Verification', 'Government Subsidy Release Sanction Order']
+        title: 'Bank Submission & Credit Cell Defense',
+        timeline: 'Week 4 – Week 6',
+        desc: 'Formal loan file submission, managing technical queries from the bank branch and Zonal Credit Processing Center (ZCPC), and attending credit interviews.',
+        deliverables: ['Formal Bank Loan Application Submission', 'Resolution of Bank Pre-Sanction Inquiries', 'Joint Physical Site Inspection Coordination']
       },
       {
         phase: 'Phase 4',
-        title: 'Disbursement Release & 3-Year Lock-In Care',
-        timeline: 'Month 4 to Year 3',
-        desc: 'Ensuring subsidy funds are safely credited, managing annual compliance reporting, and facilitating final TDR liquidation against the loan principal after 36 months.',
-        deliverables: ['Subsidy Fund Credit Confirmation', 'Annual Employment Retention Filing', 'Final Loan Balance Adjustment Letter']
+        title: 'Sanction Letter Issuance & Disbursement',
+        timeline: 'Week 7 Onward',
+        desc: 'Vetting sanction letter covenants, coordinating mortgage documentation, compliance certificates, and stage-wise loan disbursement releases.',
+        deliverables: ['Bank Credit Sanction Letter', 'Fair Mortgage & Loan Agreement Execution', 'First Capital Disbursement Release']
       }
     ],
     regionalPresence: {
-      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Chhatrapati Sambhajinagar', 'Solapur', 'Nashik', 'Satara'],
-      industrialAreas: ['MIDC Nagapur', 'MIDC Supa', 'MIDC Shrirampur', 'MIDC Kopargaon', 'MIDC Waluj', 'MIDC Baramati'],
-      bankLinkages: ['State Bank of India', 'Bank of Maharashtra', 'Canara Bank', 'Union Bank of India', 'Punjab National Bank']
+      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Chhatrapati Sambhajinagar', 'Nashik', 'Solapur', 'Satara'],
+      industrialAreas: ['MIDC Nagapur', 'MIDC Supa Parner', 'MIDC Shrirampur', 'MIDC Chakan', 'MIDC Waluj', 'MIDC Ambad'],
+      bankLinkages: ['State Bank of India', 'Bank of Maharashtra', 'Punjab National Bank', 'Bank of Baroda', 'HDFC Bank', 'ICICI Bank']
     },
     faqs: [
       {
-        q: 'What is the 3-year TDR lock-in period for PMEGP and CMEGP subsidies?',
-        a: 'When your subsidy is sanctioned under PMEGP or CMEGP, the government transfers the grant into a special Term Deposit Receipt (TDR) account held in your name at your financing bank. The subsidy stays locked for 36 months from the date of first loan disbursement. During this lock-in period, no interest is charged on the portion of the loan equal to the subsidy. After 3 years and a successful physical inspection, the TDR amount is officially credited against your loan balance, permanently reducing your debt.'
+        q: 'Why do commercial banks reject project loan and working capital applications?',
+        a: 'The most common reasons for loan rejection include poorly structured CMA data with unconvincing projected cash flows, insufficient Debt Service Coverage Ratio (DSCR < 1.3), high Total Outside Liabilities to Net Worth (TOL/TNW > 3.0), unaddressed Drawing Power deficits, low promoter capital contribution, or mismatch between business activities and loan requests. Our ex-banker team corrects all these issues before submission.'
       },
       {
-        q: 'What happens during the Joint Physical Inspection (JPI)?',
-        a: 'The Joint Physical Inspection is conducted by a committee consisting of a DIC General Manager/Officer, KVIC/KVIB representative, and your Bank Branch Manager. They physically visit your factory to verify: (1) all machinery mentioned in the DPR is installed and operational, (2) the factory is actively producing goods, (3) the mandatory scheme display board is prominently visible, and (4) the promoter is actively managing the unit. We prepare your factory thoroughly so inspection is cleared on day one.'
+        q: 'What is CMA data and why is it mandatory for business loans?',
+        a: 'Credit Monitoring Arrangement (CMA) data is an exhaustive financial report mandated by RBI and commercial banks for working capital and term loans exceeding ₹25 Lakhs. It provides a historical and 5-to-10 year projected analysis of operating statements, balance sheets, working capital cycles, and cash flows to demonstrate that the business can comfortably service the requested loan.'
       },
       {
-        q: 'Can AB Consultancy help if my subsidy has been delayed or stuck for months?',
-        a: 'Yes! Stalled subsidies are a major part of our casework. Delays usually happen due to missing CA certificates, unmapped bank portal IDs, or pending inspection reports. We perform a forensic file audit, identify the exact administrative bottleneck at the DIC or nodal bank, and secure expedited release.'
+        q: 'Can AB Consultancy help secure collateral-free loans for MSMEs?',
+        a: 'Yes. Under the CGTMSE (Credit Guarantee Fund Trust for Micro and Small Enterprises) scheme, we structure collateral-free term loans and working capital facilities up to ₹5 Crores without requiring third-party guarantees or immovable property mortgage. The loan is secured through primary hypothecation of project assets.'
       },
       {
-        q: 'What is the Maharashtra Package Scheme of Incentives (PSI 2019/2024)?',
-        a: 'PSI is Maharashtra’s flagship industrial subsidy scheme. Depending on your factory location (e.g., Ahilyanagar is predominantly Zone D / D+, which commands the highest benefits), manufacturing units receive up to 60%–80% of their total Fixed Capital Investment reimbursed as Gross SGST refunds, electricity duty exemptions for 7 years, and annual interest subsidies on term loans.'
+        q: 'How does your ex-banker team improve our chances of loan sanction?',
+        a: 'Our advisory team is led by retired senior bank credit managers who have personally evaluated, underwritten, and sanctioned thousands of industrial loans during their careers. They know exactly how credit officers evaluate proposals, what red flags credit committees look for, and how to structure numbers to withstand rigorous audit scrutiny.'
       },
       {
-        q: 'What display board is mandatory at the factory for government subsidies?',
-        a: 'All government subsidy schemes mandate an exterior display board (minimum 6 ft x 4 ft) prominently positioned at the factory entrance stating: "Project Sponsored Under [Scheme Name], Ministry of [Name], Implemented by DIC / KVIC, Financed by [Bank Name]." Failure to display this board can cause immediate inspection failure.'
+        q: 'What is the maximum loan quantum AB Consultancy can syndicate?',
+        a: 'We handle loan syndications ranging from ₹25 Lakhs up to ₹50 Crores across single-bank limits and multi-bank consortium arrangements for greenfield manufacturing plants, agro-processing units, commercial warehousing, and infrastructure projects.'
       },
       {
-        q: 'Can I sell or replace machinery during the 3-year subsidy lock-in period?',
-        a: 'No. Selling, leasing, or disposing of machinery during the 3-year lock-in period without prior government permission is a severe violation that triggers immediate subsidy clawback with penal interest. If you need to upgrade machinery, we help obtain formal prior approval from the DIC.'
+        q: 'Can you help refinance or take over high-interest private or NBFC loans?',
+        a: 'Yes. We specialize in Debt Takeover Syndication. We restructure expensive NBFC credit lines or high-interest unsecured business loans into low-cost institutional bank term loans or cash credit facilities, reducing your monthly interest burden significantly.'
       },
       {
-        q: 'Does AB Consultancy assist in annual SGST refund claims under the PSI scheme?',
-        a: 'Yes. We prepare and file annual industrial promotion subsidy claims with the Joint Director of Industries, reconciling your monthly GSTR-3B filings with cash ledger payments to ensure maximum SGST reimbursement.'
+        q: 'How long does the entire loan sanction and disbursement process take?',
+        a: 'CMA data and project reports are prepared within 7 to 10 days. The bank credit sanction process typically takes 30 to 45 days for public sector banks and 20 to 30 days for private commercial banks, provided all promoter KYC, property papers, and statutory approvals are in order.'
       },
       {
-        q: 'How can I engage AB Consultancy for subsidy claim assistance?',
-        a: 'Contact us with your Bank Loan Sanction Letter and machinery invoices. Our subsidy specialists will examine your file and provide an immediate assessment of your claimable subsidy amount and disbursement timeline.'
+        q: 'How do we schedule a financial advisory discussion with AB Consultancy?',
+        a: 'Visit our office at Office No. 106, Baiju Height, Savedi, Ahilyanagar or contact our advisory desk. Bring your last 3 years balance sheets and proposed expansion details for a confidential preliminary debt feasibility appraisal.'
       }
     ],
     relatedServices: [
-      { id: 'government-scheme-application-assistance', code: 'GSA', name: 'Govt Scheme Application', desc: 'Portal registration, DIC liaison, and scheme approvals.' },
-      { id: 'financial-consultancy', code: 'FC', name: 'Financial Consultancy', desc: 'CMA data modeling, debt syndication, and working capital advisory.' },
-      { id: 'business-consultancy', code: 'BC', name: 'Business Consultancy', desc: 'Strategic scaling, SOP deployment, and operational diagnostics.' }
+      { id: 'business-development-consultancy', code: 'BDC', name: 'Business Development Consultancy', desc: 'Strategic planning, market research, and sustainable growth roadmaps.' },
+      { id: 'licenses-approvals', code: 'LA', name: 'Licenses & Approvals', desc: 'MIDC land permissions, MPCB consents, and factory licenses for bank sanction.' },
+      { id: 'roc-registration', code: 'ROC', name: 'ROC Registration', desc: 'Private limited company incorporation, LLP formation, and MCA filings.' }
+    ]
+  },
+
+  // =========================================================================
+  // SERVICE 6: INDUSTRIAL LICENSES & STATUTORY APPROVALS
+  // =========================================================================
+  'licenses-approvals': {
+    id: 'licenses-approvals',
+    code: 'LA',
+    slug: 'licenses-approvals',
+    name: 'Industrial Licenses & Statutory Regulatory Approvals',
+    shortTitle: 'Licenses & Approvals',
+    categoryBadge: 'Statutory Compliance & Regulatory Clearances',
+    department: 'Industrial Regulatory & Statutory Clearances Division',
+    portal: 'Single-Window Environmental & Industrial Approvals Practice',
+    heroTitle: 'Industrial Licenses & Approvals in Ahilyanagar & Maharashtra',
+    heroHighlight: 'Fast-Track Statutory Permissions, MPCB Consents, Factory Licenses & MIDC Clearances',
+    heroDesc: 'Eliminate bureaucratic delays and ensure zero operational disruption. We assist businesses in obtaining all mandatory statutory approvals, environmental clearances, industrial land permissions, factory licenses, fire NOCs, and municipal clearances through single-window government portals.',
+    jtbd: {
+      statement: "When an industrial entrepreneur or factory promoter is setting up a new plant or expanding operations, they want fast-track statutory clearances, MPCB consents, and factory licenses, so they can achieve commercial commissioning without government notices, legal penalties, or bureaucratic project delays.",
+      situation: "Setting up a greenfield factory or commercial facility, undergoing industrial expansion, or resolving regulatory compliance notices.",
+      motivation: "Secure all mandatory environmental, labor, safety, and municipal permits through single-window channels with verified documentation.",
+      outcome: "Full legal compliance, issued operating licenses, zero shut-down risks, and bank-acceptable statutory permissions."
+    },
+    seo: {
+      title: 'Industrial Licenses & Approvals Ahilyanagar | MPCB & Factory License Maharashtra',
+      description: 'Expert industrial licensing consultancy in Ahilyanagar & Maharashtra. MPCB Consent to Establish & Operate, Factory License, DISH approvals, Fire NOC & MIDC clearances.',
+      canonical: 'https://www.abconsultancy.net.in/services/licenses-approvals',
+      keywords: 'Industrial Licenses Ahilyanagar, MPCB Consent to Operate Nagar, Factory License Consultant Maharashtra, Fire NOC Ahmednagar, MIDC Land Approval Savedi, DISH Factory Plan Approval Pune'
+    },
+    directAnswer: {
+      question: 'What is Industrial Licenses & Approvals Consultancy and how does AB Consultancy help factories?',
+      answer: 'Industrial Licenses & Approvals Consultancy at AB Consultancy provides end-to-end statutory clearance management for manufacturing, food processing, and commercial facilities. We handle MPCB Environmental Consents (CTE/CTO), Directorate of Industrial Safety & Health (DISH) factory approvals, Fire Department NOCs, MIDC industrial land clearances, FSSAI licenses, and labor welfare registrations through Maharashtra Single Window portals.'
+    },
+    trustStats: [
+      { label: 'Issued Clearances', value: '2,800+', sub: 'Factory & Statutory Approvals' },
+      { label: 'Clearance Rate', value: '99.1%', sub: 'Query-Free Application Submissions' },
+      { label: 'Advisory Experience', value: '15+ Years', sub: 'Regional Industrial & MIDC Expertise' },
+      { label: 'Time Saved', value: '45+ Days', sub: 'Faster than Typical Bureaucratic Cycles' }
+    ],
+    architecture: {
+      quantum: 'Covering Red, Orange, Green & White Industrial Categories',
+      bankDebt: 'Prerequisite for Bank Loan First Disbursement',
+      subsidyPct: 'Mandatory for Central & State MSME Capital Subsidies',
+      moratorium: 'Immediate Compliance Gap Analysis',
+      tenor: 'Project-Based Approval Cycles (15 to 45 Days)',
+      interestRate: 'Transparent Government Fee & Milestone-Based Advisory'
+    },
+    verticals: [
+      {
+        id: 'mpcb-consents',
+        title: 'MPCB Environmental Clearances (CTE & CTO)',
+        badge: 'Pollution Control',
+        summary: 'Securing mandatory Consent to Establish (CTE) before construction and Consent to Operate (CTO) before commercial production from Maharashtra Pollution Control Board.',
+        scope: [
+          'Industrial Categorization Audit: Red, Orange, Green, or White Category',
+          'Preparation of Environmental Management Plan (EMP) & Capital Investment Cert',
+          'Effluent Treatment Plant (ETP) & Sewage Treatment (STP) Adequacy Reports',
+          'Online Application via MPCB Single Window & Technical Officer Defense'
+        ],
+        marketImpact: 'Guarantees complete environmental compliance, preventing shut-down notices, power disconnection, or heavy pollution fines.'
+      },
+      {
+        id: 'factory-license-dish',
+        title: 'Factory Inspectorate & DISH License Approvals',
+        badge: 'Safety & Labor',
+        summary: 'Obtaining factory building plan approvals and valid factory licenses under the Factories Act, 1948 from the Directorate of Industrial Safety and Health (DISH).',
+        scope: [
+          'Preparation of Engineering Factory Layout Plans & Machine Spacing Drawings',
+          'Stability Certificate Coordination from Competent Chartered Structural Engineers',
+          'Online Application for Factory License with Horsepower & Worker Count Sizing',
+          'Annual License Renewals & Worker Health/Safety Statutory Filing'
+        ],
+        marketImpact: 'Ensures lawful factory operation, protects promoters from personal liability, and fulfills mandatory bank loan covenants.'
+      },
+      {
+        id: 'midc-land-utilities',
+        title: 'MIDC Industrial Land Clearances & Utility Sanctions',
+        badge: 'Industrial Land',
+        summary: 'Facilitating industrial plot transfers, building completion certificates (BCC), and utility connections across MIDC industrial zones.',
+        scope: [
+          'MIDC Plot Allotment, Transfer of Lease & Tripartite Agreement Execution',
+          'Building Plan Approval & Building Completion Certificate (BCC) from MIDC SPA',
+          'Water Connection Allocation from MIDC Water Works',
+          'Power Connection Sanction & Transformer Load Feasibility with MSEDCL'
+        ],
+        marketImpact: 'Prevents land forfeiture, enables property mortgage creation for bank loans, and ensures uninterrupted industrial power supply.'
+      },
+      {
+        id: 'fire-safety-noc',
+        title: 'Fire Safety NOC & Building Clearances',
+        badge: 'Fire Safety',
+        summary: 'Securing Provisional and Final Fire No Objection Certificates (NOC) from MIDC Fire Wing or Local Municipal Fire Authorities.',
+        scope: [
+          'Industrial Fire Risk Assessment & Fire Fighting Layout Blueprints',
+          'Hydrant, Sprinkler, Smoke Detector & Fire Extinguisher Compliance Setup',
+          'Joint On-Site Inspection Coordination with Chief Fire Officers (CFO)',
+          'Annual Form-A & Form-B Fire Safety Audit Certificate Renewals'
+        ],
+        marketImpact: 'Mandatory prerequisite for factory licensing, industrial insurance coverage, and bank mortgage compliance.'
+      },
+      {
+        id: 'fssai-licensing',
+        title: 'FSSAI Central & State Food Licensing',
+        badge: 'Food Safety',
+        summary: 'Procuring mandatory food safety manufacturing, processing, and repacking licenses from the Food Safety and Standards Authority of India.',
+        scope: [
+          'Evaluation of Production Capacity: State License vs Central FSSAI License',
+          'Food Safety Management System (FSMS) Plan & Food Recall Manual Documentation',
+          'Factory Hygiene Layout, Water Potability Test Reports & Equipment Vetting',
+          'Quarterly Food Testing Coordination & Annual FoSCoS Return Filings'
+        ],
+        marketImpact: 'Enables lawful food product manufacturing, interstate distribution, and retail chain onboarding across India.'
+      },
+      {
+        id: 'labor-statutory-registrations',
+        title: 'Labor Registrations (PF, ESIC, Shop Act & Labor Law)',
+        badge: 'Workforce Compliance',
+        summary: 'Establishing all statutory workforce welfare registrations and licenses required under Maharashtra labor legislation.',
+        scope: [
+          'Employees Provident Fund (EPFO) & Employees State Insurance (ESIC) Portal Setup',
+          'Maharashtra Shop & Establishment Act Registration (Gumasta License)',
+          'Contract Labor Regulation & Abolition (CLRA) Act Licensing for Contractors',
+          'Professional Tax (PTRC & PTEC) Enrollment and Periodic Compliance Calendars'
+        ],
+        marketImpact: 'Eliminates legal employee disputes, labor department notices, and creates an audit-compliant corporate environment.'
+      }
+    ],
+    marginTiers: [
+      {
+        category: 'Statutory Compliance Audit',
+        promoterEquity: 'Initial Audit',
+        subsidyGrant: 'Gap Matrix',
+        bankDebt: '5 - 7 Days',
+        criteria: 'Comprehensive review of factory premises, existing licenses, missing approvals, and potential legal exposure risks.'
+      },
+      {
+        category: 'Single Clearance Track (MPCB or DISH)',
+        promoterEquity: 'Per Approval',
+        subsidyGrant: 'Consent Certificate',
+        bankDebt: '15 - 25 Days',
+        criteria: 'Targeted filing and liaison for a specific clearance: MPCB CTE/CTO, Factory License, or FSSAI License.'
+      },
+      {
+        category: 'Greenfield Turnkey Industrial Clearances',
+        promoterEquity: 'New Factories',
+        subsidyGrant: 'Full Package',
+        bankDebt: '30 - 45 Days',
+        criteria: 'End-to-end statutory suite: MIDC plan approval, Fire NOC, MPCB CTE/CTO, Factory License, Power sanction, and labor setup.'
+      },
+      {
+        category: 'Annual Compliance Management Retainership',
+        promoterEquity: 'Running Plants',
+        subsidyGrant: 'Zero Notices',
+        bankDebt: 'Annual Retainer',
+        criteria: 'Handling all periodic renewals, MPCB environment returns, factory license renewals, and annual statutory compliance.'
+      }
+    ],
+    documents: [
+      {
+        group: '1. Land & Premises Ownership',
+        items: [
+          'MIDC Plot Allotment Letter, Possession Receipt & Registered Lease Agreement (or 7/12 extract for freehold land)',
+          'Approved Factory Architectural Layout Plan with machinery positioning and elevations',
+          'Town Planning NA (Non-Agricultural) Sanction Order (for private industrial land)',
+          'Latest property tax paid receipts and demarcation certificates'
+        ]
+      },
+      {
+        group: '2. Plant, Machinery & Power Specifications',
+        items: [
+          'List of all manufacturing machinery with motor horsepower (HP) ratings and cost breakdown',
+          'Total sanctioned electric power load demand (in KW / KVA) with MSEDCL power bill',
+          'Proposed fuel details (Diesel, Coal, Biomass, LPG) and chimney/stack height specs',
+          'DG Set details with acoustic enclosure and air pollution control system specs'
+        ]
+      },
+      {
+        group: '3. Process & Water Effluent Details',
+        items: [
+          'Detailed manufacturing process flow chart with raw material mass balance',
+          'Daily water consumption breakdown (Domestic, Industrial Processing, Cooling, Boiler)',
+          'Daily wastewater generation and Effluent Treatment Plant (ETP/STP) technical scheme',
+          'Hazardous waste generation categorization and disposal plan'
+        ]
+      },
+      {
+        group: '4. Corporate Identity & Promoters KYC',
+        items: [
+          'Certificate of Incorporation / Partnership Deed / Udyam MSME Certificate',
+          'PAN & Aadhaar cards of all Directors, Partners, or Occupier/Factory Manager',
+          'Board Resolution authorizing the designated signatory for government single-window portals',
+          'Valid Digital Signature Certificate (DSC Class-3) of the authorized director'
+        ]
+      }
+    ],
+    roadmaps: [
+      {
+        phase: 'Phase 1',
+        title: 'Compliance Audit & Documentation Compilation',
+        timeline: 'Week 1',
+        desc: 'Reviewing factory location, industrial zoning, category pollution index, and compiling all architectural drawings and machinery power ratings.',
+        deliverables: ['Industrial Clearance Checklist', 'Validated Architectural Factory Drawings', 'MPCB Pollution Category Confirmation']
+      },
+      {
+        phase: 'Phase 2',
+        title: 'Single-Window Portal Filing (Maitri & MPCB)',
+        timeline: 'Week 2 – Week 3',
+        desc: 'Submitting applications across Maharashtra Single Window (Maitri), MPCB, DISH, and Fire Department portals with complete technical annexures.',
+        deliverables: ['Formal Portal Submission Receipts', 'Payment of Official Government Fees', 'Query Resolution Tracking Sheet']
+      },
+      {
+        phase: 'Phase 3',
+        title: 'Joint Department Inspection & Defense',
+        timeline: 'Week 3 – Week 5',
+        desc: 'Coordinating physical on-site inspections with MPCB Field Officers, Factory Inspectors (DISH), and Fire Officers, defending compliance arrangements.',
+        deliverables: ['Successful Site Inspection Reports', 'Clarification Letters & Undertaking Filings', 'Final Scrutiny Committee Approval']
+      },
+      {
+        phase: 'Phase 4',
+        title: 'Certificate Issuance & Compliance Calendar',
+        timeline: 'Week 5 Onward',
+        desc: 'Receiving official digital licenses, verifying renewal validity dates, and providing the factory management with an annual compliance calendar.',
+        deliverables: ['Issued MPCB Consent (CTE/CTO)', 'Factory License & DISH Approval Certificates', 'Annual Compliance Renewal Tracker']
+      }
+    ],
+    regionalPresence: {
+      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Chhatrapati Sambhajinagar', 'Nashik', 'Solapur', 'Satara'],
+      industrialAreas: ['MIDC Nagapur', 'MIDC Supa Parner', 'MIDC Shrirampur', 'MIDC Kopargaon', 'MIDC Chakan', 'MIDC Waluj'],
+      bankLinkages: ['All Commercial Banks (Fulfilling Loan Disbursement Conditions)', 'Industrial Insurance Underwriters']
+    },
+    faqs: [
+      {
+        q: 'What is the difference between MPCB Consent to Establish (CTE) and Consent to Operate (CTO)?',
+        a: 'Consent to Establish (CTE) is mandatory before you begin any construction, site development, or machinery installation on the industrial premises. Consent to Operate (CTO) is obtained after the plant is built, machinery is installed, and pollution control systems (ETP/STP) are tested, authorizing you to start commercial production. Operating without CTO is a punishable offense under the Water and Air Acts.'
+      },
+      {
+        q: 'Which industries fall under the MPCB Red, Orange, Green, and White categories?',
+        a: 'MPCB categorizes industries based on their Pollution Index. Red Category (highest pollution, e.g. chemical manufacturing, sugar, electroplating) requires stringent clearances and ETPs. Orange Category (moderate pollution, e.g. food processing, fabrication, dairy) requires standard pollution controls. Green Category (low pollution, e.g. packaging, assembly) has simplified rules. White Category (practically non-polluting) only requires self-declaration.'
+      },
+      {
+        q: 'At what point does a business require a Factory License under DISH?',
+        a: 'Under the Factories Act, 1948, any manufacturing unit employing 10 or more workers using electric power, or 20 or more workers without power, is legally classified as a factory and must obtain prior factory building plan approval and a valid Factory License from the Directorate of Industrial Safety and Health (DISH).'
+      },
+      {
+        q: 'Can bank loans be disbursed before obtaining MPCB and factory approvals?',
+        a: 'No. Commercial banks specify in loan sanction letters that initial disbursement for machinery or final plant commissioning requires submission of a valid MPCB Consent to Establish (CTE) and building plan approvals. Final working capital disbursement mandates the submission of the MPCB Consent to Operate (CTO) and Factory License.'
+      },
+      {
+        q: 'How long does it take to secure an MPCB Consent to Operate in Maharashtra?',
+        a: 'Through Maharashtra Single Window portal (Maitri), Green category consents are typically cleared in 15 to 20 days. Orange and Red category consents generally take 30 to 45 days, depending on the completeness of technical ETP drawings and inspection scheduling. Our team expedites queries to ensure minimum turnaround.'
+      },
+      {
+        q: 'Do you assist with MIDC industrial land plot allotment and transfer?',
+        a: 'Yes. We assist industrial entrepreneurs with online MIDC plot applications, project justification reports, building plan approvals through the MIDC Special Planning Authority (SPA), water connection sanctions, and building completion certificates (BCC).'
+      },
+      {
+        q: 'What happens if a factory operates without a Fire NOC in Maharashtra?',
+        a: 'Operating without a valid Fire NOC invalidates your commercial fire insurance policy, meaning insurance companies will reject claims in the event of an accident. Furthermore, local municipal authorities and MIDC have the legal authority to issue show-cause notices and seal non-compliant premises.'
+      },
+      {
+        q: 'How do we engage AB Consultancy for industrial licensing assistance?',
+        a: 'Contact our regulatory clearances team at our Savedi office in Ahilyanagar. Provide your site location, proposed manufacturing activity, machinery power ratings, and water requirements for an immediate compliance roadmap.'
+      }
+    ],
+    relatedServices: [
+      { id: 'business-finance', code: 'BF', name: 'Business & Finance', desc: 'Fulfill statutory bank loan covenants for term loan disbursement.' },
+      { id: 'roc-registration', code: 'ROC', name: 'ROC Registration', desc: 'Private limited incorporation, LLP formation & corporate secretarial setup.' },
+      { id: 'import-export', code: 'IEC', name: 'Import & Export', desc: 'Customs compliance, DGFT licensing & environmental import clearances.' }
+    ]
+  },
+
+  // =========================================================================
+  // SERVICE 7: ROC REGISTRATION & CORPORATE INCORPORATION
+  // =========================================================================
+  'roc-registration': {
+    id: 'roc-registration',
+    code: 'ROC',
+    slug: 'roc-registration',
+    name: 'ROC Registration & Corporate Incorporation Services',
+    shortTitle: 'ROC Registration',
+    categoryBadge: 'Corporate Law & MCA Statutory Incorporation',
+    department: 'Corporate Affairs, Company Law & MCA Compliance Practice',
+    portal: 'Corporate Incorporation & Secretarial Regulatory Desk',
+    heroTitle: 'ROC Registration & Company Incorporation in Ahilyanagar & Maharashtra',
+    heroHighlight: 'Seamless Company Incorporation, LLP Registration & Annual Statutory MCA Compliance',
+    heroDesc: 'Establish a rock-solid corporate foundation with complete Ministry of Corporate Affairs (MCA) compliance. We manage Private Limited Company incorporation, Limited Liability Partnerships (LLP), Producer Companies (FPO), Section 8 Non-Profits, Director Identification Numbers (DIN), Digital Signatures (DSC), and annual ROC filing compliance.',
+    jtbd: {
+      statement: "When an entrepreneur or business owner wants to formalize their business structure, attract external investors, or qualify for institutional bank credit, they want swift, flawless MCA company incorporation and ROC compliance, so they can operate under a protected limited liability corporate identity without legal pitfalls.",
+      situation: "Entrepreneurs launching a new venture, or existing sole proprietorships/partnerships upgrading to a formal corporate entity.",
+      motivation: "Acquire legal corporate identity, protect personal assets through limited liability, and establish equity shareholding structures.",
+      outcome: "Issued Certificate of Incorporation, PAN, TAN, DIN, corporate bank account, and complete Ministry of Corporate Affairs compliance."
+    },
+    seo: {
+      title: 'ROC Registration & Company Incorporation Ahilyanagar | MCA Consultant Maharashtra',
+      description: 'Top ROC registration and company incorporation services in Ahilyanagar & Maharashtra. Private Limited Company registration, LLP formation, Producer Company, DIN, DSC & annual MCA filing.',
+      canonical: 'https://www.abconsultancy.net.in/services/roc-registration',
+      keywords: 'ROC Registration Ahilyanagar, Company Incorporation Consultant Nagar, Private Limited Company Registration Maharashtra, LLP Registration Savedi, Producer Company Formation Pune Ahmednagar, MCA Annual Filing Consultant'
+    },
+    directAnswer: {
+      question: 'What is ROC Registration and how does AB Consultancy assist with company incorporation?',
+      answer: 'ROC Registration at AB Consultancy covers the complete legal incorporation and statutory compliance of business entities under the Registrar of Companies (ROC) and Ministry of Corporate Affairs (MCA). We manage name approval (RUN), drafting of MOA & AOA, SPICe+ digital incorporation, DIN & Class-3 DSC issuance, PAN/TAN allocation, corporate bank account integration, and mandatory annual MCA secretarial filings across Maharashtra.'
+    },
+    trustStats: [
+      { label: 'Incorporated Entities', value: '3,200+', sub: 'Pvt Ltd, LLPs & Producer Companies' },
+      { label: 'Turnaround Time', value: '3 - 5 Days', sub: 'Fast-Track SPICe+ MCA Approvals' },
+      { label: 'Corporate Advisory', value: '15+ Years', sub: 'Company Law & Secretarial Practice' },
+      { label: 'Compliance Record', value: '100%', sub: 'Zero ROC Penalty or Strike-Off Track' }
+    ],
+    architecture: {
+      quantum: 'Pvt Ltd, LLP, One Person Company (OPC) & Farmer Producer Companies',
+      bankDebt: 'Essential for Major Bank Credit Lines & Institutional Loans',
+      subsidyPct: 'Mandatory Entity Type for High-Value Central Schemes',
+      moratorium: 'Immediate Name Availability Search & Reservation',
+      tenor: 'One-Time Incorporation (3–5 Days) + Annual Compliance',
+      interestRate: 'Fixed Package Fee & Official MCA Challan Transparency'
+    },
+    verticals: [
+      {
+        id: 'pvt-ltd-incorporation',
+        title: 'Private Limited Company Incorporation (SPICe+)',
+        badge: 'Private Limited',
+        summary: 'End-to-end incorporation of Private Limited companies under the Companies Act, 2013 using the integrated MCA SPICe+ portal.',
+        scope: [
+          'Name Reservation via SPICe+ Part A with Distinctiveness Justification',
+          'Drafting Custom Memorandum of Association (MOA) & Articles of Association (AOA)',
+          'Filing SPICe+ Part B, AGILE-PRO-S (GST, EPFO, ESIC, Bank Account & Profession Tax)',
+          'Issuance of Certificate of Incorporation (COI), Corporate Identity Number (CIN), PAN & TAN'
+        ],
+        marketImpact: 'Creates the most prestigious and globally recognized business structure with limited liability and seamless equity funding capability.'
+      },
+      {
+        id: 'llp-registration',
+        title: 'Limited Liability Partnership (LLP) Registration',
+        badge: 'LLP Structure',
+        summary: 'Incorporating LLPs under the Limited Liability Partnership Act, 2008, combining corporate limited liability with partnership operational flexibility.',
+        scope: [
+          'Name Approval via RUN-LLP & Partner DPIN Verification',
+          'Filing FiLLiP (Form for Incorporation of Limited Liability Partnership)',
+          'Drafting, Stamping & Filing of Comprehensive LLP Agreement (Form-3)',
+          'Issuance of LLPIN (LLP Identification Number), PAN & TAN'
+        ],
+        marketImpact: 'Ideal for professional service firms, traders, and consultancies seeking minimal statutory compliance burden without personal liability.'
+      },
+      {
+        id: 'producer-company-fpo',
+        title: 'Producer Company (FPO / Farmer Producer Company) Formation',
+        badge: 'Agro Collectives',
+        summary: 'Incorporating specialized Farmer Producer Companies under Part IXA of the Companies Act, unlocking NABARD, SFAC, and central equity grants.',
+        scope: [
+          'Mobilization & Documentation of 10+ Primary Agricultural Producers',
+          'MOA & AOA Drafting Tailored for Crop Aggregation, Processing & Marketing',
+          'ROC Registration, DIN Issuance & Producer Share Certificate Structuring',
+          'Equity Grant & Credit Guarantee Scheme Linkages through SFAC and NABARD'
+        ],
+        marketImpact: 'Enables rural agricultural groups to function as corporate agro-businesses with direct access to institutional export and processing markets.'
+      },
+      {
+        id: 'opc-section8',
+        title: 'One Person Company (OPC) & Section 8 Non-Profit Registration',
+        badge: 'Specialized Entities',
+        summary: 'Incorporating single-promoter corporate entities (OPC) or non-profit organizations dedicated to charitable, social, or industrial development (Section 8).',
+        scope: [
+          'OPC Incorporation with Single Director & Mandatory Nominee Structuring',
+          'Section 8 Company Name Reservation & Central Government License (Form INC-12)',
+          'Drafting Charitable Objectives, Non-Dividend MOA Charters & By-Laws',
+          'Income Tax 12A & 80G Exemption Application Alignment'
+        ],
+        marketImpact: 'Provides solo entrepreneurs with corporate protection and social impact initiatives with prestigious institutional status.'
+      },
+      {
+        id: 'annual-mca-compliance',
+        title: 'Annual ROC Compliance & Secretarial Filings',
+        badge: 'Ongoing Compliance',
+        summary: 'Managing mandatory annual corporate filings, statutory registers, and board documentation to maintain active corporate standing.',
+        scope: [
+          'Annual Filing of Financial Statements (Form AOC-4 / AOC-4 XBRL)',
+          'Annual Return Filing (Form MGT-7 / MGT-7A)',
+          'Mandatory Annual Director KYC (DIR-3 KYC / DIR-3 KYC-Web)',
+          'Drafting Board Meeting Minutes, AGM Notices & Statutory Register Maintenance'
+        ],
+        marketImpact: 'Prevents heavy MCA late penalties (₹100/day per form), director disqualifications, and corporate strike-off notices.'
+      },
+      {
+        id: 'entity-conversion',
+        title: 'Conversion of Proprietorship / Partnership into Pvt Ltd',
+        badge: 'Corporate Upgrade',
+        summary: 'Transitioning established sole proprietorships or traditional partnership firms into Private Limited companies without capital gains tax liability.',
+        scope: [
+          'Statutory Valuation of Assets & Liabilities by Registered Valuer',
+          'Drafting Takeover Agreements & Succession Charters',
+          'ROC Part I Filing for Direct Conversion under Companies Act, 2013',
+          'Transfer of Licenses, Bank Accounts, GST & Brand Assets to New Entity'
+        ],
+        marketImpact: 'Protects accumulated business goodwill and credit track record while upgrading to an institutional corporate structure.'
+      }
+    ],
+    marginTiers: [
+      {
+        category: 'Fast-Track Pvt Ltd Incorporation',
+        promoterEquity: 'New Founders',
+        subsidyGrant: 'Complete COI',
+        bankDebt: '3 - 5 Days',
+        criteria: 'Name approval, 2 DSCs, 2 DINs, MOA/AOA drafting, SPICe+ filing, COI, PAN, TAN, and bank account setup.'
+      },
+      {
+        category: 'LLP Turnkey Formation Pack',
+        promoterEquity: 'Professional Partners',
+        subsidyGrant: 'LLP Agreement',
+        bankDebt: '5 - 7 Days',
+        criteria: 'Name reservation, DPINs, FiLLiP filing, LLPIN, PAN/TAN, and professional drafting & stamping of LLP Agreement.'
+      },
+      {
+        category: 'Farmer Producer Company (FPO) Setup',
+        promoterEquity: 'Agro Groups (10+)',
+        subsidyGrant: 'Producer COI',
+        bankDebt: '10 - 15 Days',
+        criteria: '10 Member producer documentation, specialized agro MOA/AOA, ROC incorporation, and SFAC grant alignment.'
+      },
+      {
+        category: 'Annual Corporate Secretarial Retainership',
+        promoterEquity: 'Running Companies',
+        subsidyGrant: 'Zero Penalties',
+        bankDebt: 'Annual Service',
+        criteria: 'Managing AOC-4, MGT-7, DIR-3 KYC, board meeting minutes, share transfers, and annual statutory compliance.'
+      }
+    ],
+    documents: [
+      {
+        group: '1. Directors & Shareholders KYC',
+        items: [
+          'PAN Card copy of all proposed Directors and Shareholders (Mandatory for Indian nationals)',
+          'Identity Proof: Passport / Voter ID Card / Driving License of each Director',
+          'Address Proof: Latest Bank Statement / Electricity Bill / Telephone Bill (not older than 2 months)',
+          'Passport-size photographs and active email addresses / mobile numbers for OTP authentication'
+        ]
+      },
+      {
+        group: '2. Registered Office Premises Proof',
+        items: [
+          'Latest Electricity Bill / Property Tax Receipt of the proposed registered office address (less than 2 months old)',
+          'No-Objection Certificate (NOC) from the property owner authorizing company registration',
+          'Registered Rent Agreement / Lease Deed (if premises are rented/leased)',
+          'Ownership title deed (if premises are owned by the promoter)'
+        ]
+      },
+      {
+        group: '3. Proposed Company Details',
+        items: [
+          'Two proposed company name choices in order of preference with significance of each word',
+          'Detailed description of core business objects and commercial activities to be undertaken',
+          'Authorized and paid-up share capital breakdown and percentage shareholding ratio among promoters',
+          'Designation of primary directors and authorized signatories'
+        ]
+      },
+      {
+        group: '4. Digital Signature & Verification Credentials',
+        items: [
+          'Class-3 Digital Signature Certificate (DSC) video verification and mobile OTP validation',
+          'Existing Director Identification Number (DIN) details (if any director already holds one)',
+          'Existing Udyam MSME / GST details (in case of conversion from proprietorship/partnership)',
+          'Declaration of non-acceptance of deposits and compliance undertakings (provided by our team)'
+        ]
+      }
+    ],
+    roadmaps: [
+      {
+        phase: 'Phase 1',
+        title: 'Name Reservation & Digital Credentials',
+        timeline: 'Day 1 – Day 2',
+        desc: 'Procuring Class-3 Digital Signature Certificates (DSC) for promoters, conducting MCA trademark and name availability searches, and submitting SPICe+ Part A.',
+        deliverables: ['Issued Class-3 DSCs for All Promoters', 'MCA Name Approval Letter', 'Draft MOA & AOA Object Clauses']
+      },
+      {
+        phase: 'Phase 2',
+        title: 'SPICe+ Documentation & Statutory Drafting',
+        timeline: 'Day 2 – Day 3',
+        desc: 'Drafting Memorandum of Association (MOA), Articles of Association (AOA), promoter declarations, registered office NOCs, and compiling the full SPICe+ Part B pack.',
+        deliverables: ['Custom Electronic MOA (e-MOA) & e-AOA', 'AGILE-PRO-S Multi-Service Registration Pack', 'Director Declarations & Consent Forms']
+      },
+      {
+        phase: 'Phase 3',
+        title: 'MCA Scrutiny & Certificate Issuance',
+        timeline: 'Day 3 – Day 5',
+        desc: 'Submitting digital forms to the Registrar of Companies (ROC), paying official government MCA challans, resolving scrutiny inquiries, and securing approval.',
+        deliverables: ['Certificate of Incorporation (COI) with CIN', 'Permanent Account Number (PAN) & TAN', 'Director Identification Numbers (DIN)']
+      },
+      {
+        phase: 'Phase 4',
+        title: 'Bank Account & Commencement of Business',
+        timeline: 'Week 2',
+        desc: 'Activating the corporate bank account, drafting first board meeting minutes, issuing physical share certificates, and filing Form INC-20A (Commencement of Business).',
+        deliverables: ['Active Corporate Bank Current Account', 'Form INC-20A Filed Receipt', 'Share Certificates & Statutory Register Setup']
+      }
+    ],
+    regionalPresence: {
+      districts: ['Ahilyanagar (Ahmednagar)', 'Pune', 'Chhatrapati Sambhajinagar', 'Nashik', 'Mumbai MMR', 'Solapur', 'Kolhapur'],
+      industrialAreas: ['MIDC Nagapur', 'MIDC Supa Parner', 'MIDC Shrirampur', 'MIDC Chakan', 'MIDC Waluj', 'Major Commercial Centers'],
+      bankLinkages: ['All Leading Commercial Scheduled Banks (Current Account Integration)', 'Corporate Payment Gateway Partners']
+    },
+    faqs: [
+      {
+        q: 'What is the minimum requirement to incorporate a Private Limited Company in India?',
+        a: 'To incorporate a Private Limited company, you need a minimum of 2 directors (at least one must be a resident of India), 2 shareholders (directors can also be shareholders), and a registered office address in India. There is no minimum capital requirement mandated by the MCA (you can start with as low as ₹10,000 paid-up capital).'
+      },
+      {
+        q: 'What is the SPICe+ system used for company incorporation?',
+        a: 'SPICe+ (Simplified Proforma for Incorporating Company Electronically Plus) is an integrated digital portal by the Ministry of Corporate Affairs (MCA). In a single application, it simultaneously delivers 10 services: Name Reservation, Company Incorporation, DIN allocation, PAN, TAN, EPFO registration, ESIC registration, Professional Tax registration (Maharashtra), Bank Account opening, and GST registration.'
+      },
+      {
+        q: 'Can a residential address be used as the registered office of a company?',
+        a: 'Yes. The registered office can be a residential, commercial, or industrial address. All that is required is proof of ownership (electricity bill or property tax receipt) and an NOC from the property owner. You can also change the registered office address later as your business expands.'
+      },
+      {
+        q: 'What is the difference between a Private Limited Company and an LLP?',
+        a: 'A Private Limited company is suited for businesses seeking equity investment, venture capital, or high bank credit lines; it has distinct equity shareholding but requires more secretarial compliance. An LLP (Limited Liability Partnership) is ideal for service firms, family businesses, and consultancies; it offers limited liability protection with lower compliance requirements and no statutory audit mandate unless turnover exceeds ₹40 Lakhs.'
+      },
+      {
+        q: 'How long does it take to register a Private Limited company through AB Consultancy?',
+        a: 'With all KYC and property documents in order, name approval takes 24 to 48 hours, and final Certificate of Incorporation (COI), PAN, and TAN are typically issued by the MCA within 3 to 5 business days.'
+      },
+      {
+        q: 'What is Form INC-20A (Commencement of Business) and why is it critical?',
+        a: 'Under Section 10A of the Companies Act, every company incorporated in India must file Form INC-20A within 180 days of incorporation, verifying that shareholders have deposited their subscribed capital into the corporate bank account. Failure to file INC-20A attracts heavy penalties and prevents the company from commencing business or borrowing loans.'
+      },
+      {
+        q: 'Can a foreign national or NRI be a director in an Indian Private Limited company?',
+        a: 'Yes. Foreign nationals and NRIs can become directors and shareholders. They must provide notarized and apostilled passport and address proofs from their country of residence. At least one director on the board must be a resident Indian citizen.'
+      },
+      {
+        q: 'How do I start the company incorporation process with AB Consultancy?',
+        a: 'Contact our corporate secretarial desk at our Savedi, Ahilyanagar office. Provide two proposed company names and the Aadhaar/PAN cards of the promoters. We perform an instant MCA name search and initiate Digital Signature processing immediately.'
+      }
+    ],
+    relatedServices: [
+      { id: 'business-development-consultancy', code: 'BDC', name: 'Business Development Consultancy', desc: 'Strategic planning, market research, and sustainable growth roadmaps.' },
+      { id: 'business-finance', code: 'BF', name: 'Business & Finance', desc: 'Institutional debt syndication, working capital & CMA feasibility data.' },
+      { id: 'licenses-approvals', code: 'LA', name: 'Licenses & Approvals', desc: 'MPCB consents, factory licenses, fire NOC & MIDC land clearances.' }
     ]
   }
+};
+
+// =========================================================================
+// BACKWARD COMPATIBILITY ALIASES
+// Ensures all previous URLs / bookmarks continue to work seamlessly without 404s
+// =========================================================================
+CONSULTANCY_SERVICES_DATA['business-consultancy'] = {
+  ...CONSULTANCY_SERVICES_DATA['business-development-consultancy'],
+  id: 'business-consultancy',
+  slug: 'business-consultancy'
+};
+
+CONSULTANCY_SERVICES_DATA['business-setup-guidance'] = {
+  ...CONSULTANCY_SERVICES_DATA['licenses-approvals'],
+  id: 'business-setup-guidance',
+  slug: 'business-setup-guidance'
+};
+
+CONSULTANCY_SERVICES_DATA['financial-consultancy'] = {
+  ...CONSULTANCY_SERVICES_DATA['business-finance'],
+  id: 'financial-consultancy',
+  slug: 'financial-consultancy'
+};
+
+CONSULTANCY_SERVICES_DATA['project-report-preparation'] = {
+  ...CONSULTANCY_SERVICES_DATA['business-finance'],
+  id: 'project-report-preparation',
+  slug: 'project-report-preparation'
+};
+
+CONSULTANCY_SERVICES_DATA['government-scheme-application-assistance'] = {
+  ...CONSULTANCY_SERVICES_DATA['licenses-approvals'],
+  id: 'government-scheme-application-assistance',
+  slug: 'government-scheme-application-assistance'
+};
+
+CONSULTANCY_SERVICES_DATA['subsidy-application-assistance'] = {
+  ...CONSULTANCY_SERVICES_DATA['business-finance'],
+  id: 'subsidy-application-assistance',
+  slug: 'subsidy-application-assistance'
 };
